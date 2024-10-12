@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: ' font-family: "Poppins", sans-serif;';
+
+}
+
+body {
+  width: 1920px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 13rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10; /* Adicionando z-index maior */
+}
+.logo {
+  margin-left: 13rem;
+}
+
+.menu-hamburguer {
+  display: none;
+}
+
+header ul{
+ 
+  display: flex;
+  justify-content: center;
+  margin-right: 40rem;
+  gap:  5rem;
+  padding: 4px;
+}
+
+header ul li a {
+  color: #000;
+
+}
+
+header ul li a:hover {
+  color: green;
+}
+
+.menu li {
+  position: relative;
+}
+
+.dropdown-menu{
+  background: transparent;
+  position: absolute;
+  z-index: 2;
+  display: none;
+}
+ 
+.dropdown:hover .dropdown-menu {
+  display: block;
+  background: rgba(135, 230, 164, 0.253);
+  border-radius: 8px;
+}
+
+.dropdown-menu a{
+
+  padding: 6px;
+  width: 90px;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  color: green;
+}
+
+
+main {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-slider {
+  margin-top: 26rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1rem;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner img {
+  color: #000;
+  margin-top: 4rem;
+  background:rgb(255, 255, 255);
+  width: 100%;
+  height: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+.slider {
+  opacity: 0;
+  transition: opacity .2s;
+  position: absolute ;
+  z-index: 1;
+  width: 100%;
+
+}
+
+.on {
+  opacity: 1;
+}
+
+#prev-button, #next-button {
+
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+#prev-button img, #next-button img {
+
+  width: 100%;
+  height: 100%;
+}
+
+.seguimentos {
+  margin-top: 28rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+}
+
+.seguimentos a img{
+  display: block;
+  background: rgb(255, 255, 255);
+  width: 20rem;
+  height: 19rem;
+}
+
+.seguimentos a, .seguimentos h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bannerEsporte {
+  margin-top: 15rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1rem;
+}
+
+.sliderEsportes {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.esporteSlide {
+  opacity: 0;
+  transition: opacity .2s;
+  position: absolute ;
+  z-index: 1;
+  width: 100%;
+}
+
+#prev-button-esporte, #next-button-esporte {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+#prev-button-esporte img, #next-button-esporte img {
+
+  width: 100%;
+  height: 100%;
+}
+
+.bannerEsporte img {
+  margin-top: 8rem;
+  color: #000;
+  background-color: transparent;
+  width: 100%;
+  height: 27.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.info {
+  margin-top: 22rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.info-dois {
+  margin-top: 7rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.info h2, .info-dois h2 {
+  color: #38C738;
+  font-weight: bold;
+}
+
+.info P, .info-dois P {
+  width: 30rem;
+}
+
+.infoBotao {
+  background-color: #4CAF50; 
+  color: white; 
+  padding: 10px 20px; 
+  width: 12rem;
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block;
+  margin-top: 0.7rem;
+  margin-left: 25rem;
+  font-size: 14px; 
+  cursor: pointer; 
+  border: none; 
+  border-radius: 4px; 
+  transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+.infoBotao:hover {
+  background-color: #45a049; /* Cor de fundo ao passar o mouse */
+}
+
+footer {
+  background: #38C738;
+  width: 100%;
+  height: 10rem;
+  margin-top: 8rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+footer a {
+  width: 195px;
+  display: flex;
+  color: #000;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+}
+footer a img {
+  height: 25px;
+  width: 25px;
+}
+
+span {
+  display: flex;
+  padding: 8px;
+  justify-content: end;
+}
+
+
+
+
+

@@ -1,0 +1,306 @@
+@media (max-width: 480px) {
+
+
+  header {
+    width: 100%;
+    position: fixed;
+    height: 3rem;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  .logo img {
+    height: 2.8rem;
+    width: 5rem;
+  }
+
+  .logo{
+  margin-left: 0rem;
+  }
+  
+  header ul{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    gap:  1rem;
+    padding: 4px;
+  }
+
+  .menu-hamburguer {
+    cursor: pointer;
+    display: flex; /* Altere para flex ou block para que ele apareça */
+    margin-right: 2rem;
+    padding: 6px;
+    flex-direction: column;
+    width: 30px;
+    height: 30px;
+    
+    
+  }
+
+
+  .bar {
+    height: 3px;
+    width: 30px;
+    background-color: #38C738;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+  .menu {
+    display: none; /* Esconde o menu inicialmente */
+    background-color: #fff;
+    position: absolute;
+    top: 50px; /* Ajuste conforme necessário */
+    left: 0px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.menu ul {
+    list-style: none;
+    margin-left: 0rem;
+    margin-top: 1rem;
+    height: 15.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+
+.menu li {
+    padding: 6px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 1rem;
+}
+
+.menu.active {
+    display: block;
+    justify-content: end;
+    margin-left: 15.8rem;
+    height: 20rem;
+    width: 13.7rem;
+}
+  
+.dropdown-menu {
+  display: none;
+  
+}
+
+
+.dropdown-menu{
+  width: auto;
+  position:static ;
+  display: none;
+  margin-top: 0rem;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+ 
+.dropdown:hover .dropdown-menu {
+  display: block;
+
+}
+
+.dropdown-menu a{
+  background: rgba(255, 255, 255, 0.5);
+  padding: 6px;
+  display: block;
+}
+
+
+  header ul li a {
+    color: #000;
+    font-size: 17px;
+  }
+
+  header ul{
+    margin-top: -4rem;
+    display: flex;
+    align-items: end;
+    margin-right: 0.7rem;
+  }
+
+  .container-slider {
+    margin-top: 7rem;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+  }
+
+  .banner img {
+    color: #000;
+    margin-top: 4rem;
+    width: 100%;
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #prev-button, #next-button {
+
+    width: 14px;
+    height: 14px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  #prev-button img, #next-button img {
+  
+    width: 100%;
+    height: 100%;
+  }
+
+
+  main .seguimentos {
+    margin-top: 9rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 0px;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+  .bannerEsporte {
+    margin-top: 0rem;
+  }
+  .sliderEsportes img {
+    width: 100%;
+    height: 6rem;
+  }
+  #prev-button-esporte, #next-button-esporte {
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  #prev-button-esporte img, #next-button-esporte img {
+  
+    width: 100%;
+    height: 100%;
+  }
+
+  .info {
+    width: 100%;
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  .info-dois {
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .info h2, .info-dois h2 {
+    color: #38C738;
+    font-weight: bold;
+    margin-left: 7px;
+  }
+  
+  .info P, .info-dois P {
+    width: 95%;
+    font-size: 15px;
+    margin-left: 0rem;
+  }
+
+  .infoBotao {
+  background-color: #4CAF50; 
+  color: white; 
+  padding: 10px 20px; 
+  width: 12rem;
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block;
+  margin-top: 0.7rem;
+  margin-left: 0rem;
+  }
+
+  footer {
+    background: #38C738;
+    width: 100%;
+    height: auto;
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: start;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  footer a {
+    color: #000;
+    padding: 15px;
+  }
+  
+  span {
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    font-size: 14px;
+  }
+
+
+}
+
+
+@media (max-width: 393px) {
+
+  .menu.active {
+    display: flex;
+    justify-content: end;
+    margin-left: 11.2rem;
+    height: 13rem;
+    width: 13rem;
+}
+
+
+
+}
+
+
+
+
+@media (max-width: 360px) {
+
+  .menu.active {
+    display: flex;
+    justify-content: end;
+    margin-left: 9.3rem;
+    height: 13rem;
+    width: 13rem;
+}
+
+
+
+}

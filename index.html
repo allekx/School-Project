@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mobile.css">
+  <link rel="stylesheet" href="desktop.css">
+  <title>School</title>
+</head>
+
+<body>
+  <header>
+    <a class="logo" href="/index.html"><img src="/img/logo exemplo.svg" alt="Escola Criativa"></a>
+
+    <div class="menu-hamburguer" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <nav class="menu">
+      <ul>
+
+        <li class="dropdown">
+          <a href="#" id="portalLink">Matrículas</a>
+          <div class="dropdown-menu">
+            <a href="https://app.proesc.com/cursos/escolacelus/LJkw" target="_blank" rel="noopener noreferrer">Matricular</a>
+            <a href="#">Rematricular</a>
+          </div>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" id="portalLink">Seguimentos</a>
+          <div class="dropdown-menu">
+            <a href="#">Educação Infantil</a>
+            <a href="#">Ensino Fundamental I</a>
+            <a href="#">Ensino Fundamental II</a>
+            <a href="#">Ensino Médio</a>
+          </div>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" id="portalLink">Portal</a>
+
+          <div class="dropdown-menu">
+
+            <a href="https://app.proesc.com/app" target="_blank" rel="noopener noreferrer">Portal Proesc</a>
+
+            <a href="https://portal.coc.com.br/login/" target="_blank" rel="noopener noreferrer">Portal COC</a>
+
+          </div>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" id="portalLink">Projetos e Ações</a>
+          <div class="dropdown-menu">
+            <a href="/pagfutsal/futsal.html">Futsal</a>
+            <a href="/pagballet/ballet.html">Ballet</a>
+            <a href="/pagjiu-jitsu/jiu-jitsu.html">Jiu-Jitsu</a>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container-slider">
+      <button id="prev-button"><img src="img/left-chevron_9144318.png" alt="prev button"></button>
+      <div class="banner">
+        <img src="/img/freepik-flat-waves-save-the-world-big-sale-environment-banner-20241010001251UXTQ.png" alt="Banner de Anúncio" class="slider">
+        <img src="/img/testeimg2.png" class="slider" alt="Banner de Anúncio">
+        <img src="/img/testeimg3.png" alt="Banner de Anúncio" class="slider">
+      </div>
+      <button id="next-button"><img src="img/right-chevron_9144319.png" alt="next button"></button>
+    </div>
+
+    <div class="seguimentos">
+      <div>
+        <h3>Early Childhood Education</h3>
+        <a href="#"><img src="/img/teste seguimentos img.svg" alt="Educação Infantil"></a>
+      </div>
+      <div>
+        <h3>Elementary School I 1st to 5th Year</h3>
+        <a href="#"><img src="/img/teste seguimentos img 1.svg" alt="Ensino Fundamental I 1° ao 5° Ano"></a>
+      </div>
+      <div>
+        <h3>Elementary School II 6th to 9th Year</h3>
+        <a href="#"><img src="/img/teste seguimentos img 2.svg" alt="Ensino Fundamental II 6° ao 9° Ano"></a>
+      </div>
+      <div>
+        <h3>High School</h3>
+        <a href="#"><img src="/img/teste seguimentos img 3.svg" alt="Ensino Médio"></a>
+      </div>
+    </div>
+
+    <div class="bannerEsporte">
+      <button id="prev-button-esporte"><img src="img/left-chevron_9144318.png" alt="prev button"></button>
+      <div class="sliderEsportes">
+          <img src="/img/futsal exemple.svg" class="esporteSlide" alt="Banner dos Esportes">
+          <img src="/img/ballet esporte exemple.png" class="esporteSlide" alt="Banner dos Esportes">
+          <img src="/img/jiu-jitsu esporte exemple.png" class="esporteSlide" alt="Banner dos Esportes">
+      </div>
+      <button id="next-button-esporte"><img src="img/right-chevron_9144319.png" alt="next button"></button>
+  </div>
+
+    <div class="info">
+      <h2>Nome da Escola</h2>
+      <p>Somos um colégio pensado para despertar sua melhor versão!
+
+        Da Educação Infantil ao Pré-Vestibular, com opções matutino, vespertino e integral, aqui você encontra a melhor estrutura, material de ponta e uma equipe de excelência desenvolvendo projetos e ações pensadas para cada faixa etária.</p>
+    </div>
+    <button class="infoBotao">Conheça nossa Escola »</button>
+    <div class="info-dois">
+      <h2>Sistema COC</h2>
+      <p>Somos referência em resultados nos principais vestibulares do país! Isso porque o COC tem uma metodologia que alia conteúdo forte e formação integral do Berçário ao Pré-Vestibular.</p>
+    </div>
+    <a href="https://ensino.coc.com.br/coc-plataforma-completa-de-educacao?utm_source=google&utm_medium=cpa&utm_campaign=bob_coc_-_pmax-long-tail_cnv_cad_pmax_-_cpa&utm_content=atm_-_pmax_v1_all&gad_source=1&gclid=CjwKCAjw9eO3BhBNEiwAoc0-jWjNYZVZu03GHcfPcCQ4HjcFHOEp1IZK4bFwMTLoSdDw5L0oFavnXRoCdgcQAvD_BwE" target="_blank" rel="noopener noreferrer">
+      <button class="infoBotao">Conheça o COC »</button>
+    </a>
+
+  </main>
+  <footer>
+    <a href="#"><img src="/img/icon sobre nós.svg" alt="Icon sobre nós"> SOBRE NÓS</a>
+    <a href="#"><img src="/img/icon contato.svg" alt="Icon contatos">CONTATO</a>
+    <a href="https://ensino.coc.com.br/coc-plataforma-completa-de-educacao?utm_source=google&utm_medium=cpa&utm_campaign=bob_coc_-_pmax-long-tail_cnv_cad_pmax_-_cpa&utm_content=atm_-_pmax_v1_all&gad_source=1&gclid=CjwKCAjw9eO3BhBNEiwAoc0-jWjNYZVZu03GHcfPcCQ4HjcFHOEp1IZK4bFwMTLoSdDw5L0oFavnXRoCdgcQAvD_BwE" target="_blank" rel="noopener noreferrer"> <img src="/img/icon coc.svg" alt="Icon COC">COC</a>
+    <a href="#"><img src="/img/icon matrículas.svg" alt="Icon matrículas">MATRÍCULAS</a>
+    <a href="#"><img src="/img/icon seguimentos.svg" alt="Icon Seguimentos">SEGMENTOS</a>
+    <a href="https://www.proesc.com" target="_blank" rel="noopener noreferrer"><img src="/img/icon proesc.svg" alt="Icon Proesc">PORTAL</a>
+    <a href="#"><img src="/img/icon pedagógico.svg" alt="Icon Pedagógico"> PEDAGÓGICO</a>
+    <a href="#"><img src="/img/icon P & A.svg" alt="Icon Projetos e Ações">PROJETOS & AÇÕES</a>
+    <a href="https://maps.app.goo.gl/kbDusRXSPpugpRQPA" target="_blank" rel="noopener noreferrer"><img src="/img/icon unidade.svg"  alt="Icon Unidade">UNIDADE</a>
+  </footer>
+  <span>©2024 - Todos os direitos reservados</span>
+  <script src="script.js"></script>
+</body>
+
+</html>
