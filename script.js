@@ -17,17 +17,7 @@ document.addEventListener('click', (event) => {
   }
 });
 
-const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
 
-  dropdownToggles.forEach(toggle => {
-    toggle.addEventListener('click', function(event) {
-      event.preventDefault(); // Previne a ação padrão do link
-      const dropdownMenu = this.nextElementSibling; // Seleciona o próximo elemento que é o dropdown-menu
-      
-      // Alterna a exibição do menu dropdown
-      dropdownMenu.style.display = dropdownMenu.style.display === 'none' || dropdownMenu.style.display === '' ? 'block' : 'none';
-    });
-  });
 
 const slider = document.querySelectorAll('.slider');
 const btnPrev = document.getElementById('prev-button');
@@ -112,3 +102,25 @@ showEsportes();
 setInterval(nextEsportes, 4000); // Altere para o intervalo desejado em milissegundos
 
 
+function toggleDropdown(event) {
+  event.preventDefault(); // Cancela a ação padrão do link
+  const dropdownMenu = event.target.nextElementSibling;
+
+  // Alterna a visibilidade do menu
+  if (dropdownMenu.style.display === 'block') {
+    dropdownMenu.style.display = 'none'; // Oculta se já estiver visível
+  } else {
+    dropdownMenu.style.display = 'block'; // Mostra se estiver oculto
+  }
+}
+
+// Fecha o dropdown se clicar fora dele
+document.addEventListener('click', function(event) {
+  const target = event.target;
+  const dropdown = document.querySelector('.dropdown-menu');
+
+  // Verifica se o clique foi fora do dropdown
+  if (!target.closest('.dropdown')) {
+    dropdown.style.display = 'none'; // Oculta o dropdown
+  }
+});
