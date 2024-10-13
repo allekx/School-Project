@@ -140,19 +140,19 @@ header ul{
   margin-right: 0.7rem;
 }
 
-.banner-futsal {
+.banner-ballet {
   margin-top: 3.2rem;
   width: 100%;
   height: auto;
   padding: 0px;
 }
-.banner-futsal img {
+.banner-ballet img {
   margin-top: 0rem;
   width: 100%rem;
   padding: 0px;
 }
 
-.container-futsal {
+.container-ballet {
   margin-top: 1rem;
   width: 100%;
   display: flex;
@@ -177,7 +177,7 @@ header ul{
 .container-dois p {
   font-size: 14px;
 }
-.button-futsal {
+.button-ballet {
   font-size: 16px;
   margin-left: 0rem;
 }

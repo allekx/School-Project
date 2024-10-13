@@ -56,10 +56,11 @@
   .seguimentos {
     width: 100%;
     height: auto;
-    margin-top: 19rem;
+    margin-top: 22rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-left: 0rem;
+    gap: 0rem;
   }
   .seguimentos a img{
     display: block;

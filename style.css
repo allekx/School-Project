@@ -152,7 +152,7 @@ main {
   margin-top: 28rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 5rem;
+  gap: 6rem;
 }
 
 .seguimentos a img{
@@ -166,6 +166,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 7px;
 }
 
 .bannerEsporte {
