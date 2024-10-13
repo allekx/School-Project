@@ -68,7 +68,7 @@ header ul li a:hover {
  
 .dropdown:hover .dropdown-menu {
   display: block;
-  background: rgba(135, 230, 164, 0.253);
+  background: rgba(135, 230, 164, 0.925);
   border-radius: 8px;
 
 }
