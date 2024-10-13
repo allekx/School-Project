@@ -10,7 +10,7 @@
 }
 
 body {
-  width: 1920px;
+  width: 100%;
 }
 
 header {
@@ -40,10 +40,13 @@ header ul{
   margin-right: 40rem;
   gap:  5rem;
   padding: 4px;
+
 }
 
 header ul li a {
   color: #000;
+  display: flex;
+  width: auto;
 
 }
 
@@ -60,12 +63,14 @@ header ul li a:hover {
   position: absolute;
   z-index: 2;
   display: none;
+
 }
  
 .dropdown:hover .dropdown-menu {
   display: block;
   background: rgba(135, 230, 164, 0.253);
   border-radius: 8px;
+
 }
 
 .dropdown-menu a{
@@ -73,10 +78,12 @@ header ul li a:hover {
   padding: 6px;
   width: 90px;
   display: block;
+
 }
 
 .dropdown-menu a:hover {
   color: green;
+
 }
 
 

@@ -17,6 +17,18 @@ document.addEventListener('click', (event) => {
   }
 });
 
+const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+
+  dropdownToggles.forEach(toggle => {
+    toggle.addEventListener('click', function(event) {
+      event.preventDefault(); // Previne a ação padrão do link
+      const dropdownMenu = this.nextElementSibling; // Seleciona o próximo elemento que é o dropdown-menu
+      
+      // Alterna a exibição do menu dropdown
+      dropdownMenu.style.display = dropdownMenu.style.display === 'none' || dropdownMenu.style.display === '' ? 'block' : 'none';
+    });
+  });
+
 const slider = document.querySelectorAll('.slider');
 const btnPrev = document.getElementById('prev-button');
 const btnNext = document.getElementById('next-button');
