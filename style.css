@@ -20,28 +20,34 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 13rem;
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   z-index: 10; /* Adicionando z-index maior */
 }
+
 .logo {
-  margin-left: 13rem;
+  display: flex;
+  
+}
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .menu-hamburguer {
   display: none;
 }
-
 header ul{
- 
+  
   display: flex;
   justify-content: center;
-  margin-right: 40rem;
+  margin-right: 0rem;
   gap:  5rem;
   padding: 4px;
 
 }
+
 
 header ul li a {
   color: #000;
