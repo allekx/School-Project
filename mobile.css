@@ -275,7 +275,7 @@
   }
 
   footer {
-    background: #38C738;
+    background: #00ff00bb;
     width: 100%;
     height: auto;
     margin-top: 6rem;
@@ -297,7 +297,25 @@
     justify-content: center;
     font-size: 14px;
   }
-
+  .redes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .redes h2 {
+    font-size: 18px;
+    margin-left: 1rem;
+  }
+  .redes div  {
+    display: flex;
+  }
+  .container-redes {
+    width: 28%;
+  }
+  .redes div a {
+    width: 100%;
+  }
 
 }
 
