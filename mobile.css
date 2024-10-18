@@ -308,7 +308,7 @@
     display: flex;
     justify-content: end;
     margin-left: 0rem;
-    height: 13rem;
+    height: auto;
     width: 100%;
 }
 
@@ -325,7 +325,7 @@
     display: flex;
     justify-content: end;
     margin-left: 0rem;
-    height: 13rem;
+    height: auto;
     width: 100%;
 }
 
