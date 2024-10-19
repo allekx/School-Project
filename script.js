@@ -1,24 +1,7 @@
-// Mostra o menu 
-function toggleMenu() {
-  const menu = document.querySelector('.menu');
-  menu.classList.toggle('active');
-
-}
-
-
-// Adiciona um evento de clique no documento
-document.addEventListener('click', (event) => {
-  const menu = document.querySelector('.menu');
-  const menuButton = document.querySelector('.menu-hamburguer');
-
-  // Verifica se o menu está ativo e se o clique não foi no menu ou no botão
-  if (menu.classList.contains('active') && !menu.contains(event.target) && !menuButton.contains(event.target)) {
-    menu.classList.remove('active'); // Fecha o menu
-  }
-});
 
 
 
+//slide
 const slider = document.querySelectorAll('.slider');
 const btnPrev = document.getElementById('prev-button');
 const btnNext = document.getElementById('next-button');

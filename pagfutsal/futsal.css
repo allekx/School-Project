@@ -6,73 +6,64 @@
   list-style: none;
   text-decoration: none;
   font-family: ' font-family: "Poppins", sans-serif;';
+  box-sizing: border-box;
+
+}
+
+body {
+  width: 100%;
 }
 
 header {
   position: fixed;
   width: 100%;
-  height: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 13rem;
-  background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  z-index: 10; /* Adicionando z-index maior */
-}
-.logo {
-  margin-left: 13rem;
-}
-
-.menu-hamburguer {
-  display: none;
-}
-
-header ul{
- 
+  height: 3.6rem;
   display: flex;
   justify-content: center;
-  margin-right: 40rem;
-  gap:  5rem;
-  padding: 4px;
+  align-items: center;
+  gap: 0rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
 }
-
-header ul li a {
-  color: #000;
-
-}
-
-header ul li a:hover {
-  color: green;
-}
-
-.menu li {
-  position: relative;
-}
-
-.dropdown-menu{
-  background: transparent;
+.logo {
   position: absolute;
-  z-index: 2;
+  display: block;
+  margin-right: 70%;
+}
+.logo img{
+  width: 150px;
+  height: 50px;
+}
+nav {
+  background: transparent;
+}
+nav li {
+  display: inline-block;
+}
+nav li a {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  padding: 15px;
+}
+nav li a:hover {
+  background-color: #0e944b;
+}
+.dropdown-menu{
+  position: absolute;
+  box-shadow: 0 0 2px black;
   display: none;
 }
- 
+.dropdown-menu a {
+  display: block;
+}
 .dropdown:hover .dropdown-menu {
   display: block;
-  background: rgba(135, 230, 164, 0.253);
-  border-radius: 8px;
+  background: #fff;
 }
 
-.dropdown-menu a{
 
-  padding: 6px;
-  width: 90px;
-  display: block;
-}
-
-.dropdown-menu a:hover {
-  color: green;
-}
 body {
   display: flex;
   flex-direction: column;
@@ -98,7 +89,7 @@ main {
 
 .banner-futsal img {
   display: block;
-  margin-top: 8.7rem;
+  margin-top: 8rem;
   width: 100%;
 }
 
@@ -165,17 +156,19 @@ main {
 
 
 footer {
-  background: #38C738;
+  background: #00ff00bb;
   width: 100%;
-  height: 10rem;
+  height: auto;
   margin-top: 8rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   align-items: center;
+  gap: 1rem;
 }
 
 footer a {
+  margin-top: 1rem;
   width: 195px;
   display: flex;
   color: #000;
@@ -187,8 +180,30 @@ footer a img {
   height: 25px;
   width: 25px;
 }
+.redes {
+
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.redes h2 {
+  font-size: 20px;
+}
+.container-redes {
+  width: 20%;
+  display: flex;
+  margin: 0px;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.container-redes a {
+  padding: 10px;
+  margin: 0rem;
+}
+
 span {
   display: flex;
   padding: 8px;
-  justify-content: end;
+  justify-content: center;
 }
