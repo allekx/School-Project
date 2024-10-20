@@ -74,7 +74,7 @@
 }
 
 .menu ul {
-  background-image: url(../img/background\ menu\ 1.png);
+  background-image: url(../img/background\ menu.png);
   opacity: 98%;
     list-style: none;
     margin-left: 0rem;
@@ -92,6 +92,7 @@
 
 .menu li {
     padding: 6px;
+    
 }
 
 .menu li a {
@@ -149,7 +150,7 @@
   margin-left: 0rem;
   padding: 7px;
   display: flex;
-
+  
 }
 
 .menu li {

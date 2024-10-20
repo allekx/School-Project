@@ -74,13 +74,13 @@
 }
 
 .menu ul {
-  background-image: url(../img/background\ menu\ 1.png);
+  background-image: url(../img/background\ menu.png);
   opacity: 98%;
     list-style: none;
     margin-left: 0rem;
     margin-top: 0.4rem;
-    height: 100em;
     width: 100%;
+    height: 100rem;
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
@@ -92,6 +92,7 @@
 
 .menu li {
     padding: 6px;
+    
 }
 
 .menu li a {
@@ -149,7 +150,7 @@
   margin-left: 0rem;
   padding: 7px;
   display: flex;
-
+  
 }
 
 .menu li {
