@@ -228,7 +228,9 @@
     height: auto
   
   }
-
+  .extracurricular h1{
+    font-size: 20px;
+  }
 
   .bannerEsporte {
     margin-top: 0rem;
@@ -355,7 +357,9 @@
     height: auto;
     width: 100%;
 }
-
+.extracurricular h1{
+  font-size: 19px;
+}
 
 
 }
@@ -372,7 +376,9 @@
     height: auto;
     width: 100%;
 }
-
+.extracurricular h1{
+  font-size: 18px;
+}
 
 
 }

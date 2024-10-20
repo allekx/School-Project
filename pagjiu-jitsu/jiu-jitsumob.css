@@ -79,7 +79,7 @@
     list-style: none;
     margin-left: 0rem;
     margin-top: 0.4rem;
-    height: 100rem;
+    height: 100em;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -266,13 +266,7 @@ span {
 
 @media (max-width: 444px) {
 
-  .menu.active {
-    display: flex;
-    justify-content: end;
-    margin-left: 0rem;
-    height: 13rem;
-    width: 100%;
-}
+
 .container-dois  {
   display: flex;
   flex-direction: column;
@@ -290,13 +284,7 @@ span {
 
 @media (max-width: 360px) {
 
-  .menu.active {
-    display: flex;
-    justify-content: end;
-    margin-left: 0rem;
-    height: 13rem;
-    width: 100%;
-}
+
 
 .container-dois  {
   display: flex;
