@@ -143,6 +143,13 @@ main {
   background: rgb(255, 255, 255);
   width: 20rem;
   height: 19rem;
+  border-radius: 20px;
+}
+.seguimentos a:hover{
+  position: absolute;
+  width: 22rem;
+  height: auto
+
 }
 
 .seguimentos a, .seguimentos h3 {

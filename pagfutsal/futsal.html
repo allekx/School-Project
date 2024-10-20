@@ -10,50 +10,50 @@
 </head>
 <body>
   <header>
-    <a class="logo" href="../index.html"><img src="../img/logo exemplo.svg" alt="Escola Criativa"></a>
+    <a class="logo" href="../index.html"><img src="../img/logocelus.png" alt="Escola Celus"></a>
 
     <div class="menu-hamburguer" onclick="toggleMenu()">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
     </div>
 
     <nav class="menu">
-      <ul>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle">Matrículas</a>
-          <div class="dropdown-menu">
-            <a href="https://app.proesc.com/cursos/escolacelus/LJkw" target="_blank" rel="noopener noreferrer">Matricular</a>
-            <a href="#">Rematricular</a>
-          </div>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle">Seguimentos</a>
-          <div class="dropdown-menu">
-            <a href="#">Educação Infantil</a>
-            <a href="#">Ensino Fundamental I</a>
-            <a href="#">Ensino Fundamental II</a>
-            <a href="#">Ensino Médio</a>
-          </div>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle">Portal</a>
-          <div class="dropdown-menu">
-            <a href="https://app.proesc.com/app" target="_blank" rel="noopener noreferrer">Portal Proesc</a>
-            <a href="https://portal.coc.com.br/login/" target="_blank" rel="noopener noreferrer">Portal COC</a>
-          </div>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle">Projetos e Ações</a>
-          <div class="dropdown-menu">
-            <a href="../pagfutsal/futsal.html">Futsal</a>
-            <a href="../pagballet/ballet.html">Ballet</a>
-            <a href="../pagjiu-jitsu/jiu-jitsu.html">Jiu-Jitsu</a>
-          </div>
-        </li>
-      </ul>
+        <ul>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" onclick="toggleDropdown(event)">Matrículas</a>
+                <div class="dropdown-menu">
+                    <a href="https://app.proesc.com/cursos/escolacelus/LJkw" target="_blank" rel="noopener noreferrer">» Matricular</a>
+                    <a href="../rematrícula/rematricula.html">» Rematricular</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" onclick="toggleDropdown(event)">Seguimentos</a>
+                <div class="dropdown-menu">
+                    <a href="#">» Educação Infantil</a>
+                    <a href="#">» Ensino Fundamental I</a>
+                    <a href="#">» Ensino Fundamental II</a>
+                    <a href="#">» Ensino Médio</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" onclick="toggleDropdown(event)">Portal</a>
+                <div class="dropdown-menu">
+                    <a href="https://app.proesc.com/app" target="_blank" rel="noopener noreferrer">» Portal Proesc</a>
+                    <a href="https://portal.coc.com.br/login/" target="_blank" rel="noopener noreferrer">» Portal COC</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" onclick="toggleDropdown(event)">Projetos e Ações</a>
+                <div class="dropdown-menu">
+                    <a href="../pagfutsal/futsal.html">» Futsal</a>
+                    <a href="../pagballet/ballet.html">» Ballet</a>
+                    <a href="../pagjiu-jitsu/jiu-jitsu.html">» Jiu-Jitsu</a>
+                </div>
+            </li>
+        </ul>
     </nav>
-  </header>
+</header>
   <main>
     <div class="banner-futsal">
       <img src="../img/futsal exemple.png" alt="Banner de Futsal">

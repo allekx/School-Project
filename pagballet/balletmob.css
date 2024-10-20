@@ -1,29 +1,44 @@
 @media (max-width: 480px) {
 
-  header {
-    width: 100%;
-    position: fixed;
-    height: 3rem;
-    padding: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  }
-
   body {
     width: 100%;
   }
+
+  header {
+    position: fixed;
+    width: 100%;
+    height: 3.6rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 0rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  }
+
   .logo img {
-    height: 2.8rem;
-    width: 5rem;
+    width: 85px;
+    height: auto;
+    padding: 0px;
   }
 
   .logo{
   margin-left: 0rem;
   }
   
+  
+  .menu-hamburguer {
+    cursor: pointer;
+    display: inline-block; /* Altere para flex ou block para que ele apareça */
+    margin-right: 2rem;
+    padding: 6px;
+    flex-direction: column;
+    width: 30px;
+    height: 30px;
+    
+    
+  }
   header ul{
     display: flex;
     flex-direction: column;
@@ -34,24 +49,12 @@
     padding: 4px;
   }
 
-  .menu-hamburguer {
-    cursor: pointer;
-    display: flex; /* Altere para flex ou block para que ele apareça */
-    margin-right: 2rem;
-    padding: 6px;
-    flex-direction: column;
-    width: 30px;
-    height: 30px;
-    
-    
-  }
-
 
   .bar {
-    height: 3px;
-    width: 30px;
     background-color: #38C738;
-    margin: 4px 0;
+    height: 6px;
+    width: 33px;
+    margin: 3px 0;
     transition: all 0.3s ease;
 }
 
@@ -62,6 +65,11 @@
     left: 0px;
     width: 100%;
     
+
+    max-height: 0; /* Inicialmente, o menu está escondido */
+    overflow: hidden; /* Oculta o conteúdo que excede a altura */
+    opacity: 0; /* Torna o menu invisível */
+    transition: max-height 0.7s ease, opacity 0.7s ease; /* Define a transição */
  
 }
 
@@ -70,8 +78,8 @@
   opacity: 98%;
     list-style: none;
     margin-left: 0rem;
-    margin-top: 0rem;
-    height: 29.5rem;
+    margin-top: 0.4rem;
+    height: 100em;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -87,9 +95,11 @@
 }
 
 .menu li a {
+
     text-decoration: none;
     color: #333;
     margin-right: 0rem;
+    padding: 7px;
 }
 
 .menu.active {
@@ -97,8 +107,13 @@
     justify-content: end;
     margin-left: 0rem;
     width: 100%;
+
+
+    max-height: 70rem; /* Ajuste para um valor que seja maior que a altura total do menu */
+    opacity: 1; /* Torna o menu visível */
+
 }
-.dropdown {
+.dropdown{
   width: 100%;
 }
 .dropdown-menu {
@@ -112,21 +127,26 @@
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   border-radius: 5px;
 }
-
+ 
 .dropdown-toggle  {
   background: rgb(112, 243, 123);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   width: 100%;
-  height: 2rem;
+  height: auto;
   margin-left: 0rem;
-  display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+
   border-radius: 5px;
+  font-size: 25px;
+  padding: 10px;
 }
 
 .dropdown-menu a {
+  background: #fff;
+  font-size: 23px;
   width: 100%;
+  margin-left: 0rem;
   padding: 7px;
   display: flex;
 

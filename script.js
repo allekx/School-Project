@@ -1,3 +1,13 @@
+//função para o menu
+function toggleMenu() {
+  const menu = document.querySelector('.menu');
+  menu.classList.toggle('active'); // Adiciona ou remove a classe "active"
+}
+
+function toggleDropdown(event) {
+  const dropdown = event.currentTarget.nextElementSibling;
+  dropdown.classList.toggle('active'); // Alterna a exibição do dropdown
+}
 
 
 
@@ -43,7 +53,7 @@ btnPrev.addEventListener('click', prevSlider);
 showSlider();
 
 // Função para avançar os slides automaticamente a cada 3 segundos
-setInterval(nextSlider, 4000); // Mude  para o intervalo desejado em milissegundos
+setInterval(nextSlider, 3500); // Mude  para o intervalo desejado em milissegundos
 
 
 
@@ -82,7 +92,7 @@ btnPrevEsporte.addEventListener('click', prevEsportes);
 showEsportes();
 
 // Função para avançar os slides automaticamente a cada 3 segundos
-setInterval(nextEsportes, 4000); // Altere para o intervalo desejado em milissegundos
+setInterval(nextEsportes, 3000); // Altere para o intervalo desejado em milissegundos
 
 
 function toggleDropdown(event) {

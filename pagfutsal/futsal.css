@@ -32,8 +32,9 @@ header {
   margin-right: 70%;
 }
 .logo img{
-  width: 150px;
-  height: 50px;
+  padding: 5px;
+  width: 105px;
+  height: auto;
 }
 nav {
   background: transparent;
@@ -62,7 +63,6 @@ nav li a:hover {
   display: block;
   background: #fff;
 }
-
 
 body {
   display: flex;
