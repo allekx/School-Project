@@ -1,3 +1,15 @@
+// Simula o carregamento de conteúdo
+window.addEventListener('load', function() {
+  const loading = document.getElementById('loading');
+  const content = document.getElementById('content');
+
+  // Remove o loading após 2 segundos
+  setTimeout(function() {
+      loading.style.display = 'none';
+      content.style.display = 'block';
+  }, 1800); // Altere o tempo conforme necessário
+});
+
 //função para o menu
 function toggleMenu() {
   const menu = document.querySelector('.menu');

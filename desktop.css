@@ -130,6 +130,7 @@
   footer a {
     margin-top: 1rem;
     width: 195px;
+    font-size: 14px;
     display: flex;
     color: #000;
     align-items: center;
@@ -137,8 +138,8 @@
     gap: 5px;
   }
   footer a img {
-    height: 25px;
-    width: 25px;
+    height: 23px;
+    width: 23px;
   }
   .redes {
     width: 300px;
@@ -148,7 +149,7 @@
     align-items: center;
   }
   .redes h2 {
-    font-size: 20px;
+    font-size: 17px;
   }
   .container-redes {
     width: 60%;
@@ -163,9 +164,18 @@
   }
   
   span {
-    display: flex;
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 19%;
     padding: 8px;
-    justify-content: center;
+    width: 65%;
+    align-items: center;
+    font-size: 13px;
+    text-align: center;
+  }
+  span a {
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
 }

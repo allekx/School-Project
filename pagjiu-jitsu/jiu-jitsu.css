@@ -14,6 +14,34 @@ body {
   width: 100%;
 }
 
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.925);
+  z-index: 9999;
+}
+
+.loading-image {
+  width: 100px; /* Altere conforme necessário */
+  height: auto; /* Mantém a proporção da imagem */
+  animation: fadeInOut 3s forwards; /* Altera a animação */
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+
+
+
 header {
   position: fixed;
   width: 100%;
@@ -169,6 +197,7 @@ footer {
 footer a {
   margin-top: 1rem;
   width: 195px;
+  font-size: 14px;
   display: flex;
   color: #000;
   align-items: center;
@@ -176,8 +205,8 @@ footer a {
   gap: 5px;
 }
 footer a img {
-  height: 25px;
-  width: 25px;
+  height: 23px;
+  width: 23px;
 }
 .redes {
 
@@ -187,7 +216,7 @@ footer a img {
   align-items: center;
 }
 .redes h2 {
-  font-size: 20px;
+  font-size: 17px;
 }
 .container-redes {
   width: 20%;
@@ -202,11 +231,38 @@ footer a img {
 }
 
 span {
-  display: flex;
+  display: inline-block;
+  margin-top: 1rem;
+  margin-left: 0rem;
   padding: 8px;
-  justify-content: center;
+  width: 65%;
+  align-items: center;
+  font-size: 13px;
+  text-align: center;
 }
 span a {
   margin-left: 5px;
   margin-right: 5px;
+}
+
+@media (min-width: 481px) and (max-width: 1201px) {
+  .banner-jiu-jitsu img {
+    display: block;
+    margin-top: -7rem;
+    width: 100%;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1338px) {
+  .banner-jiu-jitsu img {
+    display: block;
+    margin-top: -4rem;
+    width: 100%;
+  }
+}
+@media (min-width: 1338px) and (max-width: 1700px) {
+  .banner-jiu-jitsu img {
+    display: block;
+    margin-top: 2.3rem;
+    width: 100%;
+  }
 }

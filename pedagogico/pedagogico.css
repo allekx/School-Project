@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  list-style: none;
+ 
   text-decoration: none;
   font-family: ' font-family: "Poppins", sans-serif;';
   box-sizing: border-box;
@@ -38,6 +38,7 @@ body {
   50% { opacity: 1; }
   100% { opacity: 0; }
 }
+
 
 
 
@@ -90,151 +91,206 @@ nav li a:hover {
   display: block;
   background: #fff;
 }
-
-main {
-  display: flex;
-  justify-content: center;
-}
-main section {
-  display: flex;
-  flex-direction: column;
-  width: 50rem;
-  height: auto;
-  gap: 2rem;
-}
-main section h1 {
-  margin-top: 5rem;
-  color: #0e944b;
-  font-weight: bold;
-  font-size: 35px;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-.button-visita {
-  background-color: #4CAF50; 
-  color: white; 
-  padding: 10px 20px; 
-  width: 12rem;
-  text-align: center; 
-  text-decoration: none; 
-  display: inline-block;
-  margin-top: 6rem;
-  margin-left: 60%;
-  font-size: 14px; 
-  cursor: pointer; 
-  border: none; 
-  border-radius: 4px; 
-  transition: background-color 0.3s; /* Transição suave para a cor de fundo */
-}
-
-.button-visita:hover {
-  background-color: #45a049; /* Cor de fundo ao passar o mouse */
-}
-main img {
-  margin-top: 4rem;
-  width: 40%;
-}
-
-
-
-
-
-
-
-
-footer {
-  background: #00ff00bb;
+#banner-pedagogico {
+  margin-top: 3.8rem;
   width: 100%;
   height: auto;
-  margin-top: 8rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  align-items: center;
-  gap: 1rem;
 }
-
-footer a {
-  margin-top: 1rem;
-  width: 195px;
-  font-size: 14px;
-  display: flex;
-  color: #000;
-  align-items: center;
-  justify-content: start;
-  gap: 5px;
-}
-footer a img {
-  height: 23px;
-  width: 23px;
-}
-.redes {
-
-  margin-top: 2rem;
+.conteudo{
+  width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
-.redes h2 {
-  font-size: 17px;
-}
-.container-redes {
-  width: 20%;
+.section1 {
+  margin-top: 5rem;
   display: flex;
-  margin: 0px;
-  margin-top: 1rem;
   gap: 1rem;
 }
-.container-redes a {
-  padding: 10px;
-  margin: 0rem;
+.section1 img {
+  margin-left: 8rem;
+  width: 40%;
+  height: auto;
+}
+.section1 div {
+  margin-right: 2rem;
+}
+.section1 div h1 {
+  color: #46A646;
+}
+.section1 div p {
+  margin-top: 3rem;
+}
+.section1 div h3 {
+  margin-top: 2rem;
+}
+.section1 div ul {
+  margin-top: 0.5rem;
+  margin-left: 3rem;
+}
+.section1 div ul li {
+  padding: 4px;
+}
+.section1 div a li{
+  margin-top: 0.9rem;
+  margin-left: 2rem;
 }
 
-span {
-  display: inline-block;
-  margin-top: 1rem;
-  margin-left: 19%;
-  padding: 8px;
-  width: 65%;
-  align-items: center;
-  font-size: 13px;
-  text-align: center;
+
+.section2 {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  
+  gap: 1rem;
 }
-span a {
-  margin-left: 5px;
-  margin-right: 5px;
+.section2 img {
+  margin-right: 10rem;
+  width: 40%;
+  height: auto;
+}
+.section2 div {
+  margin-left: 8rem;
+  text-align: end;
+}
+.section2 div h1 {
+  color: #46A646;
+}
+.section2 div p {
+  margin-top: 3rem;
 }
 
+.section3 {
+  margin-top: 5rem;
+  display: flex;
+  gap: 1rem;
+}
+.section3 img {
+  margin-left: 2rem;
+  width: 40%;
+  height: auto;
+}
+.section3 div {
+  margin-right: 10rem;
+}
+.section3 div h1 {
+  color: #46A646;
+}
+.section3 div p {
+  margin-top: 3rem;
+}
+.button-pedagogico {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px 20px; 
+    width: 12rem;
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block;
+    margin-top: 8rem;
+    margin-left: 0rem;
+    font-size: 14px; 
+    cursor: pointer; 
+    border: none; 
+    border-radius: 4px; 
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+  }
+  
+  .button-pedagogico:hover {
+    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+  }
 
 
 
 
-@media (min-width: 481px) and (max-width: 1700px) {
-  main {
+
+
+  footer {
+    background: #00ff00bb;
+    width: 100%;
+    height: auto;
+    margin-top: 8rem;
+    margin-left: 0rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
     align-items: center;
     gap: 1rem;
   }
-  main section{
-    width: 40%;
-    height: 30%;
-    gap: 1rem;
+  
+  footer a {
     margin-top: 1rem;
-  }
-  main  img {
-    width: 40%;
-    height: 50%;
-    margin-top: 6rem;
-  }
-  section p {
+    width: 195px;
     font-size: 14px;
+    display: flex;
+    color: #000;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
   }
-  section h1 {
-    font-size: 35px;
+  footer a img {
+    height: 23px;
+    width: 23px;
+  }
+  .redes {
+    width: 300px;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .redes h2 {
+    font-size: 17px;
+  }
+  .container-redes {
+    width: 60%;
+    display: flex;
+    margin: 0px;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+  .container-redes a {
+    padding: 10px;
+    margin: 0rem;
+  }
+  
+  span {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 19%;
+    padding: 8px;
+    width: 65%;
+    align-items: center;
+    font-size: 13px;
     text-align: center;
-    margin-bottom: 2rem;
   }
-  .button-visita {
-    margin-top: 0.8rem;
+  span a {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+
+
+
+
+@media (min-width: 481px) and (max-width: 804px) {
+  main section img {
+    display: none;
+  }
+  main section {
+    display: flex;
+    margin: 5rem;
+    text-align: start;
+  }
+  .section2 div {
+    margin-left: 0rem;
+    text-align: start;
+  }
+  .button-pedagogico {
+    margin-top: 4rem;
   }
 
 
@@ -419,36 +475,43 @@ span a {
       align-items: end;
       margin-right: 0rem;
     }
-  .conteudo {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .conteudo section {
-    margin-top: 0rem;
-    width: 90%;
-    margin-left: 1rem;
-  }
-  .conteudo section h1 {
-    font-size: 30px;
-    text-align: center;
-  }
-  .conteudo section h2 {
-    font-size: 19px;
-  }
-  .conteudo section p {
-    font-size: 16px;
-  }
-  .button-visita {
-    margin-left: 0rem;
-    margin-top: 1rem;
-  }
-  .conteudo img {
-    margin-top: 1rem;
-    width: 100%;
-  }
+ 
 
-
+    main section img {
+      display: none;
+      
+    }
+    main section {
+      margin: 3rem;
+    }
+    .section1 div h3 {
+      font-size: 16px;
+    }
+    .section2 div {
+      margin-left: 0rem;
+    }
+    .section2 h1, .section2 p {
+      text-align: start;
+      margin-left: 0rem;
+      margin: 0rem;
+    }
+    .button-pedagogico {
+      width: 100%;
+      margin-top: 3rem;
+    }
+    .section3 div {
+      width: 100%;
+      margin: 0rem;
+    }
+    .section3 div h1 {
+      width: 100%;
+      height: auto;
+      
+    }
+    .section3 div p {
+      width: 100%;
+      height: auto;
+  }
 
 
 
