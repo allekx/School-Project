@@ -1,3 +1,30 @@
+function toggleDropdown(event) {
+  const dropdownMenu = event.currentTarget.nextElementSibling;
+  dropdownMenu.classList.toggle('active'); // Alterna a exibição do dropdown
+}
+
+function checkScreenSize() {
+  const dropdownToggles = document.querySelectorAll('.toggle-dropdown');
+
+  dropdownToggles.forEach(toggle => {
+    if (window.innerWidth >= 768) { // Ajuste para seu breakpoint de desktop
+      toggle.removeEventListener('click', toggleDropdown); // Remove o evento de clique
+    } else {
+      toggle.addEventListener('click', toggleDropdown); // Adiciona o evento de clique
+    }
+  });
+}
+
+// Inicializa ao carregar a página
+checkScreenSize();
+
+// Atualiza ao redimensionar a janela
+window.addEventListener('resize', checkScreenSize);
+
+//
+
+
+
 // Simula o carregamento de conteúdo
 window.addEventListener('load', function() {
   const loading = document.getElementById('loading');
