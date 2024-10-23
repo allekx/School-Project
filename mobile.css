@@ -208,10 +208,12 @@
     width: 100%;
     height: 100%;
   }
-
+  .temos {
+    margin-top: 5rem;
+  }
 
   main .seguimentos {
-    margin-top: 9rem;
+    margin-top: 3rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -228,6 +230,7 @@
     height: auto
   
   }
+
   .extracurricular h1{
     font-size: 20px;
   }
@@ -267,7 +270,7 @@
 
   .info {
     width: 100%;
-    margin-top: 15rem;
+    margin-top: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;

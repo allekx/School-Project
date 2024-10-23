@@ -69,11 +69,16 @@
     align-items: center;
     justify-content: center;
   }
-  
+  .info {
+    margin-top: 20rem;
+  }
+  .temos {
+    margin-top: 8rem;
+  }
   .seguimentos {
     width: 100%;
     height: auto;
-    margin-top: 22rem;
+    margin-top: 5rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-left: 0rem;
