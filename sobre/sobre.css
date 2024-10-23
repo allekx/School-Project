@@ -94,6 +94,7 @@ nav li a:hover {
 main {
   display: flex;
   justify-content: center;
+
 }
 main section {
   display: flex;
@@ -131,8 +132,10 @@ main section h1 {
   background-color: #45a049; /* Cor de fundo ao passar o mouse */
 }
 main img {
-  margin-top: 4rem;
+  margin-top: 5rem;
   width: 40%;
+  border-radius: 15PX;
+  margin-left: 2rem;
 }
 
 
@@ -443,9 +446,11 @@ span a {
     margin-left: 0rem;
     margin-top: 1rem;
   }
-  .conteudo img {
+ .conteudo img {
     margin-top: 1rem;
-    width: 100%;
+    width: 98%;
+    margin: 5px;
+    
   }
 
 
