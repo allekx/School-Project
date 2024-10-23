@@ -253,6 +253,17 @@
     width: 100%;
     height: 100%;
   }
+  .atividade-extra{
+    width: 95%;
+    margin-top: 10rem;
+    margin-left: 1rem;
+    margin-right: 4rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+
 
   .info {
     width: 100%;

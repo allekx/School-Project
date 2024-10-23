@@ -189,7 +189,7 @@ main {
 .extracurricular h1 {
   margin-top: 5rem;
   margin-left: 2rem;
-  color: #46a646;
+  color: #000;
   display: inline-block;
   text-align: start;
 }
@@ -245,9 +245,18 @@ main {
   justify-content: center;
 
 }
+.atividade-extra{
+  width: 95%;
+  margin-top: 20rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
 
 .info {
-  margin-top: 22rem;
+  margin-top: 9rem;
   display: flex;
   gap: 1rem;
   justify-content: center;

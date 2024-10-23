@@ -112,6 +112,19 @@
     justify-content: center;
   
   }
+  .atividade-extra{
+    width: 95%;
+    margin-top: 12rem;
+    margin-left: 2rem;
+    margin-right: 4rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+
+
+
   footer {
     background: #00ff00bb;
     width: 100%;
