@@ -195,7 +195,7 @@
     justify-content: center;
   }
   #prev-button, #next-button {
-
+    display: none;
     width: 14px;
     height: 14px;
     border: none;
@@ -203,7 +203,7 @@
     cursor: pointer;
   }
   #prev-button img, #next-button img {
-
+    display: none;
     margin-top: 1.5rem;
     width: 100%;
     height: 100%;
@@ -243,6 +243,7 @@
     height: 6rem;
   }
   #prev-button-esporte, #next-button-esporte {
+    display: none;
     width: 20px;
     height: 20px;
     border: none;
@@ -252,7 +253,7 @@
     align-items: center;
   }
   #prev-button-esporte img, #next-button-esporte img {
-  
+    display: none;
     width: 100%;
     height: 100%;
   }
