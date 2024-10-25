@@ -76,9 +76,10 @@
     margin-top: 8rem;
   }
   .seguimentos {
+    background-image: url(./img/fundo\ seguimentos\ desktop.png);
     width: 100%;
     height: auto;
-    margin-top: 5rem;
+    margin-top: 2rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-left: 0rem;

@@ -158,8 +158,13 @@ main {
 .temos{
   margin-top: 12rem;
 }
+
+
 .seguimentos {
-  margin-top: 5rem;
+  width: 100%;
+  height: auto;
+  background-image: url(./img/fundo\ seguimentos.png);
+  margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 6rem;
@@ -171,6 +176,8 @@ main {
   width: 20rem;
   height: 19rem;
   border-radius: 20px;
+  border-radius: 20px;
+    box-shadow: 1px 2px 30px 0 rgba(31, 170, 117, 0.4);
 }
 .seguimentos a:hover{
   position: absolute;
@@ -178,7 +185,11 @@ main {
   height: auto
 
 }
-
+.seguimentos h3 {
+  background-color: transparent;
+  background: #ffffff52;
+  border-radius: 20px;
+}
 .seguimentos a, .seguimentos h3 {
   display: flex;
   align-items: center;
@@ -258,6 +269,7 @@ main {
 }
 
 .info {
+  width: 100%;
   margin-top: 30rem;
   display: flex;
   gap: 4rem;
