@@ -73,7 +73,12 @@
     margin-top: 20rem;
   }
   .temos {
-    margin-top: 8rem;
+    margin-top: 7rem;
+  }
+  .temos h1 {
+    padding: 3px;
+    margin-left: 2rem;
+    font-size: 28px;
   }
   .seguimentos {
     background-image: url(./img/fundo\ seguimentos\ desktop.png);

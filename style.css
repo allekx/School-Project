@@ -156,7 +156,13 @@ main {
   height: 100%;
 }
 .temos{
-  margin-top: 12rem;
+  width: 100%;
+  margin-top: 10rem;
+  display: flex;
+}
+.temos h1 {
+  padding: 5px;
+  margin-left: 3rem;
 }
 
 
