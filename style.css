@@ -12,6 +12,7 @@
 
 body {
   width: 100%;
+
 }
 
 .loading {
@@ -213,7 +214,7 @@ main {
   text-align: start;
 }
 .bannerEsporte {
-  margin-top: 9rem;
+  margin-top: 10rem;
   display: flex;
   width: 100%;
   align-items: center;
