@@ -81,7 +81,7 @@
     font-size: 28px;
   }
   .seguimentos {
-    background-image: url(./img/fundo\ seguimentos\ desktop.png);
+    background: #38c7381c;
     width: 100%;
     height: auto;
     margin-top: 2rem;
@@ -137,7 +137,7 @@
 
 
   footer {
-    background: #00ff00bb;
+    background: #00ff003f;
     width: 100%;
     height: auto;
     margin-top: 8rem;
