@@ -34,7 +34,7 @@ window.addEventListener('load', function() {
   setTimeout(function() {
       loading.style.display = 'none';
       content.style.display = 'block';
-  }, 1800); // Altere o tempo conforme necessário
+  }, 990); // Altere o tempo conforme necessário
 });
 
 //função para o menu

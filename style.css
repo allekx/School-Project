@@ -59,9 +59,8 @@ header {
   margin-right: 70%;
 }
 .logo img{
-  padding: 5px;
-  width: 105px;
-  height: auto;
+  width: auto;
+  height: 60px;
 }
 nav {
   background: transparent;
@@ -170,7 +169,8 @@ main {
 .seguimentos {
   width: 100%;
   height: auto;
-  background-image: url(./img/fundo\ seguimentos.png);
+  padding: 4rem ;
+  background: #38c7381c;
   margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -267,12 +267,12 @@ main {
 }
 .atividade-extra{
   width: 95%;
-  margin-top: 20rem;
+  margin-top: 1rem;
   margin-left: 4rem;
   margin-right: 4rem;
   display: flex;
   justify-content: center;
-  text-align: center;
+  text-align: start;
 }
 
 .info {
@@ -320,14 +320,19 @@ main {
 }
 
 footer {
-  background: #00ff00bb;
+  background: #00ff003f;
   width: 100%;
   height: auto;
   margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  padding: 4rem;
+  gap: 1rem;
+}
+.links-rodape {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  align-items: center;
   gap: 1rem;
 }
 
@@ -346,11 +351,9 @@ footer a img {
   width: 23px;
 }
 .redes {
-
-  margin-top: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
 }
 .redes h2 {
   font-size: 17px;

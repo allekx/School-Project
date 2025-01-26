@@ -226,7 +226,7 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    padding: 0px;
+    padding: 2rem;
     margin-left: 0rem;
     margin-right: 0rem;
   }
@@ -265,7 +265,7 @@
   }
   .atividade-extra{
     width: 95%;
-    margin-top: 10rem;
+    margin-top: 1rem;
     margin-left: 1rem;
     margin-right: 4rem;
     display: flex;
@@ -321,15 +321,17 @@
   }
 
   footer {
-    background: #00ff00bb;
-    width: 100%;
-    height: auto;
-    margin-top: 6rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: start;
-    align-items: center;
-    gap: 1rem;
+    background: #00ff003f;
+    display: flex;
+    flex-direction: column;
+  }
+  .redes {
+    display: flex;
+    flex-direction: column;
+  }
+  .links-rodape {
+    display: flex;
+    flex-direction: column;
   }
   
   footer a {
