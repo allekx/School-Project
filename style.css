@@ -282,6 +282,9 @@ main {
   gap: 4rem;
   justify-content: center;
 }
+.info img {
+  display: none;
+}
 .info-dois {
   margin-top: 7rem;
   display: flex;
