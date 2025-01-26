@@ -389,7 +389,12 @@
 .extracurricular h1{
   font-size: 19px;
 }
-
+.info img {
+  display: block;
+  width: 70%;
+  height: auto;
+  border-radius: 4px ;
+}
 
 }
 
@@ -408,6 +413,11 @@
 .extracurricular h1{
   font-size: 18px;
 }
-
+.info img {
+  display: block;
+  width: 70%;
+  height: auto;
+  border-radius: 4px ;
+}
 
 }
