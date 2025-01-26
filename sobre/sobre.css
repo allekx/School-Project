@@ -59,9 +59,8 @@ header {
   margin-right: 70%;
 }
 .logo img{
-  padding: 5px;
-  width: 105px;
-  height: auto;
+  width: auto;
+  height: 60px;
 }
 nav {
   background: transparent;
