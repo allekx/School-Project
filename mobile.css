@@ -97,7 +97,8 @@
 .menu li a {
 
     text-decoration: none;
-    color: #333;
+    color: #38c738;
+    font-weight: bold;
     margin-right: 0rem;
     padding: 7px;
 }
