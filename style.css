@@ -208,10 +208,9 @@ main {
 }
 .extracurricular h1 {
   margin-top: 5rem;
-  margin-left: 2rem;
-  color: #000;
-  display: inline-block;
-  text-align: start;
+  color: #38C738;
+  font-weight: bold;
+  text-align: center;
 }
 .bannerEsporte {
   margin-top: 10rem;
