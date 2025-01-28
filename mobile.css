@@ -355,6 +355,7 @@
     align-items: center;
   }
   .logo-footer {
+    display: block;
     width: 200px;
     height: auto;
   }
