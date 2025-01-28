@@ -177,12 +177,9 @@
   }
 
   .container-slider {
-    margin-top: 7.5rem;
     display: flex;
-    width: 100%;
     align-items: center;
     justify-content: center;
-    gap: 0.2rem;
   }
 
   .banner img {
@@ -240,9 +237,17 @@
     width: 90%;
     height: auto;
   }
-
+  .extracurricular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   .extracurricular h1{
-    font-size: 20px;
+    color: #38C738;
+    font-weight: bold;
+    margin-left: 7px;
+    font-size: 1.8rem;
   }
 
   .bannerEsporte {
@@ -294,6 +299,18 @@
     height: auto;
     border-radius: 4px ;
   }
+  .info p {
+    max-width: 888px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #474747;
+    text-align: center;
+    font-family: "Nunito", serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 28px;
+  }
   .info-dois {
     width: 100%;
     margin-top: 8rem;
@@ -309,6 +326,7 @@
     color: #38C738;
     font-weight: bold;
     margin-left: 7px;
+    font-size: 1.8rem;
   }
   
   .info P, .info-dois P {
@@ -333,10 +351,16 @@
     background: #00ff0018;
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+  .logo-footer {
+    width: 200px;
+    height: auto;
   }
   .redes {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .links-rodape {
     display: flex;
@@ -359,22 +383,27 @@
 
   .redes {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
   }
   .redes h2 {
     font-size: 18px;
-    margin-left: 1rem;
+    font-family:"Nunito", serif;
+    opacity: 70%;
   }
   .redes div  {
     display: flex;
   }
   .container-redes {
-    width: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
   .redes div a {
-    width: 100%;
+    align-items: center;
+    justify-content: center;
   }
 
 }
@@ -389,8 +418,18 @@
     height: auto;
     width: 100%;
 }
+.extracurricular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 .extracurricular h1{
-  font-size: 19px;
+  color: #38C738;
+  font-weight: bold;
+  margin-left: 7px;
+  font-size: 1.7rem;
+  text-align: center;
 }
 .info img {
   display: block;
@@ -398,7 +437,18 @@
   height: auto;
   border-radius: 4px ;
 }
-
+.extracurricular p {
+  max-width: 888px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #474747;
+    text-align: center;
+    font-family: "Nunito", serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 28px;
+}
 }
 
 
@@ -414,7 +464,10 @@
     width: 100%;
 }
 .extracurricular h1{
-  font-size: 18px;
+  color: #38C738;
+  font-weight: bold;
+  margin-left: 7px;
+  font-size: 1.8rem;
 }
 .info img {
   display: block;
