@@ -333,6 +333,9 @@ footer {
   padding: 4rem;
   gap: 1rem;
 }
+.logo-footer {
+  display: none;
+}
 .links-rodape {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
