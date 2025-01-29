@@ -95,10 +95,10 @@
 }
 
 .menu li a {
-
     text-decoration: none;
-    color: #38c738;
+    color: #38C738;
     font-weight: bold;
+    font-size: 19px;
     margin-right: 0rem;
     padding: 7px;
 }
