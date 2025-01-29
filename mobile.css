@@ -207,6 +207,20 @@
     width: 100%;
     height: 100%;
   }
+
+  .swiper {
+    width: 90%;
+    max-width: 350px;
+  }
+  .swiper-slide {
+    background: #ffffff;
+    border-radius: 6px;
+    padding: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+
   .temos {
     margin-top: 5rem;
     margin-left: 0rem;
@@ -332,9 +346,16 @@
   }
   
   .info P, .info-dois P {
-    width: 95%;
-    font-size: 15px;
-    margin-left: 0rem;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #474747;
+    text-align: center;
+    font-family: "Nunito", serif;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 28px;
   }
 
   .infoBotao {
@@ -350,15 +371,28 @@
   }
 
   footer {
-    background: #00ff0018;
+    font-family: "Nunito", serif;
+    color: #ffffff;
+    background: #0c0c0cdc;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .logo-footer {
-    display: block;
-    width: 200px;
-    height: auto;
+    width: 100px;
+  }
+  .container-log-redes {
+    font-family: "Nunito", serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin-left: 0px;
+    padding: 0px;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
   }
   .redes {
     display: flex;
@@ -369,8 +403,14 @@
     display: flex;
     flex-direction: column;
   }
+  .links-rodape a {
+    font-family: "Nunito", serif;
+    color: #ffffff;
+  }
   
   footer a {
+    font-family: "Nunito", serif;
+    color: #ffffff;
     color: #000;
     padding: 15px;
   }
@@ -441,7 +481,7 @@
   border-radius: 4px ;
 }
 .extracurricular p {
-  max-width: 888px;
+    max-width: 888px;
     margin-left: auto;
     margin-right: auto;
     color: #474747;

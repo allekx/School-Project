@@ -170,11 +170,15 @@ main {
   width: 100%;
   height: auto;
   padding: 4rem ;
-  background: #38c7381c;
+  background: #a8f89811;
   margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 6rem;
+}
+.seguimentos h3 {
+  font-family: "Nunito", serif;
+  color: #38C738;
 }
 
 .seguimentos a img{
@@ -329,11 +333,12 @@ main {
 .comentario {
   margin-top: 2rem;
   font-family: "Nunito", serif;
-  background-color: #f5f5f5;
+  background-color: #f5f5f5d5;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50vh;
+  width: 100%;
   flex-direction: column;
 }
 .comentario h2,p {
@@ -341,14 +346,16 @@ main {
 }
 
 .swiper {
-  width: 90%;
-  max-width: 350px;
+  width: 50%;
 }
 .swiper-slide {
   background: #fff;
   border-radius: 6px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
+}
+.swiper-slide h3 {
+  margin-top: 1rem;
 }
 
 .stars {
@@ -364,7 +371,9 @@ main {
 
 
 footer {
-  background: #00ff003f;
+  font-family: "Nunito", serif;
+  background: #0c0c0c;
+  background-image: url(img/footerstyle.png);
   width: 100%;
   height: auto;
   margin-top: 6rem;
@@ -375,20 +384,30 @@ footer {
   gap: 1rem;
 }
 .logo-footer {
-  display: none;
+  width: 150px;
+}
+.container-log-redes {
+  font-family: "Nunito", serif;
+  color: #fff;
+  margin-left: 11rem;
+  display: flex;
+  padding: 20px;
+  gap: 4rem;
 }
 .links-rodape {
   display: grid;
+  justify-items: center;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
 
 footer a {
+  font-family: "Nunito", serif;
   margin-top: 1rem;
   width: 195px;
   font-size: 14px;
   display: flex;
-  color: #000;
+  color: #ffffff;
   align-items: center;
   justify-content: start;
   gap: 5px;
