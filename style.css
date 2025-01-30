@@ -289,10 +289,14 @@ main {
   display: none;
 }
 .info-dois {
-  margin-top: 7rem;
+  margin-top: 20rem;
   display: flex;
   gap: 1rem;
   justify-content: center;
+  align-content: center;
+}
+.info-dois img {
+  width: 50px;
 }
 
 .info h2, .info-dois h2 {
@@ -312,7 +316,7 @@ main {
   text-align: center; 
   text-decoration: none; 
   display: inline-block;
-  margin-top: 0.7rem;
+  margin-top: 1.4rem;
   margin-left: 25rem;
   font-size: 14px; 
   cursor: pointer; 
@@ -329,39 +333,34 @@ main {
 
 
 
-
-.comentario {
-  margin-top: 2rem;
-  font-family: "Nunito", serif;
-  background-color: #f5f5f5d5;
+/*
+.comentario{
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
-  width: 100%;
   flex-direction: column;
+  padding: 40px;
 }
-.comentario h2,p {
-  padding: 6px;
-}
-
 .swiper {
-  width: 50%;
+  width: 90%;
+  max-width: 1100px;
 }
 .swiper-slide {
   background: #fff;
-  border-radius: 6px;
+  padding: 20px;
+  border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
-.swiper-slide h3 {
-  margin-top: 1rem;
-}
-
 .stars {
   color: #FFD700;
 }
-
+.swiper-button-next, .swiper-button-prev {
+  color: #008000;
+}
+*/
 
 
 

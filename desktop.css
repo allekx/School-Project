@@ -24,13 +24,14 @@
     z-index: 10;
   }
   .logo {
+    margin-top: 10px;
     position: absolute;
     display: block;
-    margin-right: 70%;
+    height: auto;
   }
   .logo img{
     width: auto;
-    height: 60px;
+    height: 45px;
   }
   nav {
     background: transparent;
@@ -177,7 +178,7 @@ main {
 
 
   footer {
-    background: #00ff003f;
+    background-image: url(./img/footerstyle.png);
     width: 100%;
     height: auto;
     margin-top: 8rem;
@@ -186,6 +187,10 @@ main {
     justify-items: center;
     padding: 1rem;
     gap: 1rem;
+  }
+  .logo-footer {
+    width: 150px;
+    height: 100px;
   }
   
   footer a {
@@ -213,6 +218,8 @@ main {
     font-size: 17px;
   }
   .container-redes {
+    font-family: "Nunito", serif;
+    color: #fff;
     width: 60%;
     display: flex;
     margin: 0px;
@@ -223,7 +230,10 @@ main {
     padding: 10px;
     margin: 0rem;
   }
-  
+  .links-rodape a{
+    font-family: "Nunito", serif;
+    color: #fff;
+  }
   span {
     display: inline-block;
     margin-top: 1rem;
