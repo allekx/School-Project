@@ -229,7 +229,7 @@ main {
 .container-seg h2 span {
   color: #6c5ce7;
 }
-.subtitle {
+.subtitle, .info .subtitle {
   margin-top: 1rem;
   color: #777;
   font-size: 16px;

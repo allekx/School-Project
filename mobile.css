@@ -300,8 +300,9 @@
 
 
   .info {
+
     width: 100%;
-    margin-top: 10rem;
+    margin-top: 20rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -316,13 +317,15 @@
     border-radius: 4px ;
   }
   .info p {
+    margin-top: 1rem;
+    color: #777;
+    font-size: 16px;
+
     max-width: 888px;
     margin-left: auto;
     margin-right: auto;
-    color: #474747;
     text-align: center;
-    font-family: "Nunito", serif;
-    font-size: 1.125rem;
+ 
     font-style: normal;
     font-weight: 500;
     margin-bottom: 28px;
@@ -366,7 +369,7 @@
   text-align: center; 
   text-decoration: none; 
   display: inline-block;
-  margin-top: 0.7rem;
+  margin-top: 10rem;
   margin-left: 0rem;
   }
 
