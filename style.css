@@ -166,7 +166,7 @@ main {
 }
 
 
-.seguimentos {
+/* .seguimentos {
   width: 100%;
   height: auto;
   padding: 4rem ;
@@ -206,7 +206,65 @@ main {
   align-items: center;
   justify-content: center;
   padding: 7px;
+} */
+
+
+.todos-os-seguimentos {
+  font-family: "Nunito", serif;
+  color: #38C738;
+  text-align: center;
+  background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+  margin: 0;
+  padding: 0;
 }
+.container-seg {
+  padding: 50px 20px;
+}
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+h2 span {
+  color: #6c5ce7;
+}
+.subtitle {
+  color: #777;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.feature-box {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  width: 220px;
+  text-align: center;
+}
+.feature-box img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.feature-box h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.feature-box p {
+  font-size: 14px;
+  color: #666;
+}
+
+
+
+
+
+
+
 .extracurricular{
   width: 100%;
 }
