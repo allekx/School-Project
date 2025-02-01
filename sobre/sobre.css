@@ -415,9 +415,10 @@ span a {
   }
   
   .menu li a {
-  
       text-decoration: none;
-      color: #333;
+      color: #38C738;
+      font-weight: bold;
+      font-size: 19px;
       margin-right: 0rem;
       padding: 7px;
   }
