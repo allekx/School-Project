@@ -18,7 +18,8 @@
   }
 
   .logo img {
-    width: 85px;
+    margin-top: 15px;
+    width: 70px;
     height: auto;
     padding: 0px;
   }
@@ -330,9 +331,12 @@
     font-weight: 500;
     margin-bottom: 28px;
   }
+  #line {
+    display: none;
+  }
   .info-dois {
     width: 100%;
-    margin-top: 8rem;
+    margin-top: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
