@@ -184,23 +184,43 @@ main {
 
 
 footer {
-  background: #00ff00bb;
+  font-family: "Nunito", serif;
+  background: #0c0c0c;
+  background-image: url(../img/footerstyle.png);
   width: 100%;
   height: auto;
-  margin-top: 8rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
   justify-items: center;
-  align-items: center;
+  padding: 4rem;
+  gap: 1rem;
+}
+.logo-footer {
+  width: 150px;
+}
+.container-log-redes {
+  font-family: "Nunito", serif;
+  color: #fff;
+  margin-left: 11rem;
+  display: flex;
+  padding: 20px;
+  gap: 4rem;
+}
+.links-rodape {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
 
 footer a {
+  font-family: "Nunito", serif;
   margin-top: 1rem;
   width: 195px;
   font-size: 14px;
   display: flex;
-  color: #000;
+  color: #ffffff;
   align-items: center;
   justify-content: start;
   gap: 5px;
@@ -210,11 +230,9 @@ footer a img {
   width: 23px;
 }
 .redes {
-
-  margin-top: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
 }
 .redes h2 {
   font-size: 17px;
@@ -234,7 +252,7 @@ footer a img {
 span {
   display: inline-block;
   margin-top: 1rem;
-  margin-left: 0rem;
+  margin-left: 19%;
   padding: 8px;
   width: 65%;
   align-items: center;
@@ -244,7 +262,6 @@ span {
 span a {
   margin-left: 5px;
   margin-right: 5px;
-}
 
 @media (min-width: 481px) and (max-width: 1201px) {
   .banner-ballet img {
@@ -268,4 +285,10 @@ span a {
     margin-top: 2.3rem;
     width: 100%;
   }
+}
+
+
+
+
+
 }
