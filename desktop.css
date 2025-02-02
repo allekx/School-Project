@@ -83,13 +83,14 @@ main {
     background:#38C738;
     width: 100%;
     height: auto;
-    margin-top: 7rem;
+    margin-top: 10rem;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .info {
-    margin-top: 20rem;
+    background-image: url(./img/fundo\ info01.png);
+    margin-top: 24rem;
   }
   .info-dois {
     margin-top: 2rem;
@@ -274,6 +275,7 @@ main {
     width: 70px;
     height: auto;
     padding: 0px;
+    margin-left: -10rem;
   }
 
   .logo{
@@ -439,7 +441,7 @@ main {
 
   .banner img {
     color: #000;
-    margin-top: 8.5rem;
+    margin-top: 11rem;
     width: 100%;
     height: auto;
     display: flex;
@@ -459,7 +461,7 @@ main {
     height: 100%;
   }
 .info {
-  margin-top: 12rem;
+  margin-top: 16rem;
 }
 #line {
   margin-top: 6rem;

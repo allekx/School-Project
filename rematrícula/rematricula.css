@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
-  font-family: ' font-family: "Poppins", sans-serif;';
+  font-family: "Nunito", serif;
   box-sizing: border-box;
 
 }
@@ -60,9 +60,9 @@ header {
   margin-right: 70%;
 }
 .logo img{
-  padding: 5px;
-  width: 105px;
-  height: auto;
+width: 70px;
+height: auto;
+margin-top: 16px;
 }
 nav {
   background: transparent;
@@ -141,23 +141,43 @@ main img {
 
 
 footer {
-  background: #00ff00bb;
+  font-family: "Nunito", serif;
+  background: #0c0c0c;
+  background-image: url(../img/footerstyle.png);
   width: 100%;
   height: auto;
-  margin-top: 8rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
   justify-items: center;
-  align-items: center;
+  padding: 4rem;
+  gap: 1rem;
+}
+.logo-footer {
+  width: 150px;
+}
+.container-log-redes {
+  font-family: "Nunito", serif;
+  color: #fff;
+  margin-left: 11rem;
+  display: flex;
+  padding: 20px;
+  gap: 4rem;
+}
+.links-rodape {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
 
 footer a {
+  font-family: "Nunito", serif;
   margin-top: 1rem;
   width: 195px;
   font-size: 14px;
   display: flex;
-  color: #000;
+  color: #ffffff;
   align-items: center;
   justify-content: start;
   gap: 5px;
@@ -167,11 +187,9 @@ footer a img {
   width: 23px;
 }
 .redes {
-
-  margin-top: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
 }
 .redes h2 {
   font-size: 17px;
@@ -238,7 +256,8 @@ span a {
     }
   
     .logo img {
-      width: 85px;
+      margin-top: 15px;
+      width: 70px;
       height: auto;
       padding: 0px;
     }
@@ -426,25 +445,54 @@ span a {
 
 
  
+
+  
   footer {
-    background: #00ff00bb;
-    width: 100%;
-    height: auto;
-    margin-top: 6rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: start;
+    font-family: "Nunito", serif;
+    color: #ffffff;
+    background: #010c00ea;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 1rem;
+  }
+  .logo-footer {
+    width: 100px;
+  }
+  .container-log-redes {
+    font-family: "Nunito", serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin-left: 0px;
+    padding: 0px;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+  }
+  .redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .links-rodape {
+    display: flex;
+    flex-direction: column;
+  }
+  .links-rodape a {
+    font-family: "Nunito", serif;
+    color: #ffffff;
   }
   
   footer a {
+    font-family: "Nunito", serif;
+    color: #ffffff;
     color: #000;
     padding: 15px;
   }
   
-
-  span {
+  span{
     display: inline-block;
     padding: 8px;
     justify-content: center;
@@ -452,26 +500,229 @@ span a {
     text-align: center;
   }
 
+
   .redes {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
   }
   .redes h2 {
     font-size: 18px;
-    margin-left: 1rem;
+    font-family:"Nunito", serif;
+    opacity: 70%;
   }
   .redes div  {
     display: flex;
   }
   .container-redes {
-    width: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
   .redes div a {
-    width: 100%;
+    align-items: center;
+    justify-content: center;
   }
 
 }
 
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  header {
+    position: fixed;
+    width: 100%;
+    height: 3.6rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 0rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  }
+
+  .logo img {
+    margin-top: 15px;
+    width: 70px;
+    height: auto;
+    padding: 0px;
+    margin-left: -10rem;
+  }
+
+  .logo{
+  margin-left: 0rem;
+  }
+  
+  
+  .menu-hamburguer {
+    cursor: pointer;
+    display: inline-block; /* Altere para flex ou block para que ele apareça */
+    margin-right: 2rem;
+    padding: 6px;
+    flex-direction: column;
+    width: 30px;
+    height: 30px;
+    
+    
+  }
+  header ul{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    gap:  1rem;
+    padding: 4px;
+  }
+
+
+  .bar {
+    background-color: #38C738;
+    height: 6px;
+    width: 33px;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+}
+
+  .menu {
+    display: none; /* Esconde o menu inicialmente */ 
+    position: absolute;
+    top: 50px; /* Ajuste conforme necessário */
+    left: 0px;
+    width: 100%;
+    
+
+    max-height: 0; /* Inicialmente, o menu está escondido */
+    overflow: hidden; /* Oculta o conteúdo que excede a altura */
+    opacity: 0; /* Torna o menu invisível */
+    transition: max-height 0.7s ease, opacity 0.7s ease; /* Define a transição */
+ 
+}
+
+.menu ul {
+ background: #333;
+  opacity: 100%;
+    list-style: none;
+    margin-left: 0rem;
+    margin-top: 0.4rem;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+
+
+.menu li {
+    padding: 6px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #38C738;
+    font-weight: bold;
+    font-size: 19px;
+    margin-right: 0rem;
+    padding: 7px;
+}
+
+.menu.active {
+    display: block;
+    justify-content: end;
+    margin-left: 0rem;
+    width: 100%;
+
+
+    max-height: 70rem; /* Ajuste para um valor que seja maior que a altura total do menu */
+    opacity: 1; /* Torna o menu visível */
+
+}
+.dropdown{
+  width: 100%;
+}
+.dropdown-menu {
+  margin-top: 1rem;
+  background: transparent;
+  position: relative;
+  z-index: 2;
+  display: none; /* Mantém o menu oculto por padrão */
+  height: auto;
+  width: auto;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+ 
+.dropdown-toggle  {
+  background: rgb(112, 243, 123);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  width: 100%;
+  height: auto;
+  margin-left: 0rem;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 5px;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.dropdown-menu a {
+  background: #fff;
+  font-size: 23px;
+  width: 100%;
+  margin-left: 0rem;
+  padding: 7px;
+  display: flex;
+
+}
+
+.menu li {
+  padding: 6px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 0rem;
+}
+
+
+
+  header ul li a {
+    color: #000;
+    font-size: 17px;
+  }
+
+  header ul{
+    margin-top: -4rem;
+    display: flex;
+    align-items: end;
+    margin-right: 0rem;
+  }
+  main {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+main section {
+  width: 90%;
+}
+.button-rematricula {
+  margin: 0px;
+}
+
+
+
+
+
+
+
+
+}

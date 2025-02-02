@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 function toggleDropdown(event) {
   const dropdownMenu = event.currentTarget.nextElementSibling;
   dropdownMenu.classList.toggle('active'); // Alterna a exibição do dropdown
