@@ -76,7 +76,8 @@
 
 .menu ul {
   background-image: url(./img/background\ menu.png);
-  opacity: 98%;
+  background-repeat: no-repeat;
+  opacity: 100%;
     list-style: none;
     margin-left: 0rem;
     margin-top: 0.4rem;

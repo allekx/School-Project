@@ -61,7 +61,7 @@ header {
 }
 .logo img{
   padding: 5px;
-  width: 105px;
+  width: 75px;
   height: auto;
 }
 nav {
@@ -318,9 +318,10 @@ nav li a:hover {
     }
   
     .logo img {
-      width: 85px;
+      width: 70px;
       height: auto;
       padding: 0px;
+      margin-top: 17px;
     }
   
     .logo{
