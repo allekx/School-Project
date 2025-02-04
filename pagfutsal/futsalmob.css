@@ -1,285 +1,315 @@
-@media (max-width: 480px) {
-
-  body {
-    width: 100%;
+@media (min-width: 481px) and (max-width: 1700px) {
+  main section {
+    width: 40%;
   }
 
-  header {
-    position: fixed;
-    width: 100%;
-    height: 3.6rem;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    gap: 0rem;
-    background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 10;
-  }
 
-  .logo img {
-    width: 85px;
-    height: auto;
-    padding: 0px;
-  }
 
-  .logo{
-  margin-left: 0rem;
-  }
+
+}
+
+@media (min-width: 360px) and (max-width: 480px) {
+
+    body {
+      width: 100%;
+    }
   
+    header {
+      position: fixed;
+      width: 100%;
+      height: 3.6rem;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      gap: 0rem;
+      background-color: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      z-index: 10;
+    }
   
-  .menu-hamburguer {
-    cursor: pointer;
-    display: inline-block; /* Altere para flex ou block para que ele apareça */
-    margin-right: 2rem;
-    padding: 6px;
-    flex-direction: column;
-    width: 30px;
-    height: 30px;
-    
-    
-  }
-  header ul{
-    display: flex;
-    flex-direction: column;
+    .logo img {
+      margin-top: 15px;
+      width: 70px;
+      height: auto;
+      padding: 0px;
+    }
+  
+    .logo{
     margin-left: 0rem;
-    margin-right: 2rem;
+    }
+    
+    
+    .menu-hamburguer {
+      cursor: pointer;
+      display: inline-block; /* Altere para flex ou block para que ele apareça */
+      margin-right: 2rem;
+      padding: 6px;
+      flex-direction: column;
+      width: 30px;
+      height: 30px;
+      
+      
+    }
+    header ul{
+      display: flex;
+      flex-direction: column;
+      margin-left: 0rem;
+      margin-right: 2rem;
+      margin-top: 1rem;
+      gap:  1rem;
+      padding: 4px;
+    }
+  
+  
+    .bar {
+      background-color: #38C738;
+      height: 6px;
+      width: 33px;
+      margin: 3px 0;
+      transition: all 0.3s ease;
+  }
+  
+    .menu {
+      display: none; /* Esconde o menu inicialmente */ 
+      position: absolute;
+      top: 50px; /* Ajuste conforme necessário */
+      left: 0px;
+      width: 100%;
+      
+  
+      max-height: 0; /* Inicialmente, o menu está escondido */
+      overflow: hidden; /* Oculta o conteúdo que excede a altura */
+      opacity: 0; /* Torna o menu invisível */
+      transition: max-height 0.7s ease, opacity 0.7s ease; /* Define a transição */
+   
+  }
+  
+  .menu ul {
+    background-image: url(../img/background\ menu.png);
+    opacity: 98%;
+      list-style: none;
+      margin-left: 0rem;
+      margin-top: 0.4rem;
+      height: 100em;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      border-radius: 5px;
+  }
+  
+  
+  
+  .menu li {
+      padding: 6px;
+  }
+  
+  .menu li a {
+  
+      text-decoration: none;
+      color: #333;
+      margin-right: 0rem;
+      padding: 7px;
+  }
+  
+  .menu.active {
+      display: block;
+      justify-content: end;
+      margin-left: 0rem;
+      width: 100%;
+  
+  
+      max-height: 70rem; /* Ajuste para um valor que seja maior que a altura total do menu */
+      opacity: 1; /* Torna o menu visível */
+  
+  }
+  .dropdown{
+    width: 100%;
+  }
+  .dropdown-menu {
     margin-top: 1rem;
-    gap:  1rem;
-    padding: 4px;
-  }
-
-
-  .bar {
-    background-color: #38C738;
-    height: 6px;
-    width: 33px;
-    margin: 3px 0;
-    transition: all 0.3s ease;
-}
-
-  .menu {
-    display: none; /* Esconde o menu inicialmente */ 
-    position: absolute;
-    top: 50px; /* Ajuste conforme necessário */
-    left: 0px;
-    width: 100%;
-    
-
-    max-height: 0; /* Inicialmente, o menu está escondido */
-    overflow: hidden; /* Oculta o conteúdo que excede a altura */
-    opacity: 0; /* Torna o menu invisível */
-    transition: max-height 0.7s ease, opacity 0.7s ease; /* Define a transição */
- 
-}
-
-.menu ul {
-  background-image: url(../img/background\ menu.png);
-  opacity: 98%;
-    list-style: none;
-    margin-left: 0rem;
-    margin-top: 0.4rem;
-    height: 100rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
+    background: transparent;
+    position: relative;
+    z-index: 2;
+    display: none; /* Mantém o menu oculto por padrão */
+    height: auto;
+    width: auto;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     border-radius: 5px;
-}
-
-
-
-.menu li {
+  }
+   
+  .dropdown-toggle  {
+    background: rgb(112, 243, 123);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    width: 100%;
+    height: auto;
+    margin-left: 0rem;
+    align-items: center;
+    justify-content: center;
+  
+    border-radius: 5px;
+    font-size: 25px;
+    padding: 10px;
+  }
+  
+  .dropdown-menu a {
+    background: #fff;
+    font-size: 23px;
+    width: 100%;
+    margin-left: 0rem;
+    padding: 7px;
+    display: flex;
+  
+  }
+  
+  .menu li {
     padding: 6px;
-}
-
-.menu li a {
-
+  }
+  
+  .menu li a {
     text-decoration: none;
     color: #333;
     margin-right: 0rem;
-    padding: 7px;
-}
-
-.menu.active {
-    display: block;
-    justify-content: end;
-    margin-left: 0rem;
-    width: 100%;
-
-
-    max-height: 70rem; /* Ajuste para um valor que seja maior que a altura total do menu */
-    opacity: 1; /* Torna o menu visível */
-
-}
-.dropdown{
-  width: 100%;
-}
-.dropdown-menu {
-  margin-top: 1rem;
-  background: transparent;
-  position: relative;
-  z-index: 2;
-  display: none; /* Mantém o menu oculto por padrão */
-  height: auto;
-  width: auto;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  border-radius: 5px;
-}
- 
-.dropdown-toggle  {
-  background: rgb(112, 243, 123);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  width: 100%;
-  height: auto;
-  margin-left: 0rem;
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 5px;
-  font-size: 25px;
-  padding: 10px;
-}
-
-.dropdown-menu a {
-  background: #fff;
-  font-size: 23px;
-  width: 100%;
-  margin-left: 0rem;
-  padding: 7px;
-  display: flex;
-
-}
-
-.menu li {
-  padding: 6px;
-}
-
-.menu li a {
-  text-decoration: none;
-  color: #333;
-  margin-right: 0rem;
-}
-
-
-
-  header ul li a {
-    color: #000;
-    font-size: 17px;
   }
+  
+  
+  
+    header ul li a {
+      color: #000;
+      font-size: 17px;
+    }
+  
+    header ul{
+      margin-top: -4rem;
+      display: flex;
+      align-items: end;
+      margin-right: 0rem;
+    }
 
-  header ul{
-    margin-top: -4rem;
+  main div {
     display: flex;
-    align-items: end;
-    margin-right: 0rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
   }
-.banner-futsal {
-  margin-top: 3.8rem;
-  width: 100%;
-  height: auto;
-  padding: 0px;
-}
-.banner-futsal img {
-  margin-top: 0rem;
-  width: 100%rem;
-  padding: 0px;
-}
 
-.container-futsal {
-  margin-top: 1rem;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-.container-um h1 {
-  font-size: 29px;
-}
-.container-um img {
-  height: 10rem;
-  display: none;
-}
-.container-dois  {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  width: 25rem;
-}
-.container-dois p {
-  font-size: 14px;
-}
-.button-futsal {
-  font-size: 16px;
-  margin-left: 0rem;
-}
-footer {
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  margin-top: 2rem;
-  align-items: start;
-  gap: 1rem;
-}
-footer a {
-  padding: 5px;
-  display: flex;
-  margin: 5px;
-}
-.redes {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
-.redes h2 {
-  font-size: 18px;
-  margin-left: 1rem;
-}
-.redes div  {
-  display: flex;
-}
-.container-redes {
-  width: 28%;
-}
-.redes div a {
-  width: 100%;
-}
-}
+  .banner-futsal {
+    margin-top: -4rem;
+    width: 100%;
+    height: auto;
+  }
+  .banner-futsal img {
+    width: 100%;
+    height: auto;
+  }
+  .container-futsal {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    max-width: 96%;
+    height: auto;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+  }
+  .container-futsal img {
+    width: 100%;
+    height: auto;
+  }
+  .container-dois p{
+    width: 96%;
 
-
-@media (max-width: 444px) {
-
-
-.container-dois  {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  width: 22rem;
-}
-
-
-}
+  }
+  .button-futsal {
+    margin: 0rem;
+  }
 
 
 
+ 
 
-@media (max-width: 360px) {
+  
+  footer {
+    font-family: "Nunito", serif;
+    color: #ffffff;
+    background: #010c00ea;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo-footer {
+    width: 100px;
+  }
+  .container-log-redes {
+    font-family: "Nunito", serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin-left: 0px;
+    padding: 0px;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .links-rodape {
+    display: flex;
+    flex-direction: column;
+  }
+  .links-rodape a {
+    font-family: "Nunito", serif;
+    color: #ffffff;
+  }
+  
+  footer a {
+    font-family: "Nunito", serif;
+    color: #ffffff;
+    color: #000;
+    padding: 15px;
+  }
+  
+  span{
+    display: inline-block;
+    padding: 8px;
+    justify-content: center;
+    font-size: 14px;
+    text-align: center;
+  }
 
 
-
-.container-dois  {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  width: 22rem;
-}
+  .redes {
+    width: 100%;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+  }
+  .redes h2 {
+    font-size: 18px;
+    font-family:"Nunito", serif;
+    opacity: 70%;
+  }
+  .redes div  {
+    display: flex;
+  }
+  .container-redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .redes div a {
+    align-items: center;
+    justify-content: center;
+  }
 
 }
