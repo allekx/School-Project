@@ -18,9 +18,10 @@
   }
 
   .logo img {
-    width: 85px;
+    width: 70px;
     height: auto;
     padding: 0px;
+    margin-top:17px;
   }
 
   .logo{
@@ -79,8 +80,8 @@
     list-style: none;
     margin-left: 0rem;
     margin-top: 0.4rem;
+    height: 100em;
     width: 100%;
-    height: 100rem;
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
@@ -92,13 +93,13 @@
 
 .menu li {
     padding: 6px;
-    
 }
 
 .menu li a {
-
     text-decoration: none;
-    color: #333;
+    color: #38C738;
+    font-weight: bold;
+    font-size: 19px;
     margin-right: 0rem;
     padding: 7px;
 }
@@ -150,7 +151,7 @@
   margin-left: 0rem;
   padding: 7px;
   display: flex;
-  
+
 }
 
 .menu li {
@@ -185,15 +186,17 @@
 }
 .banner-jiu-jitsu img {
   margin-top: 0rem;
-  width: 100%rem;
+  width: 100%;
   padding: 0px;
 }
 
 .container-jiu-jitsu {
   margin-top: 1rem;
-  width: 100%;
+  width: 96%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 .container-um h1 {
@@ -219,23 +222,51 @@
   margin-left: 0rem;
 }
 footer {
-  background: #00ff00bb;
-  width: 100%;
-  height: auto;
-  margin-top: 6rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: start;
+  font-family: "Nunito", serif;
+  color: #ffffff;
+  background: #0c0c0cdc;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 1rem;
+}
+.logo-footer {
+  width: 100px;
+}
+.container-log-redes {
+  font-family: "Nunito", serif;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin-left: 0px;
+  padding: 0px;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.links-rodape {
+  display: flex;
+  flex-direction: column;
+}
+.links-rodape a {
+  font-family: "Nunito", serif;
+  color: #ffffff;
 }
 
 footer a {
+  font-family: "Nunito", serif;
+  color: #ffffff;
   color: #000;
   padding: 15px;
 }
 
-span {
+span{
   display: inline-block;
   padding: 8px;
   justify-content: center;
@@ -243,24 +274,30 @@ span {
   text-align: center;
 }
 
+
 .redes {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
+  display: flex ;
+  align-items: center;
+  justify-content: center;
 }
 .redes h2 {
   font-size: 18px;
-  margin-left: 1rem;
+  font-family:"Nunito", serif;
+  opacity: 70%;
 }
 .redes div  {
   display: flex;
 }
 .container-redes {
-  width: 28%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 .redes div a {
-  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 }
 
