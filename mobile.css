@@ -27,6 +27,9 @@
   .logo{
   margin-left: 0rem;
   }
+  .logo:focus {
+    outline: none;
+  }
   
   
   .menu-hamburguer {

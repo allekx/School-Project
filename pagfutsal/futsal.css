@@ -157,6 +157,17 @@ main {
   font-size: 16px;
 }
 
+
+.container-buttons {
+  display: flex;
+  margin: 0px;
+  gap: 0rem;
+  justify-content: start;
+  align-items: start;
+}
+
+
+
 .button-futsal {
   background-color: #38C738; 
   color: white; 
@@ -166,8 +177,7 @@ main {
   display: inline-block;
   width: 160px;
   height: 40px;
-  margin-left: 23rem;
-  font-size: 16px; 
+  font-size: 13px; 
   border: none;
   border-radius: 6px; 
   cursor: pointer;
