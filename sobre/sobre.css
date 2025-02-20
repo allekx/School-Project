@@ -73,9 +73,12 @@ nav li a {
   color: #000;
   text-decoration: none;
   padding: 15px;
+  font-weight: bold;
 }
 nav li a:hover {
-  background-color: #0e944b;
+  background-color: #2bc06c;
+  border-radius: 24px;
+  color: #fff;
 }
 .dropdown-menu{
   position: absolute;
