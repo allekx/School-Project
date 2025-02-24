@@ -47,7 +47,10 @@ window.addEventListener('load', function() {
 //função para o menu
 function toggleMenu() {
   const menu = document.querySelector('.menu');
-  menu.classList.toggle('active'); // Adiciona ou remove a classe "active"
+  const hamburguer = document.querySelector('.menu-hamburguer');
+
+  menu.classList.toggle('active'); // Mantém a funcionalidade do menu
+  hamburguer.classList.toggle('ativo'); // Adiciona animação ao menu-hamburguer
 }
 
 function toggleDropdown(event) {

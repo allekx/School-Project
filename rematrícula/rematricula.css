@@ -52,8 +52,8 @@ header {
   justify-content: center;
   align-items: center;
   gap: 0rem;
-  background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: rgba(1, 24, 4, 0.9);
+  box-shadow: 0 2px 5px rgb(51, 228, 51);
   z-index: 10;
 }
 .logo {
@@ -83,6 +83,10 @@ nav li a:hover {
   background-color: #2bc06c;
   border-radius: 24px;
   color: #fff;
+}
+.dropdown-toggle{
+  font-size: 12px;
+  color: #5ce77a;
 }
 .dropdown-menu{
   position: absolute;
@@ -255,8 +259,8 @@ span a {
       justify-content: end;
       align-items: center;
       gap: 0rem;
-      background-color: rgba(255, 255, 255, 0.9);
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      background-color: rgba(1, 24, 4, 0.9);
+      box-shadow: 0 2px 5px rgb(51, 228, 51);
       z-index: 10;
     }
   
@@ -272,17 +276,16 @@ span a {
     }
     
     
-    .menu-hamburguer {
-      cursor: pointer;
-      display: inline-block; /* Altere para flex ou block para que ele apareça */
-      margin-right: 2rem;
-      padding: 6px;
-      flex-direction: column;
-      width: 30px;
-      height: 30px;
-      
-      
-    }
+/* Estilo do Menu-Hamburguer */
+.menu-hamburguer {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35px;
+  height: 30px;
+  margin-right: 1rem;
+}
     header ul{
       display: flex;
       flex-direction: column;
@@ -293,13 +296,22 @@ span a {
       padding: 4px;
     }
   
-  
     .bar {
-      background-color: #38C738;
-      height: 6px;
-      width: 33px;
-      margin: 3px 0;
-      transition: all 0.3s ease;
+      background-color: #168a2f;
+      height: 5px;
+      width: 100%;
+      border-radius: 5px;
+      transition: all 0.3s ease-in-out;
+  }
+  /* Animação para transformar o menu em "X" */
+  .menu-hamburguer.ativo .bar:nth-child(1) {
+      transform: translateY(10px) rotate(45deg);
+  }
+  .menu-hamburguer.ativo .bar:nth-child(2) {
+      opacity: 0;
+  }
+  .menu-hamburguer.ativo .bar:nth-child(3) {
+      transform: translateY(-10px) rotate(-45deg);
   }
   
     .menu {
@@ -544,8 +556,8 @@ span a {
     justify-content: end;
     align-items: center;
     gap: 0rem;
-    background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: rgba(1, 24, 4, 0.9);
+    box-shadow: 0 2px 5px rgb(51, 228, 51);
     z-index: 10;
   }
 
@@ -562,17 +574,16 @@ span a {
   }
   
   
-  .menu-hamburguer {
-    cursor: pointer;
-    display: inline-block; /* Altere para flex ou block para que ele apareça */
-    margin-right: 2rem;
-    padding: 6px;
-    flex-direction: column;
-    width: 30px;
-    height: 30px;
-    
-    
-  }
+/* Estilo do Menu-Hamburguer */
+.menu-hamburguer {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35px;
+  height: 30px;
+  margin-right: 1rem;
+}
   header ul{
     display: flex;
     flex-direction: column;
@@ -585,11 +596,21 @@ span a {
 
 
   .bar {
-    background-color: #38C738;
-    height: 6px;
-    width: 33px;
-    margin: 3px 0;
-    transition: all 0.3s ease;
+    background-color: #168a2f;
+    height: 5px;
+    width: 100%;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+/* Animação para transformar o menu em "X" */
+.menu-hamburguer.ativo .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+.menu-hamburguer.ativo .bar:nth-child(2) {
+    opacity: 0;
+}
+.menu-hamburguer.ativo .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
 }
 
   .menu {
