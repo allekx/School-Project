@@ -17,7 +17,37 @@ body {
   width: 100%;
 }
 
-
+#cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 15px;
+  text-align: center;
+  display: none;
+  z-index: 9;
+}
+#cookie-banner button {
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 0.1px solid rgba(255, 255, 255, 0.548);
+  color: rgb(255, 255, 255);
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+}
+#accept-cookies {
+  background: #22fa0567;
+}
+#reject-cookies {
+  background: transparent;
+}
+#cookie-banner button:hover {
+  background: #38C738;
+}
 
 .loading {
   position: fixed;

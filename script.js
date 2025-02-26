@@ -1,4 +1,56 @@
+//Cookies do site
 
+function setCookie(nome, valor, dias) {
+  let data = new Date();
+  data.setTime(data.getTime() + (dias * 24 * 60 * 60 * 1000));
+  document.cookie = nome + "=" + valor + "; expires=" + data.toUTCString() + "; path=/";
+}
+
+function getCookie(nome) {
+  let cookies = document.cookie.split('; ');
+  for (let i = 0; i < cookies.length; i++) {
+      let parte = cookies[i].split('=');
+      if (parte[0] === nome) return parte[1];
+  }
+  return null;
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  if (!getCookie("cookiesAceitos")) {
+      document.getElementById("cookie-banner").style.display = "block";
+  }
+});
+
+document.getElementById("accept-cookies").addEventListener("click", function() {
+  setCookie("cookiesAceitos", "sim", 30);
+  setCookie("tema", "escuro", 30); // Exemplo de cookie essencial
+  setCookie("idioma", "pt-BR", 30);
+  document.getElementById("cookie-banner").style.display = "none";
+  loadAnalytics();
+});
+
+document.getElementById("reject-cookies").addEventListener("click", function() {
+  setCookie("cookiesAceitos", "nao", 30);
+  document.getElementById("cookie-banner").style.display = "none";
+});
+
+function loadAnalytics() {
+  if (getCookie("cookiesAceitos") === "sim") {
+      let script = document.createElement("script");
+      script.async = true;
+      script.src = "https://www.googletagmanager.com/gtag/js?id=UA-SEU_ID";
+      document.head.appendChild(script);
+      
+      script.onload = function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){ dataLayer.push(arguments); }
+          gtag('js', new Date());
+          gtag('config', 'UA-SEU_ID', { 'anonymize_ip': true });
+      };
+  }
+}
+
+loadAnalytics();
 
 
 
