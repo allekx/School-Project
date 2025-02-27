@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 //Cookies do site
 function setCookie(nome, valor, dias) {
   let data = new Date();
@@ -49,6 +56,7 @@ function loadAnalytics() {
           gtag('js', new Date());
           gtag('config', 'UA-SEU_ID', { 'anonymize_ip': true });
       };
+      
   }
 }
 
@@ -234,4 +242,13 @@ const swiper = new Swiper('.swiper', {
       delay: 3000,
       disableOnInteraction: false,
   },
+});
+
+// popup
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("ad-popup").style.display = "block";
+});
+
+document.getElementById("close-ad").addEventListener("click", function() {
+  document.getElementById("ad-popup").style.display = "none";
 });
