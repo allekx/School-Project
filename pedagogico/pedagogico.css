@@ -197,7 +197,8 @@ nav li a:hover {
 .section2, .section3 {
   display: none;
 }
-.button-pedagogico {
+
+.button-pedagogico{
     background-color: #4CAF50; 
     color: white; 
     padding: 10px 20px; 
