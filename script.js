@@ -1,5 +1,4 @@
 //Cookies do site
-
 function setCookie(nome, valor, dias) {
   let data = new Date();
   data.setTime(data.getTime() + (dias * 24 * 60 * 60 * 1000));
@@ -16,22 +15,25 @@ function getCookie(nome) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-  if (!getCookie("cookiesAceitos")) {
-      document.getElementById("cookie-banner").style.display = "block";
+  let banner = document.getElementById("cookie-banner");
+  if (banner && !getCookie("cookiesAceitos")) {
+      banner.style.display = "block";
   }
 });
 
-document.getElementById("accept-cookies").addEventListener("click", function() {
-  setCookie("cookiesAceitos", "sim", 30);
-  setCookie("tema", "escuro", 30); // Exemplo de cookie essencial
-  setCookie("idioma", "pt-BR", 30);
-  document.getElementById("cookie-banner").style.display = "none";
-  loadAnalytics();
-});
+document.addEventListener("click", function(event) {
+  if (event.target.id === "accept-cookies") {
+      setCookie("cookiesAceitos", "sim", 30);
+      setCookie("tema", "escuro", 30);
+      setCookie("idioma", "pt-BR", 30);
+      document.getElementById("cookie-banner").style.display = "none";
+      loadAnalytics();
+  }
 
-document.getElementById("reject-cookies").addEventListener("click", function() {
-  setCookie("cookiesAceitos", "nao", 30);
-  document.getElementById("cookie-banner").style.display = "none";
+  if (event.target.id === "reject-cookies") {
+      setCookie("cookiesAceitos", "nao", 30);
+      document.getElementById("cookie-banner").style.display = "none";
+  }
 });
 
 function loadAnalytics() {
@@ -49,8 +51,6 @@ function loadAnalytics() {
       };
   }
 }
-
-loadAnalytics();
 
 
 
