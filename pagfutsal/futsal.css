@@ -99,6 +99,7 @@ nav li a:hover {
 .dropdown:hover .dropdown-menu {
   display: block;
   background: #fff;
+  border-radius: 24px;
 }
 
 body {
