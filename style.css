@@ -15,6 +15,7 @@ html {
 
 body {
   width: 100%;
+  
 }
 
 #cookie-banner {
@@ -499,25 +500,30 @@ main {
 }
 
 .infoBotao {
-  background-color: #4CAF50; 
-  color: white; 
-  padding: 10px 20px; 
-  width: 12rem;
-  text-align: center; 
-  text-decoration: none; 
-  display: inline-block;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  margin-left: 25rem;
-  font-size: 14px; 
-  cursor: pointer; 
-  border: none; 
-  border-radius: 4px; 
-  transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+  background-image: linear-gradient(to right, #1D976C 0%, #93F9B9  51%, #1D976C  100%)}
+  .infoBotao {
+     margin: 10px;
+     padding: 10px 40px;
+     text-align: center;
+     text-transform: uppercase;
+     transition: 0.5s;
+     background-size: 200% auto;
+     color: white;            
+     box-shadow: 0 0 20px #eee;
+     border-radius: 10px;
+     display: block;
+     margin-top: 1rem;
+     margin-bottom: 2rem;
+     margin-left: 25rem;
+     font-size: 14px; 
+     cursor: pointer; 
+     border: none; 
 }
 
 .infoBotao:hover {
-  background-color: #45a049; /* Cor de fundo ao passar o mouse */
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
 
 .linha {
