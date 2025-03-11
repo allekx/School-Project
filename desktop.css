@@ -35,12 +35,11 @@
     justify-content: center;
     align-items: center;
     gap: 0rem;
-    background-color: rgba(1, 24, 4, 0.9);
-    box-shadow: 0 2px 5px rgb(51, 228, 51);
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 5px rgb(169, 235, 169);
     z-index: 10;
   }
   .logo {
-    margin-top: 10px;
     position: absolute;
     display: block;
     height: auto;
@@ -50,8 +49,8 @@
     height: 45px;
   }
   .dropdown-toggle{
-    font-size: 12px;
-    color: #5ce77a;
+    font-size: 11px;
+    color: #475249;
   }
   nav {
     background: transparent;
@@ -274,7 +273,7 @@ main {
 }
 
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 481px) and (max-width: 900px) {
   
   header {
     position: fixed;
@@ -284,8 +283,8 @@ main {
     justify-content: end;
     align-items: center;
     gap: 0rem;
-    background-color: rgba(1, 24, 4, 0.9);
-    box-shadow: 0 2px 5px rgb(51, 228, 51);
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 5px rgb(169, 235, 169);
     z-index: 10;
   }
 
@@ -462,7 +461,7 @@ main {
   }
 
   .container-slider {
-    margin-top: 8rem;
+    margin-top: 19%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -470,7 +469,6 @@ main {
 
   .banner img {
     color: #000;
-    margin-top: 11rem;
     width: 100%;
     height: auto;
     display: flex;

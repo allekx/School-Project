@@ -52,8 +52,8 @@ header {
   justify-content: center;
   align-items: center;
   gap: 0rem;
-  background-color: rgba(1, 24, 4, 0.9);
-  box-shadow: 0 2px 5px rgb(51, 228, 51);
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 5px rgb(169, 235, 169);
   z-index: 10;
 }
 .logo {
@@ -61,10 +61,12 @@ header {
   display: block;
   margin-right: 70%;
 }
+
 .logo img{
-  margin-top: 4px;
-  width: auto;
-  height: 50px;
+  width: 70px;
+  height: auto;
+  padding: 3px;
+  padding-top: 5px;
 }
 nav {
   background: transparent;
@@ -86,7 +88,7 @@ nav li a:hover {
 }
 .dropdown-toggle{
   font-size: 12px;
-  color: #5ce77a;
+  color: #475249;
 }
 .dropdown-menu{
   position: absolute;

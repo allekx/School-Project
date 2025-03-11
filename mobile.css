@@ -27,8 +27,8 @@
     justify-content: end;
     align-items: center;
     gap: 0rem;
-    background-color: rgba(1, 24, 4, 0.9);
-    box-shadow: 0 2px 5px rgb(51, 228, 51);
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 5px rgb(169, 235, 169);
     z-index: 10;
   }
 
@@ -167,16 +167,16 @@
   margin-left: 0rem;
   align-items: center;
   justify-content: center;
-
+  color: #475249;
   border-radius: 5px;
-  font-size: 25px;
+  font-size: 11px;
   padding: 10px;
 }
 
 .dropdown-menu a {
   background: #fff;
   border-radius: 8px;
-  font-size: 23px;
+  font-size: 11px;
   width: 100%;
   margin-left: 0rem;
   padding: 7px;

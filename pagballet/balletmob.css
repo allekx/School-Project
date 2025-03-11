@@ -13,8 +13,6 @@
     justify-content: end;
     align-items: center;
     gap: 0rem;
-    background-color: rgba(1, 24, 4, 0.9);
-    box-shadow: 0 2px 5px rgb(51, 228, 51);
     z-index: 10;
   }
 

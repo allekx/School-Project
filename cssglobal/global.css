@@ -12,9 +12,90 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   width: 100%;
+  
 }
+
+#cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 15px;
+  text-align: center;
+  display: none;
+  z-index: 1000;
+}
+#cookie-banner button {
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 0.1px solid rgba(255, 255, 255, 0.548);
+  color: rgb(255, 255, 255);
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+}
+#accept-cookies {
+  background: #22fa0567;
+}
+#reject-cookies {
+  background: transparent;
+}
+#cookie-banner button:hover {
+  background: #38C738;
+}
+
+        /* Estilos para o popup de anúncio */
+        #ad-popup {
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background: white;
+          padding: 20px;
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+          border-radius: 10px;
+          display: none;
+          text-align: center;
+          width: 30%;
+          z-index: 9;
+      }
+      
+      #ad-popup img {
+          max-width: 100%;
+          border-radius: 10px;
+      }
+      
+      #ad-popup h1 {
+          font-size: 20px;
+          margin: 10px 0;
+      }
+      
+      #ad-popup p {
+          font-size: 16px;
+      }
+      
+      #close-ad {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          background: red;
+          color: white;
+          border: none;
+          padding: 5px 10px;
+          cursor: pointer;
+          border-radius: 50%;
+          font-size: 14px;
+      }
+
+
+
+
 
 .loading {
   position: fixed;
@@ -42,8 +123,6 @@ body {
 }
 
 
-
-
 header {
   position: fixed;
   width: 100%;
@@ -52,8 +131,8 @@ header {
   justify-content: center;
   align-items: center;
   gap: 0rem;
-  background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 2px 5px rgb(169, 235, 169);
+  background-color: rgba(1, 24, 4, 0.9);
+  box-shadow: 0 2px 5px rgb(51, 228, 51);
   z-index: 10;
 }
 .logo {
@@ -65,8 +144,7 @@ header {
 .logo img{
   width: 70px;
   height: auto;
-  padding: 3px;
-  padding-top: 5px;
+  margin-top: 16px;
 }
 nav {
   background: transparent;
@@ -86,9 +164,9 @@ nav li a:hover {
   border-radius: 24px;
   color: #fff;
 }
-.dropdown-toggle{
+.dropdown-toggle {
   font-size: 12px;
-  color: #475249;
+  color: #5ce77a;
 }
 .dropdown-menu{
   position: absolute;
@@ -103,168 +181,128 @@ nav li a:hover {
   background: #fff;
   border-radius: 24px;
 }
-#banner-pedagogico {
-  margin-top: 3.8rem;
-  width: 100%;
-  height: auto;
-}
-.conteudo{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.section1 {
-  width: 100%;
-  margin-top: 5rem;
-  display: flex;
-  gap: 1rem;
-}
-.section1 img {
-  margin-left: 8rem;
-  width: 30%;
-  height: auto;
-}
-.section1 div {
-  display: flex;
-  flex-direction: column;
-  margin-right: 0rem;
-  align-items: center;
-}
-.section1 div h1 {
-  color: #46A646;
-}
-.section1 div p {
-  margin-top: 3rem;
-}
-.section1 div h3 {
-  margin-top: 2rem;
-}
-.section1 div ul {
-  margin-top: 0.5rem;
-  margin-left: 0rem;
-}
-.section1 div ul li {
-  padding: 4px;
-}
-.section1 div a li{
-  margin-top: 0.9rem;
-  margin-left: 2rem;
-}
 
 
-.section2 {
-  margin-top: 5rem;
-  display: flex;
-  justify-content: center;
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 481px) and (max-width: 1700px) {
   
-  gap: 1rem;
-}
-.section2 img {
-  margin-right: 10rem;
-  width: 40%;
-  height: auto;
-}
-.section2 div {
-  margin-left: 8rem;
-  text-align: end;
-}
-.section2 div h1 {
-  color: #46A646;
-}
-.section2 div p {
-  margin-top: 3rem;
-}
-
-.section3 {
-  margin-top: 5rem;
-  display: flex;
-  gap: 1rem;
-}
-.section3 img {
-  margin-left: 2rem;
-  width: 40%;
-  height: auto;
-}
-.section3 div {
-  margin-right: 10rem;
-}
-.section3 div h1 {
-  color: #46A646;
-}
-.section3 div p {
-  margin-top: 3rem;
-}
-
-.section2, .section3 {
-  display: none;
-}
-
-.button-pedagogico{
-    background-color: #4CAF50; 
-    color: white; 
-    padding: 10px 20px; 
-    width: 12rem;
-    text-align: center; 
-    text-decoration: none; 
+  
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  
+  html {
+    scroll-behavior: smooth;
+  }
+          /* Estilos para o popup de anúncio */
+          #ad-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+            border-radius: 10px;
+            display: none;
+            text-align: center;
+            width: 29%;
+            z-index: 9;
+        }
+  
+  header {
+    position: fixed;
+    width: 100%;
+    height: 3.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+    background-color: rgba(1, 24, 4, 0.9);
+    box-shadow: 0 2px 5px rgb(51, 228, 51);
+    z-index: 10;
+  }
+  .logo {
+    margin-top: 10px;
+    position: absolute;
+    display: block;
+    height: auto;
+  }
+  .logo img{
+    width: auto;
+    height: 45px;
+  }
+  .dropdown-toggle{
+    font-size: 12px;
+    color: #5ce77a;
+  }
+  nav {
+    background: transparent;
+  }
+  nav li {
     display: inline-block;
-    margin-top: 8rem;
-    margin-left: 0rem;
-    font-size: 14px; 
-    cursor: pointer; 
-    border: none; 
-    border-radius: 4px; 
-    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
   }
-  
-  .button-pedagogico:hover {
-    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+  nav li a {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    padding: 15px;
   }
 
+  .dropdown-menu{
+    position: absolute;
+    box-shadow: 0 0 2px black;
+    display: none;
+  }
+  .dropdown-menu a {
+    display: block;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    background: #fff;
+    border-radius: 24px;
+  }
 
 
 
 
 
   footer {
-    font-family: "Nunito", serif;
-    background: #0c0c0c;
-    background-image: url(../img/footerstyle.png);
+    background-image: url(./img/footerstyle.png);
     width: 100%;
     height: auto;
-    margin-top: 6rem;
+    margin-top: 8rem;
     display: flex;
     flex-direction: column;
     justify-items: center;
-    padding: 4rem;
+    padding: 1rem;
     gap: 1rem;
   }
   .logo-footer {
     width: 150px;
-  }
-  .container-log-redes {
-    font-family: "Nunito", serif;
-    color: #fff;
-    margin-left: 11rem;
-    display: flex;
-    padding: 20px;
-    gap: 4rem;
-  }
-  .links-rodape {
-    display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    height: 100px;
   }
   
   footer a {
-    font-family: "Nunito", serif;
     margin-top: 1rem;
     width: 195px;
     font-size: 14px;
     display: flex;
-    color: #ffffff;
+    color: #000;
     align-items: center;
     justify-content: start;
     gap: 5px;
@@ -274,15 +312,19 @@ nav li a:hover {
     width: 23px;
   }
   .redes {
+    width: 300px;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
   }
   .redes h2 {
     font-size: 17px;
   }
   .container-redes {
-    width: 20%;
+    font-family: "Nunito", serif;
+    color: #fff;
+    width: 60%;
     display: flex;
     margin: 0px;
     margin-top: 1rem;
@@ -292,7 +334,10 @@ nav li a:hover {
     padding: 10px;
     margin: 0rem;
   }
-  
+  .links-rodape a{
+    font-family: "Nunito", serif;
+    color: #fff;
+  }
   span {
     display: inline-block;
     margin-top: 1rem;
@@ -308,338 +353,8 @@ nav li a:hover {
     margin-right: 5px;
   }
 
-
-
-
-
-@media (min-width: 481px) and (max-width: 1700px) {
-  main section {
-    width: 40%;
-  }
-
-  .section2, .section3 {
-    display: none;
-  }
-
-
 }
 
-@media (min-width: 360px) and (max-width: 480px) {
-
-  body {
-    width: 100%;
-  }
-
-  header {
-    position: fixed;
-    width: 100%;
-    height: 3.6rem;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    gap: 0rem;
-    z-index: 10;
-  }
-
-  .logo img {
-    margin-top: 15px;
-    width: 70px;
-    height: auto;
-    padding: 0px;
-  }
-
-  .logo{
-  margin-left: 0rem;
-  }
-  
-  
-/* Estilo do Menu-Hamburguer */
-.menu-hamburguer {
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 35px;
-  height: 30px;
-  margin-right: 1rem;
-}
-  header ul{
-    display: flex;
-    flex-direction: column;
-    margin-left: 0rem;
-    margin-right: 2rem;
-    margin-top: 1rem;
-    gap:  1rem;
-    padding: 4px;
-  }
-
-
-  .bar {
-    background-color: #168a2f;
-    height: 5px;
-    width: 100%;
-    border-radius: 5px;
-    transition: all 0.3s ease-in-out;
-}
-/* Animação para transformar o menu em "X" */
-.menu-hamburguer.ativo .bar:nth-child(1) {
-    transform: translateY(10px) rotate(45deg);
-}
-.menu-hamburguer.ativo .bar:nth-child(2) {
-    opacity: 0;
-}
-.menu-hamburguer.ativo .bar:nth-child(3) {
-    transform: translateY(-10px) rotate(-45deg);
-}
-
-  .menu {
-    display: none; /* Esconde o menu inicialmente */ 
-    position: absolute;
-    top: 50px; /* Ajuste conforme necessário */
-    left: 0px;
-    width: 100%;
-    
-
-    max-height: 0; /* Inicialmente, o menu está escondido */
-    overflow: hidden; /* Oculta o conteúdo que excede a altura */
-    opacity: 0; /* Torna o menu invisível */
-    transition: max-height 0.7s ease, opacity 0.7s ease; /* Define a transição */
- 
-}
-
-.menu ul {
-  background-image: url(../img/background\ menu.png);
-  opacity: 98%;
-    list-style: none;
-    margin-left: 0rem;
-    margin-top: 0.4rem;
-    height: 100em;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    border-radius: 5px;
-}
-
-
-
-.menu li {
-    padding: 6px;
-}
-
-.menu li a {
-
-    text-decoration: none;
-    color: #333;
-    margin-right: 0rem;
-    padding: 7px;
-}
-
-.menu.active {
-    display: block;
-    justify-content: end;
-    margin-left: 0rem;
-    width: 100%;
-
-
-    max-height: 70rem; /* Ajuste para um valor que seja maior que a altura total do menu */
-    opacity: 1; /* Torna o menu visível */
-
-}
-.dropdown{
-  width: 100%;
-}
-.dropdown-menu {
-  margin-top: 1rem;
-  background: transparent;
-  position: relative;
-  z-index: 2;
-  display: none; /* Mantém o menu oculto por padrão */
-  height: auto;
-  width: auto;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  border-radius: 5px;
-}
- 
-.dropdown-toggle  {
-  background: rgb(112, 243, 123);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  width: 100%;
-  height: auto;
-  margin-left: 0rem;
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 5px;
-  font-size: 25px;
-  padding: 10px;
-}
-
-.dropdown-menu a {
-  background: #fff;
-  font-size: 23px;
-  width: 100%;
-  margin-left: 0rem;
-  padding: 7px;
-  display: flex;
-
-}
-
-.menu li {
-  padding: 6px;
-}
-
-.menu li a {
-  text-decoration: none;
-  color: #333;
-  margin-right: 0rem;
-}
-
-
-
-  header ul li a {
-    color: #000;
-    font-size: 17px;
-  }
-
-  header ul{
-    margin-top: -4rem;
-    display: flex;
-    align-items: end;
-    margin-right: 0rem;
-  }
- 
-
-
-    main section img {
-      display: none;
-      
-    }
-    main section {
-      margin: 3rem;
-    }
-
-
-    .section1 {
-      width: 96%;
-      margin-top: 5rem;
-      display: flex;
-      gap: 1rem;
-    }
-  
-    .section1 div {
-      display: flex;
-      flex-direction: column;
-      margin-right: 0rem;
-      align-items: center;
-    }
-
-
-
-
-    .section1 div h3 {
-      font-size: 16px;
-    }
-    .section2 div {
-      margin-left: 0rem;
-    }
-    .section2 h1, .section2 p {
-      text-align: start;
-      margin-left: 0rem;
-      margin: 0rem;
-    }
-    .button-pedagogico {
-      width: auto;
-      margin-top: 1rem;
-    }
-      .section2, .section3 {
-        display: none;
-      }
-
-
-
-
- 
-  footer {
-    font-family: "Nunito", serif;
-    color: #ffffff;
-    background: #010c00ea;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .logo-footer {
-    width: 100px;
-  }
-  .container-log-redes {
-    font-family: "Nunito", serif;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    margin-left: 0px;
-    padding: 0px;
-    gap: 5px;
-    align-items: center;
-    justify-content: center;
-  }
-  .redes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .links-rodape {
-    display: flex;
-    flex-direction: column;
-  }
-  .links-rodape a {
-    font-family: "Nunito", serif;
-    color: #ffffff;
-  }
-  
-  footer a {
-    font-family: "Nunito", serif;
-    color: #ffffff;
-    color: #000;
-    padding: 15px;
-  }
-  
-  span{
-    display: inline-block;
-    padding: 8px;
-    justify-content: center;
-    font-size: 14px;
-    text-align: center;
-  }
-
-
-  .redes {
-    width: 100%;
-    display: flex ;
-    align-items: center;
-    justify-content: center;
-  }
-  .redes h2 {
-    font-size: 18px;
-    font-family:"Nunito", serif;
-    opacity: 70%;
-  }
-  .redes div  {
-    display: flex;
-  }
-  .container-redes {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-  .redes div a {
-    align-items: center;
-    justify-content: center;
-  }
-}
 
 @media (min-width: 768px) and (max-width: 1024px) {
   
@@ -679,6 +394,7 @@ nav li a:hover {
   height: 30px;
   margin-right: 1rem;
 }
+
   header ul{
     display: flex;
     flex-direction: column;
@@ -688,6 +404,7 @@ nav li a:hover {
     gap:  1rem;
     padding: 4px;
   }
+
 
   .bar {
     background-color: #168a2f;
@@ -706,7 +423,6 @@ nav li a:hover {
 .menu-hamburguer.ativo .bar:nth-child(3) {
     transform: translateY(-10px) rotate(-45deg);
 }
-
 
   .menu {
     display: none; /* Esconde o menu inicialmente */ 
@@ -828,21 +544,259 @@ nav li a:hover {
   }
 
 
-  main {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+
+  body {
+    width: 100%;
+  }
+          /* Estilos para o popup de anúncio */
+          #ad-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+            border-radius: 10px;
+            display: none;
+            text-align: center;
+            width: 300px;
+            z-index: 9;
+        }
+  
+  header {
+    position: fixed;
+    width: 100%;
+    height: 3.6rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 0rem;
+    background-color: rgba(1, 24, 4, 0.9);
+    box-shadow: 0 2px 5px rgb(51, 228, 51);
+    z-index: 10;
+  }
+
+  .logo img {
+    margin-top: 15px;
+    width: 70px;
+    height: auto;
+    padding: 0px;
+  }
+
+  .logo{
+  margin-left: 0rem;
+  }
+  .logo:focus {
+    outline: none;
+  }
+  
+  
+/* Estilo do Menu-Hamburguer */
+.menu-hamburguer {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35px;
+  height: 30px;
+  margin-right: 1rem;
+}
+
+  header ul{
     display: flex;
     flex-direction: column;
+    margin-left: 0rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    gap:  1rem;
+    padding: 4px;
   }
-.section1 {
+
+
+  .bar {
+    background-color: #168a2f;
+    height: 5px;
+    width: 100%;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+/* Animação para transformar o menu em "X" */
+.menu-hamburguer.ativo .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+.menu-hamburguer.ativo .bar:nth-child(2) {
+    opacity: 0;
+}
+.menu-hamburguer.ativo .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+  .menu {
+    display: none; /* Esconde o menu inicialmente */ 
+    position: absolute;
+    top: 50px; /* Ajuste conforme necessário */
+    left: 0px;
+    width: 100%;
+    
+
+    max-height: 0; /* Inicialmente, o menu está escondido */
+    overflow: hidden; /* Oculta o conteúdo que excede a altura */
+    opacity: 0; /* Torna o menu invisível */
+    transition: max-height 0.7s ease, opacity 0.7s ease; /* Define a transição */
+ 
+}
+
+.menu ul {
+  background-image: #b6b6b6;
+  opacity: 100%;
+    list-style: none;
+    margin-left: 0rem;
+    margin-top: 0.4rem;
+    height: 100em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+
+
+.menu li {
+    padding: 6px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #38C738;
+    font-weight: bold;
+    font-size: 19px;
+    margin-right: 0rem;
+    padding: 7px;
+}
+
+.menu.active {
+    display: block;
+    justify-content: end;
+    margin-left: 0rem;
+    width: 100%;
+
+
+    max-height: 70rem; /* Ajuste para um valor que seja maior que a altura total do menu */
+    opacity: 1; /* Torna o menu visível */
+
+}
+.dropdown{
   width: 100%;
 }
-.section2, .section3 {
-  display: none;
+.dropdown-menu {
+  margin-top: 1rem;
+  background: transparent;
+  position: relative;
+  z-index: 2;
+  display: none; /* Mantém o menu oculto por padrão */
+  height: auto;
+  width: auto;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+ 
+.dropdown-toggle  {
+  background: rgb(112, 243, 123);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  width: 100%;
+  height: auto;
+  margin-left: 0rem;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 5px;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.dropdown-menu a {
+  background: #fff;
+  border-radius: 8px;
+  font-size: 23px;
+  width: 100%;
+  margin-left: 0rem;
+  padding: 7px;
+  display: flex;
+
+}
+
+.menu li {
+  padding: 6px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 0rem;
+}
+
+
+
+  header ul li a {
+    color: #000;
+    font-size: 17px;
+  }
+
+  header ul{
+    margin-top: -4rem;
+    display: flex;
+    align-items: end;
+    margin-right: 0rem;
+  }
+
+
+
+}
+
+
+@media (max-width: 444px) {
+
+  .menu.active {
+    display: flex;
+    justify-content: end;
+    margin-left: 0rem;
+    height: auto;
+    width: 100%;
+}
+
 }
 
 
 
 
+@media (max-width: 360px) {
 
+  .menu.active {
+    display: flex;
+    justify-content: end;
+    margin-left: 0rem;
+    height: auto;
+    width: 100%;
+}
 
 
 }
