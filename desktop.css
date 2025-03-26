@@ -186,6 +186,7 @@ main {
   .atividade-extra{
     width: 95%;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     margin-left: 2rem;
     margin-right: 4rem;
     display: flex;
