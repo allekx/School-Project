@@ -1,10 +1,4 @@
 
-
-
-
-
-
-
 //Cookies do site
 function setCookie(nome, valor, dias) {
   let data = new Date();

@@ -144,9 +144,13 @@
     opacity: 1; /* Torna o menu visível */
 
 }
+
+
 .dropdown{
   width: 100%;
 }
+
+
 .dropdown-menu {
   margin-top: 1rem;
   background: transparent;
@@ -159,6 +163,7 @@
   border-radius: 5px;
 }
  
+
 .dropdown-toggle  {
   background: rgb(112, 243, 123);
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
@@ -173,6 +178,7 @@
   padding: 10px;
 }
 
+
 .dropdown-menu a {
   background: #fff;
   border-radius: 8px;
@@ -181,19 +187,19 @@
   margin-left: 0rem;
   padding: 7px;
   display: flex;
-
 }
+
 
 .menu li {
   padding: 6px;
 }
+
 
 .menu li a {
   text-decoration: none;
   color: #333;
   margin-right: 0rem;
 }
-
 
 
   header ul li a {

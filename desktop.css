@@ -64,7 +64,7 @@
     text-decoration: none;
     padding: 15px;
   }
-
+ 
   .dropdown-menu{
     position: absolute;
     box-shadow: 0 0 2px black;
@@ -251,10 +251,7 @@ main {
     padding: 10px;
     margin: 0rem;
   }
-  .links-rodape a{
-    font-family: "Nunito", serif;
-    color: #fff;
-  }
+  
   span {
     display: inline-block;
     margin-top: 1rem;
