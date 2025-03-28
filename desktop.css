@@ -57,12 +57,13 @@
   }
   nav li {
     display: inline-block;
+    margin-top: 0.5rem;
   }
   nav li a {
     display: inline-block;
     color: #000;
     text-decoration: none;
-    padding: 15px;
+    padding: 12px;
   }
  
   .dropdown-menu{
@@ -78,13 +79,32 @@
     background: #fff;
     border-radius: 24px;
   }
+  .portalMenu {
+    margin-top: 0rem;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 4px 10px rgba(82, 109, 89, 0.144);
+    width: 100px;
+    height: 40px;
+    border-radius: 10%;
+    transition: 0.3s;
+  }
+  .portalMenu a {
+    transition: 0.3s;
+  }
+  .portalMenu a:hover {
+   background: transparent;
+   scale: 1.1;
+  }
+  .portalMenu:hover {
+    scale: 1.04;
+  }
 
 main {
   width: 100%;
 }
 
   .container-slider {
-    margin-top: 17rem;
+    margin-top: 16rem;
     display: flex;
     width: 100%;
     align-items: center;
