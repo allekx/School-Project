@@ -159,9 +159,11 @@ nav li a {
   text-decoration: none;
   padding: 15px;
   font-weight: bold;
+  transition: 0.2s;
 }
 nav li a:hover {
   background-color: #2bc06c;
+  scale: 1.1;
   border-radius: 24px;
   color: #fff;
 }
@@ -186,9 +188,25 @@ nav li a:hover {
   background: #fff;
   border-radius: 24px;
 }
-
-
-
+.portalMenu {
+  margin-top: 0.8rem;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 4px 10px rgba(82, 109, 89, 0.144);
+  width: 100px;
+  height: 40px;
+  border-radius: 10%;
+  transition: 0.3s;
+}
+.portalMenu a {
+  transition: 0.3s;
+}
+.portalMenu a:hover {
+ background: transparent;
+ scale: 1.1;
+}
+.portalMenu:hover {
+  scale: 1.04;
+}
 
 
 
