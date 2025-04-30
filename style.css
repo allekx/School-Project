@@ -166,6 +166,7 @@ nav li a:hover {
   scale: 1.1;
   border-radius: 24px;
   color: #fff;
+  padding: 10px;
 }
 
 
@@ -191,21 +192,20 @@ nav li a:hover {
 .portalMenu {
   margin-top: 0.8rem;
   background: rgb(255, 255, 255);
-  box-shadow: 0 4px 10px rgba(82, 109, 89, 0.144);
+  box-shadow: 0 4px 10px rgba(0, 255, 68, 0.432);
   width: 100px;
   height: 40px;
   border-radius: 10%;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 .portalMenu a {
   transition: 0.3s;
 }
 .portalMenu a:hover {
  background: transparent;
- scale: 1.1;
 }
 .portalMenu:hover {
-  scale: 1.04;
+  scale: 0.99;
 }
 
 
@@ -561,7 +561,7 @@ main {
 }
 
 .infoBotao {
-  background-image: linear-gradient(to right, #1D976C 0%, #93F9B9  51%, #1D976C  100%)}
+  background-image: linear-gradient(to right, #05ca85 0%, #4ed37f  51%, #1D976C  80%)}
   .infoBotao {
      margin: 10px;
      padding: 10px 40px;
@@ -641,7 +641,7 @@ footer {
   background-image: url(img/footerstyle.png);
   width: 100%;
   height: auto;
-  margin-top: 6rem;
+  margin-top: 0rem;
   display: flex;
   flex-direction: column;
   justify-items: center;
