@@ -231,6 +231,8 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition: transform 0.5s ease-in-out;
 }
 
 .banner img {
@@ -245,17 +247,19 @@ main {
 } 
 
 .slider {
-  opacity: 0;
-  transition: opacity .2s;
-  position: absolute ;
+position: absolute;
   z-index: 1;
   width: 100%;
-
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.4s ease-in-out, transform 0.1s ease-in-out;
 }
 
 
 .on {
   opacity: 1;
+  transform: translateX(0%);
+  z-index: 2;
 }
 
 
@@ -528,9 +532,12 @@ main {
   gap: 4rem;
   justify-content: center;
   align-items: center;
+  
 }
+
 .info img {
   display: none;
+  animation: float 3s ease-in-out infinite;
 }
 .info h2 {
   display: none;
@@ -575,7 +582,7 @@ main {
      display: block;
      margin-top: 1rem;
      margin-bottom: 2rem;
-     margin-left: 25rem;
+     margin-left: 14rem;
      font-size: 14px; 
      cursor: pointer; 
      border: none; 
@@ -586,6 +593,28 @@ main {
   color: #fff;
   text-decoration: none;
 }
+.areablog {
+ 
+  margin-top: 3rem;
+  width: 300px;
+  height: auto;
+}
+.areablog img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 
 .linha {
   margin: 0;
