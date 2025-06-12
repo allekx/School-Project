@@ -226,7 +226,7 @@ main {
     background-image: url(./img/footerstyle.png);
     width: 100%;
     height: auto;
-    margin-top: 8rem;
+    margin-top: 0rem;
     display: flex;
     flex-direction: column;
     justify-items: center;

@@ -68,41 +68,27 @@ header {
   padding: 3px;
   padding-top: 5px;
 }
-nav {
-  background: transparent;
-}
-nav li {
-  display: inline-block;
-}
-nav li a {
-  display: inline-block;
-  color: #000;
-  text-decoration: none;
-  padding: 15px;
-  font-weight: bold;
-}
-nav li a:hover {
-  background-color: #2bc06c;
-  border-radius: 24px;
-  color: #fff;
-}
-.dropdown-toggle{
-  font-size: 12px;
-  color: #475249;
-}
-.dropdown-menu{
-  position: absolute;
-  box-shadow: 0 0 2px black;
-  display: none;
-}
-.dropdown-menu a {
-  display: block;
-}
-.dropdown:hover .dropdown-menu {
-  display: block;
-  background: #fff;
-  border-radius: 24px;
-}
+
+    .btn-voltar {
+      position: fixed;
+      right: 20px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+      z-index: 1000; /* Fica por cima de outros elementos */
+    }
+
+    .btn-voltar:hover {
+      background-color: #29b929;
+    }
+
+
 #banner-pedagogico {
   margin-top: 3.8rem;
   width: 100%;
