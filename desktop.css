@@ -35,7 +35,7 @@
     justify-content: center;
     align-items: center;
     gap: 0rem;
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(255, 255, 255);
     box-shadow: 0 2px 5px rgb(169, 235, 169);
     z-index: 10;
   }
