@@ -239,10 +239,10 @@ const swiper = new Swiper('.swiper', {
 });
 
 // popup
-document.addEventListener("DOMContentLoaded", function() {
-  document.getElementById("ad-popup").style.display = "block";
-});
+//document.addEventListener("DOMContentLoaded", function() {
+//  document.getElementById("ad-popup").style.display = "block";
+//});
 
-document.getElementById("close-ad").addEventListener("click", function() {
-  document.getElementById("ad-popup").style.display = "none";
-});
+//document.getElementById("close-ad").addEventListener("click", function() {
+//  document.getElementById("ad-popup").style.display = "none";
+//});
