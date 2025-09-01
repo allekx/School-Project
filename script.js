@@ -1,5 +1,5 @@
 
-//Cookies do site
+//Cookies
 function setCookie(nome, valor, dias) {
   let data = new Date();
   data.setTime(data.getTime() + (dias * 24 * 60 * 60 * 1000));
