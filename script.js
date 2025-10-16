@@ -76,27 +76,7 @@ function checkScreenSize() {
   });
 }
 
-// Inicializa ao carregar a página
-checkScreenSize();
 
-// Atualiza ao redimensionar a janela
-window.addEventListener('resize', checkScreenSize);
-
-//
-
-
-
-// Simula o carregamento de conteúdo
-window.addEventListener('load', function() {
-  const loading = document.getElementById('loading');
-  const content = document.getElementById('content');
-
-  // Remove o loading após 2 segundos
-  setTimeout(function() {
-      loading.style.display = 'none';
-      content.style.display = 'block';
-  }, 990); // Altere o tempo conforme necessário
-});
 
 //função para o menu
 function toggleMenu() {
