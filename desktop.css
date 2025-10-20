@@ -110,6 +110,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 0.1rem;
+    margin-bottom: 30rem;
   }
   .banner {
     width: 100%;
