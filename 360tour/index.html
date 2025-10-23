@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Tour 360° - Visita Virtual</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
+</head>
+<body>
+    <div class="tour-container">
+        <header class="tour-header">
+            <div class="header">
+            <img src="imgs/Logo celus.png" alt="Logo Escola Celus" class="logo" style="width: 120px;">
+            <h1>Tour Pela Escola</h1>
+            <button class="btn-voltar" onclick="history.back()">Voltar</button>
+            </div>
+            <div class="location-info">
+                <span id="current-location">Sala</span>
+            </div>
+        </header>
+
+  <main class="tour-main">
+            <div class="viewer-container">
+                <div class="panorama-viewer" id="panorama-viewer">
+                    <div class="panorama-container" id="panorama-container">
+                        <div id="pano"></div>
+                        <img id="main-image" src="imgs/sala do maternal 1.jpg" alt="Tour 360°" style="display:none;">
+                    </div>
+                    <div class="loading-overlay" id="loading-overlay">
+                        <div class="spinner"></div>
+                        <p>Carregando...</p>
+                    </div>
+                    <div class="panorama-controls">
+                        <button class="control-btn" id="zoom-in" title="Zoom In">+</button>
+                        <button class="control-btn" id="zoom-out" title="Zoom Out">-</button>
+                        <button class="control-btn" id="reset-view" title="Reset View">⌂</button>
+                        <button class="control-btn" id="fullscreen-btn" title="Tela Cheia">⛶</button>
+                    </div>
+                    <div class="panorama-info">
+                        <span id="panorama-hint">Arraste para navegar • Scroll para zoom</span>
+                    </div>
+                </div>
+                
+                <div class="navigation-controls">
+                    <button class="nav-btn prev-btn" id="prev-btn" disabled>
+                        <span>←</span>
+                        <span>Anterior</span>
+                    </button>
+                    <button class="nav-btn next-btn" id="next-btn">
+                        <span>Próximo</span>
+                        <span>→</span>
+                    </button>
+                </div>
+            </div>
+
+            <aside class="tour-sidebar">
+                <div class="location-selector">
+                    <h3>Locais Disponíveis</h3>
+                    <div class="location-list">
+                        <div class="location-item active" data-location="area">
+                            <img src="imgs/sala do maternal 1.jpg" alt="area">
+                            <div class="location-details">
+                                <h4>Recepção dos alunos(as)</h4>
+                                <p>Área de entrada principal dos alunos(as)</p>
+                            </div>
+                        </div>
+                        <div class="location-item" data-location="area2">
+                            <img src="imgs/sala do maternal 1.jpg" alt="area2">
+                            <div class="location-details">
+                                <h4>Área</h4>
+                                <p>Área...</p>
+                            </div>
+                        </div>
+                        <div class="location-item" data-location="area3">
+                            <img src="imgs/sala do maternal 1.jpg" alt="area3">
+                            <div class="location-details">
+                                <h4>Área</h4>
+                                <p>Área...</p>
+                            </div>
+                        </div>
+                        <div class="location-item" data-location="area4">
+                            <img src="imgs/sala do maternal 1.jpg" alt="area4">
+                            <div class="location-details">
+                                <h4>Área</h4>
+                                <p>Área...</p>
+                            </div>
+                        </div>
+                        <div class="location-item" data-location="area5">
+                            <img src="imgs/sala do maternal 1.jpg" alt="area5">
+                            <div class="location-details">
+                                <h4>Área</h4>
+                                <p>Área...</p>
+                            </div>
+                        </div>
+                        <div class="location-item" data-location="area6">
+                            <img src="imgs/sala do maternal 1.jpg" alt="area6">
+                            <div class="location-details">
+                                <h4>Área</h4>
+                                <p>Área...</p>
+                            </div>
+                        </div>
+                        <div class="location-item" data-location="area7">
+                            <img src="imgs/sala do maternal 1.jpg" alt="area7">
+                            <div class="location-details">
+                                <h4>Área</h4>
+                                <p>Área...</p>
+                            </div>
+                        </div>
+                        <div class="location-item" data-location="area8">
+                            <img src="imgs/sala do maternal 1.jpg" alt="area8">
+                            <div class="location-details">
+                                <h4>Área</h4>
+                                <p>Área...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour-info">
+                    <h3>Informações do Tour</h3>
+                    <div class="info-content">
+                        <p><strong>Total de locais:</strong> 3</p>
+                        <p><strong>Local atual:</strong> <span id="current-location-info">1 de 3</span></p>
+                        <p><strong>Navegação:</strong> <span class="nav-hint">Use os botões ou clique nos locais</span></p>
+                    </div>
+                </div>
+            </aside>
+        </main>
+
+        <footer class="tour-footer">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+            <p>Tour 360° - Experiência de Visita Virtual</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
