@@ -29,6 +29,26 @@ body {
   line-height: 1.6;
 }
 
+.header {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: block;
+  margin-left: 2rem;
+}
+
+.logo img{
+  width: 90px;
+  height: auto;
+  padding: 3px;
+  padding-top: 5px;
+}
+
 .skip-link {
   position: absolute;
   left: -9999px;
@@ -51,9 +71,48 @@ p { margin: 0 0 12px; }
 .btn--outline:hover { background: var(--green); color: var(--white); }
 
 /* HERO */
-.hero { background: var(--green-100); padding: 64px 0; position: relative; overflow: hidden; }
+ /*.hero {
+ background: var(--green-100) url("../img/banneratividades.svg") no-repeat center/cover;
+  padding: 180px 0;
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}*/
+
+.banneratividades img {
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+.hero__ctas {
+  position: absolute;
+  margin: -8rem 0 0 19rem;
+}
+.hero__ctas {
+  animation: piscarZoom 1.9s infinite;
+}
+
+@keyframes piscarZoom {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.hero__text h1 {
+  color: #ffffff;
+}
 .hero__grid { display: grid; grid-template-columns: 1.2fr 1fr; align-items: center; gap: 32px; }
-.subtitle { color: #165a1a; font-weight: 500; margin-bottom: 20px; }
+.subtitle { color: #ffffff; font-weight: 500; margin-bottom: 20px; }
 .hero__art { display: grid; place-items: center; }
 .icon-cloud { display: grid; grid-template-columns: repeat(5, auto); gap: 12px; font-size: 40px; opacity: .9; }
 
@@ -63,33 +122,54 @@ p { margin: 0 0 12px; }
 .intro__grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 32px; align-items: center; }
 .intro__icons { display: flex; gap: 10px; font-size: 22px; margin: 10px 0 18px; }
 .intro__media { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
-.media-card { height: 120px; border-radius: var(--radius); display: grid; place-items: end start; padding: 10px; color: var(--white); font-weight: 700; box-shadow: var(--shadow-md); background-size: cover; background-position: center; }
-.media-card--ballet { background-image: linear-gradient(180deg, rgba(0,0,0,.25), rgba(0,0,0,.45)), url('../images/ballet.jpg'); }
-.media-card--futsal { background-image: linear-gradient(180deg, rgba(0,0,0,.25), rgba(0,0,0,.45)), url('../images/futsal.jpg'); }
-.media-card--jj { background-image: linear-gradient(180deg, rgba(0,0,0,.25), rgba(0,0,0,.45)), url('../images/jiujitsu.jpg'); }
-.media-card--volei { background-image: linear-gradient(180deg, rgba(0,0,0,.25), rgba(0,0,0,.45)), url('../images/volei.jpg'); }
+.media-card { border-radius: var(--radius); display: grid; place-items: end start; padding: 10px; color: var(--white); font-weight: 700; box-shadow: var(--shadow-md); background-size: cover; background-position: center; }
+.media-card--ballet { background-image: linear-gradient(180deg, rgba(0,0,0,.25), rgba(0,0,0,.45)), url('../img/balletbanner.png'); }
+.media-card--futsal { background-image: linear-gradient(180deg, rgba(0,0,0,.25), rgba(0,0,0,.45)), url('../img/futsalbanner.png'); }
+.media-card--jj { background-image: linear-gradient(180deg, rgba(0,0,0,.25), rgba(0,0,0,.45)), url('../img/jiujitsubanner.png'); }
+.media-card--volei { background-image: linear-gradient(180deg, rgba(0,0,0,.25), rgba(0,0,0,.45)), url('../img/voleibanner.png'); }
+.media-card {
+    height: 157px;
+    width: 100%;
+    border-radius: var(--radius);
+    display: grid;
+    place-items: end start;
+    padding: 10px;
+    color: var(--white);
+    font-weight: 700;
+    box-shadow: var(--shadow-md);
+    background-size: cover;
+    background-position: center;
+    
+    /* Adicione isso */
+    transition: transform .35s ease, box-shadow .35s ease;
+}
+
+.media-card:hover {
+    transform: scale(1.05);        /* zoom leve */
+    box-shadow: var(--shadow-lg);  /* sombra mais forte no hover */
+}
 
 /* CARDS ATIVIDADES */
 .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 16px; }
 .card { border-radius: var(--radius-lg); background: var(--white); overflow: hidden; box-shadow: var(--shadow-sm); transition: transform .2s ease, box-shadow .2s ease; }
 .card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
 .card__media { height: 180px; background-size: cover; background-position: center; }
-.card__media--ballet { background-image: url('../images/ballet.jpg'); }
-.card__media--jj { background-image: url('../images/jiujitsu.jpg'); }
-.card__media--futsal { background-image: url('../images/futsal.jpg'); }
-.card__media--volei { background-image: url('../images/volei.jpg'); }
+.card__media--ballet { background-image: url('../img/balletbanner.png'); }
+.card__media--jj { background-image: url('../img/jiujitsubanner.png'); }
+.card__media--futsal { background-image: url('../img/futsalbanner.png'); }
+.card__media--volei { background-image: url('../img/voleibanner.png'); }
 .card__body { padding: 16px 16px 20px; }
 .card__title { margin: 0 0 8px; }
 
 /* PARTICIPAR */
 .participar { background: var(--green-200); }
 .participar__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: center; }
-.participar__illu { height: 220px; border-radius: var(--radius-lg); background: radial-gradient(120px 120px at 20% 30%, rgba(46,125,50,.35), transparent 60%), radial-gradient(160px 160px at 80% 60%, rgba(255,255,255,.6), transparent 60%), linear-gradient(145deg, #a8d5ba, #c8e6c9); box-shadow: var(--shadow-md); }
+.participar__illu { height: 220px; border-radius: var(--radius-lg); background: url('../img/banneratividades.jpeg') center/cover no-repeat; box-shadow: var(--shadow-md); }
 
 /* INFANTIL */
 .infantil__card { display: grid; grid-template-columns: 1.2fr .8fr; gap: 20px; background: var(--white); border-radius: 20px; padding: 24px; box-shadow: var(--shadow-sm); }
 .infantil__icons { display: flex; gap: 8px; font-size: 22px; margin-top: 8px; }
-.infantil__media { border-radius: 16px; min-height: 220px; background-image: linear-gradient(180deg, rgba(0,0,0,.2), rgba(0,0,0,.4)), url('../images/infantil.jpg'); background-size: cover; background-position: center; }
+.infantil__media { border-radius: 16px; min-height: 220px; background-image:  url('../img/section\ atividade\ extra.png'); background-size: cover; background-position: center; }
 
 /* FOOTER */
 .footer { background: var(--white); padding: 32px 0; border-top: 1px solid rgba(0,0,0,.06); }
@@ -115,11 +195,20 @@ p { margin: 0 0 12px; }
   .card__media { height: 150px; }
   .btn-voltar {  }
   .logo {margin-left: 5px;}
+  .btn--primary {
+    display: none;
+  }
+  .banneratividades{
+  margin-top: -2.5rem;
 }
+.banneratividades img {
+  position: absolute;
+}
+}
+
    .btn-voltar {
       position: absolute;
       right: 20px;
-      margin-top: -3rem;
       background-color: #3498db;
       color: white;
       border: none;
@@ -136,3 +225,8 @@ p { margin: 0 0 12px; }
       background-color: #29b929;
     }
 
+@media (max-width: 579px) {
+
+  .participar__illu { height: 130px; width: 100%; border-radius: var(--radius-lg); }
+  
+}

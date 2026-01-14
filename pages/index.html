@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrículas Online - Escola Particular</title>
+      <link rel="icon" href="../img/Logo celus.png" sizes="48x48" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'verde-institucional': '#16a34a',
+                        'verde-escuro': '#15803d',
+                        'cinza-suave': '#6b7280'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+
+        /* Header */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: linear-gradient(0deg, rgba(255,255,255,.95), rgba(255,255,255,.95));
+  border-bottom: 1px solid var(--gray-300);
+  backdrop-filter: saturate(1.2) blur(6px);
+}
+.header-content {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 0;
+}
+
+.logo { display: flex; align-items: center; gap: 12px; }
+.logo-mark {
+  background: var(--green);
+  color: var(--white);
+  font-weight: 800; letter-spacing: .5px;
+  padding: 10px 12px; border-radius: 8px; font-family: 'Montserrat', sans-serif;
+}
+.logo-title { font-weight: 700; font-family: 'Montserrat', sans-serif; color: var(--green); }
+.logo-subtitle { font-size: 12px; color: var(--gray-600); margin-top: -2px; display: block; }
+
+
+        .fade-in {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .dropdown-transition {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+    <!-- Header -->
+    <header class="site-header" id="inicio">
+        <div class="container header-content">
+            <a href="#inicio" class="logo" aria-label="Escola Celus">
+                <div class="logo-text">
+                    <span class="logo-title">Escola Celus</span>
+                    <span class="logo-subtitle">Setor Pedagógico</span>
+                </div>
+            </a>
+            <button class="btn-voltar" onclick="history.back()">Voltar</button>
+          
+        </div>
+    </header>
+<body class="bg-gray-50 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Título Principal -->
+        <div class="text-center mb-8">
+            <h1 class="text-4xl md:text-5xl font-bold text-verde-institucional mb-4">
+                Matrículas Online
+            </h1>
+            <p class="text-lg text-cinza-suave max-w-2xl mx-auto">
+                Escolha o segmento, a série e o turno para iniciar sua matrícula.
+            </p>
+        </div>
+
+        <!-- Card Principal -->
+        <div class="max-w-2xl mx-auto">
+            <div class="bg-white rounded-2xl shadow-lg p-8 card-hover">
+                <form id="matriculaForm" class="space-y-6">
+                    <!-- Segmento -->
+                    <div>
+                        <label for="segmento" class="block text-sm font-medium text-gray-700 mb-2">
+                            Segmento *
+                        </label>
+                        <select 
+                            id="segmento" 
+                            name="segmento" 
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-verde-institucional focus:border-transparent dropdown-transition"
+                            required
+                        >
+                            <option value="">Selecione o segmento</option>
+                            <option value="infantil">Educação Infantil</option>
+                            <option value="fundamental">Ensino Fundamental</option>
+                            <option value="medio">Ensino Médio</option>
+                        </select>
+                    </div>
+
+                    <!-- Série -->
+                    <div>
+                        <label for="serie" class="block text-sm font-medium text-gray-700 mb-2">
+                            Série *
+                        </label>
+                        <select 
+                            id="serie" 
+                            name="serie" 
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-verde-institucional focus:border-transparent dropdown-transition"
+                            required
+                            disabled
+                        >
+                            <option value="">Primeiro selecione o segmento</option>
+                        </select>
+                    </div>
+
+                    <!-- Turno -->
+                    <div>
+                        <label for="turno" class="block text-sm font-medium text-gray-700 mb-2">
+                            Turno *
+                        </label>
+                        <select 
+                            id="turno" 
+                            name="turno" 
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-verde-institucional focus:border-transparent dropdown-transition"
+                            required
+                        >
+                            <option value="">Selecione o turno</option>
+                            <option value="matutino">Matutino</option>
+                            <option value="vespertino">Vespertino</option>
+                        </select>
+                    </div>
+
+                    <!-- Botão de Matrícula -->
+                    <div id="botaoMatricula" class="hidden fade-in">
+                        <button 
+                            type="button" 
+                            id="btnMatricula"
+                            class="w-full bg-verde-institucional hover:bg-verde-escuro text-white font-semibold py-4 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-green-200"
+                        >
+                            Fazer Matrícula
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Informações Adicionais -->
+        <div class="max-w-4xl mx-auto mt-12">
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-xl shadow-md p-6 text-center card-hover">
+                    <div class="w-12 h-12 bg-verde-institucional rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Processo Rápido</h3>
+                    <p class="text-cinza-suave text-sm">Matrícula online em poucos minutos</p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md p-6 text-center card-hover">
+                    <div class="w-12 h-12 bg-verde-institucional rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Seguro e Confiável</h3>
+                    <p class="text-cinza-suave text-sm">Seus dados protegidos e seguros</p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md p-6 text-center card-hover">
+                    <div class="w-12 h-12 bg-verde-institucional rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M12 2.25a9.75 9.75 0 100 19.5 9.75 9.75 0 000-19.5z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Suporte Completo</h3>
+                    <p class="text-cinza-suave text-sm">Equipe especializada para ajudar</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Dados das séries por segmento
+        const seriesPorSegmento = {
+            infantil: [
+                { value: 'maternal1', text: 'Maternal 1' },
+                { value: 'maternal2', text: 'Maternal 2' },
+                { value: '1periodo', text: '1º Período' },
+                { value: '2periodo', text: '2º Período' }
+            ],
+            fundamental: [
+                { value: '1ano', text: '1º ano' },
+                { value: '2ano', text: '2º ano' },
+                { value: '3ano', text: '3º ano' },
+                { value: '4ano', text: '4º ano' },
+                { value: '5ano', text: '5º ano' },
+                { value: '6ano', text: '6º ano' },
+                { value: '7ano', text: '7º ano' },
+                { value: '8ano', text: '8º ano' },
+                { value: '9ano', text: '9º ano' }
+            ],
+            medio: [
+                { value: '1serie', text: '1ª série' },
+                { value: '2serie', text: '2ª série' },
+                { value: '3serie', text: '3ª série' }
+            ]
+        };
+
+        // Links para cada combinação (você pode personalizar estes links)
+        const linksMatricula = {
+            'infantil-maternal1-matutino': 'https://exemplo.com/matricula/infantil-maternal1-matutino',
+            'infantil-maternal1-vespertino': 'https://exemplo.com/matricula/infantil-maternal1-vespertino',
+            'infantil-maternal2-matutino': 'https://exemplo.com/matricula/infantil-maternal2-matutino',
+            'infantil-maternal2-vespertino': 'https://exemplo.com/matricula/infantil-maternal2-vespertino',
+            'infantil-1periodo-matutino': 'https://exemplo.com/matricula/infantil-1periodo-matutino',
+            'infantil-1periodo-vespertino': 'https://exemplo.com/matricula/infantil-1periodo-vespertino',
+            'infantil-2periodo-matutino': 'https://exemplo.com/matricula/infantil-2periodo-matutino',
+            'infantil-2periodo-vespertino': 'https://exemplo.com/matricula/infantil-2periodo-vespertino',
+            'fundamental-1ano-matutino': 'https://exemplo.com/matricula/fundamental-1ano-matutino',
+            'fundamental-1ano-vespertino': 'https://exemplo.com/matricula/fundamental-1ano-vespertino',
+            'fundamental-2ano-matutino': 'https://exemplo.com/matricula/fundamental-2ano-matutino',
+            'fundamental-2ano-vespertino': 'https://exemplo.com/matricula/fundamental-2ano-vespertino',
+            'fundamental-3ano-matutino': 'https://exemplo.com/matricula/fundamental-3ano-matutino',
+            'fundamental-3ano-vespertino': 'https://exemplo.com/matricula/fundamental-3ano-vespertino',
+            'fundamental-4ano-matutino': 'https://exemplo.com/matricula/fundamental-4ano-matutino',
+            'fundamental-4ano-vespertino': 'https://exemplo.com/matricula/fundamental-4ano-vespertino',
+            'fundamental-5ano-matutino': 'https://exemplo.com/matricula/fundamental-5ano-matutino',
+            'fundamental-5ano-vespertino': 'https://exemplo.com/matricula/fundamental-5ano-vespertino',
+            'fundamental-6ano-matutino': 'https://exemplo.com/matricula/fundamental-6ano-matutino',
+            'fundamental-6ano-vespertino': 'https://exemplo.com/matricula/fundamental-6ano-vespertino',
+            'fundamental-7ano-matutino': 'https://exemplo.com/matricula/fundamental-7ano-matutino',
+            'fundamental-7ano-vespertino': 'https://exemplo.com/matricula/fundamental-7ano-vespertino',
+            'fundamental-8ano-matutino': 'https://exemplo.com/matricula/fundamental-8ano-matutino',
+            'fundamental-8ano-vespertino': 'https://exemplo.com/matricula/fundamental-8ano-vespertino',
+            'fundamental-9ano-matutino': 'https://exemplo.com/matricula/fundamental-9ano-matutino',
+            'fundamental-9ano-vespertino': 'https://exemplo.com/matricula/fundamental-9ano-vespertino',
+            'medio-1serie-matutino': 'https://app.proesc.com/cursos/formulario/matricula/28836?origem_id=',
+            'medio-1serie-vespertino': 'https://exemplo.com/matricula/medio-1serie-vespertino',
+            'medio-2serie-matutino': 'https://exemplo.com/matricula/medio-2serie-matutino',
+            'medio-2serie-vespertino': 'https://exemplo.com/matricula/medio-2serie-vespertino',
+            'medio-3serie-matutino': 'https://exemplo.com/matricula/medio-3serie-matutino',
+            'medio-3serie-vespertino': 'https://exemplo.com/matricula/medio-3serie-vespertino'
+        };
+
+        // Elementos do DOM
+        const segmentoSelect = document.getElementById('segmento');
+        const serieSelect = document.getElementById('serie');
+        const turnoSelect = document.getElementById('turno');
+        const botaoMatricula = document.getElementById('botaoMatricula');
+        const btnMatricula = document.getElementById('btnMatricula');
+
+        // Função para atualizar as opções de série
+        function atualizarSeries() {
+            const segmento = segmentoSelect.value;
+            serieSelect.innerHTML = '<option value="">Primeiro selecione o segmento</option>';
+            
+            if (segmento && seriesPorSegmento[segmento]) {
+                serieSelect.disabled = false;
+                seriesPorSegmento[segmento].forEach(serie => {
+                    const option = document.createElement('option');
+                    option.value = serie.value;
+                    option.textContent = serie.text;
+                    serieSelect.appendChild(option);
+                });
+            } else {
+                serieSelect.disabled = true;
+            }
+            
+            verificarFormularioCompleto();
+        }
+
+        // Função para verificar se o formulário está completo
+        function verificarFormularioCompleto() {
+            const segmento = segmentoSelect.value;
+            const serie = serieSelect.value;
+            const turno = turnoSelect.value;
+            
+            if (segmento && serie && turno) {
+                botaoMatricula.classList.remove('hidden');
+                botaoMatricula.classList.add('fade-in');
+                
+                // Atualizar o link do botão
+                const chave = `${segmento}-${serie}-${turno}`;
+                const link = linksMatricula[chave] || '#';
+                btnMatricula.onclick = () => window.open(link, '_blank');
+            } else {
+                botaoMatricula.classList.add('hidden');
+                botaoMatricula.classList.remove('fade-in');
+            }
+        }
+
+        // Event listeners
+        segmentoSelect.addEventListener('change', atualizarSeries);
+        serieSelect.addEventListener('change', verificarFormularioCompleto);
+        turnoSelect.addEventListener('change', verificarFormularioCompleto);
+
+        // Inicialização
+        atualizarSeries();
+    </script>
+</body>
+</html>

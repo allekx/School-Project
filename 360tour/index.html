@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Tour 360° - Visita Virtual</title>
+      <link
+      rel="icon"
+      href="./imgs/Logo celus.png"
+      type="image/png"
+      sizes="32x32"
+    />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
 </head>
@@ -12,8 +18,11 @@
         <header class="tour-header">
             <div class="header">
             <img src="imgs/Logo celus.png" alt="Logo Escola Celus" class="logo" style="width: 120px;">
-            <h1>Tour Pela Escola</h1>
-            <button class="btn-voltar" onclick="history.back()">Voltar</button>
+                        <h1>Tour Pela Escola</h1>
+                        <div style="display:flex;gap:8px;align-items:center;">
+                            <button class="sidebar-toggle" aria-controls="tour-sidebar" aria-expanded="false" aria-label="Abrir locais">Locais</button>
+                            <button class="btn-voltar" onclick="history.back()">Voltar</button>
+                        </div>
             </div>
             <div class="location-info">
                 <span id="current-location">Sala</span>
@@ -25,7 +34,7 @@
                 <div class="panorama-viewer" id="panorama-viewer">
                     <div class="panorama-container" id="panorama-container">
                         <div id="pano"></div>
-                        <img id="main-image" src="imgs/sala do maternal 1.jpg" alt="Tour 360°" style="display:none;">
+                        <img id="main-image" src="" alt="Tour 360°" style="display:none;">
                     </div>
                     <div class="loading-overlay" id="loading-overlay">
                         <div class="spinner"></div>
@@ -59,56 +68,56 @@
                     <h3>Locais Disponíveis</h3>
                     <div class="location-list">
                         <div class="location-item active" data-location="area">
-                            <img src="imgs/sala do maternal 1.jpg" alt="area">
+                            <img src="imgs/img360-1.svg" alt="area">
                             <div class="location-details">
                                 <h4>Recepção dos alunos(as)</h4>
                                 <p>Área de entrada principal dos alunos(as)</p>
                             </div>
                         </div>
                         <div class="location-item" data-location="area2">
-                            <img src="imgs/sala do maternal 1.jpg" alt="area2">
+                            <img src="imgs/img360-2.svg" alt="area2">
                             <div class="location-details">
                                 <h4>Área</h4>
                                 <p>Área...</p>
                             </div>
                         </div>
                         <div class="location-item" data-location="area3">
-                            <img src="imgs/sala do maternal 1.jpg" alt="area3">
+                            <img src="imgs/img360-3.svg" alt="area3">
                             <div class="location-details">
                                 <h4>Área</h4>
                                 <p>Área...</p>
                             </div>
                         </div>
                         <div class="location-item" data-location="area4">
-                            <img src="imgs/sala do maternal 1.jpg" alt="area4">
+                            <img src="imgs/img360-4.svg" alt="area4">
                             <div class="location-details">
                                 <h4>Área</h4>
                                 <p>Área...</p>
                             </div>
                         </div>
                         <div class="location-item" data-location="area5">
-                            <img src="imgs/sala do maternal 1.jpg" alt="area5">
+                            <img src="imgs/img360-5.svg" alt="area5">
                             <div class="location-details">
                                 <h4>Área</h4>
                                 <p>Área...</p>
                             </div>
                         </div>
                         <div class="location-item" data-location="area6">
-                            <img src="imgs/sala do maternal 1.jpg" alt="area6">
+                            <img src="imgs/img360-6.svg" alt="area6">
                             <div class="location-details">
                                 <h4>Área</h4>
                                 <p>Área...</p>
                             </div>
                         </div>
                         <div class="location-item" data-location="area7">
-                            <img src="imgs/sala do maternal 1.jpg" alt="area7">
+                            <img src="imgs/img360-7.svg" alt="area7">
                             <div class="location-details">
                                 <h4>Área</h4>
                                 <p>Área...</p>
                             </div>
                         </div>
                         <div class="location-item" data-location="area8">
-                            <img src="imgs/sala do maternal 1.jpg" alt="area8">
+                            <img src="imgs/img360-8.svg" alt="area8">
                             <div class="location-details">
                                 <h4>Área</h4>
                                 <p>Área...</p>
@@ -135,6 +144,7 @@
             <p>Tour 360° - Experiência de Visita Virtual</p>
         </footer>
     </div>
+    <div class="sidebar-backdrop" id="sidebar-backdrop" tabindex="-1"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
     <script src="script.js"></script>

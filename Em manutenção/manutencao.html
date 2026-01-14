@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Página em Construção</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(120deg, #0f5132, #198754);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      overflow: hidden;
+    }
+    header {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -10rem;
+}
+
+.logo {
+  display: block;
+  margin-left: 1rem;
+}
+
+.logo img{
+  width: 90px;
+  height: auto;
+  padding: 3px;
+  padding-top: 5px;
+}
+
+
+  .btn-voltar {
+      position: fixed;
+      right: 20px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+      z-index: 1000; /* Fica por cima de outros elementos */
+    }
+
+    .btn-voltar:hover {
+      background-color: #29b929;
+    }
+
+
+
+    .container {
+      text-align: center;
+      animation: fadeIn 1.2s ease forwards;
+    }
+
+    .icon {
+      font-size: 5rem;
+      margin-bottom: 1.5rem;
+      animation: rotate 3s linear infinite;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      margin-bottom: 2rem;
+    }
+
+    .loading {
+      font-size: 1rem;
+      letter-spacing: 2px;
+    }
+
+    /* Animações */
+    @keyframes rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Partículas leves no fundo */
+    .bubble {
+      position: absolute;
+      bottom: -50px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      animation: rise linear infinite;
+    }
+
+    @keyframes rise {
+      from {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      to {
+        transform: translateY(-110vh);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+ <header>
+    <a class="logo" href="../index.html"><img src="../assets/img/Logo celus.png" alt="Instituição"></a>
+
+     <button class="btn-voltar" onclick="history.back()">Voltar</button>
+  </header>
+  <div class="container">
+    <div class="icon">
+      <i class="fa-solid fa-helmet-safety"></i>
+    </div>
+
+    <h1>Página em Construção</h1>
+    <p>Estamos trabalhando nesta página agora.<br>Volte em breve!</p>
+
+    <div class="loading">
+      Carregando<span id="dots"></span>
+    </div>
+  </div>
+
+  <script>
+    // Animação dos pontinhos "..."
+    const dots = document.getElementById("dots");
+    let count = 0;
+
+    setInterval(() => {
+      count = (count + 1) % 4;
+      dots.textContent = ".".repeat(count);
+    }, 500);
+
+    // Criar bolhas animadas no fundo
+    for (let i = 0; i < 15; i++) {
+      const bubble = document.createElement("div");
+      bubble.classList.add("bubble");
+
+      const size = Math.random() * 40 + 10;
+      bubble.style.width = `${size}px`;
+      bubble.style.height = `${size}px`;
+      bubble.style.left = `${Math.random() * 100}%`;
+      bubble.style.animationDuration = `${Math.random() * 10 + 5}s`;
+
+      document.body.appendChild(bubble);
+    }
+  </script>
+
+</body>
+</html>

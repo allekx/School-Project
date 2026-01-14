@@ -2,55 +2,14 @@
 class Panorama360 {
     constructor() {
         this.locations = [
-            {
-                id: 'area',
-                name: 'area',
-                image: 'imgs/4.jpeg',
-                description: 'Área de recepção principal'
-            },
-            {
-                id: 'area2',
-                name: 'area2',
-                image: 'imgs/4.jpeg',
-                description: 'Espaço principal de convivência'
-            },
-            {
-                id: 'area3',
-                name: 'area3',
-                image: 'imgs/4.jpeg',
-                description: 'Espaço para reuniões e apresentações'
-            },
-            {
-                id: 'area4',
-                name: 'area4',
-                image: 'imgs/4.jpeg',
-                description: 'Espaço para reuniões e apresentações'
-            },
-            {
-                id: 'area5',
-                name: 'area5',
-                image: 'imgs/4.jpeg',
-                description: 'Espaço para reuniões e apresentações'
-            },
-            {
-                id: 'area6',
-                name: 'area6',
-                image: 'imgs/4.jpeg',
-                description: 'Espaço para reuniões e apresentações'
-            },
-            {
-                id: 'area7',
-                name: 'area7',
-                image: 'imgs/4.jpeg',
-                description: 'Espaço para reuniões e apresentações'
-            },
-            {
-                id: 'area8',
-                name: 'area8',
-                image: 'imgs/4.jpeg',
-                description: 'Espaço para reuniões e apresentações'
-            },
-
+            { id: 'area',  name: 'area',  image: 'imgs/img360-1.svg', description: 'Área de recepção principal' },
+            { id: 'area2', name: 'area2', image: 'imgs/img360-2.svg', description: 'Espaço principal de convivência' },
+            { id: 'area3', name: 'area3', image: 'imgs/img360-3.svg', description: 'Espaço para reuniões e apresentações' },
+            { id: 'area4', name: 'area4', image: 'imgs/img360-4.svg', description: 'Sala de aula / Atividades' },
+            { id: 'area5', name: 'area5', image: 'imgs/img360-5.svg', description: 'Quadra / Ginásio' },
+            { id: 'area6', name: 'area6', image: 'imgs/img360-6.svg', description: 'Biblioteca / Leitura' },
+            { id: 'area7', name: 'area7', image: 'imgs/img360-7.svg', description: 'Refeitório / Alimentação' },
+            { id: 'area8', name: 'area8', image: 'imgs/img360-8.svg', description: 'Maternal / Espaço infantil' },
         ];
         
         this.currentIndex = 0;
@@ -373,4 +332,54 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('Locais disponíveis:', tour.locations.length);
     console.log('Controles: Arraste para navegar, Scroll para zoom, R para reset');
     console.log('Teclas: ← → para navegar, +/- para zoom, R para reset');
+
+    // --- Mobile sidebar toggle / drawer behavior ---
+    try {
+        const sidebarToggle = document.querySelector('.sidebar-toggle');
+        const tourSidebar = document.querySelector('.tour-sidebar');
+        const sidebarBackdrop = document.getElementById('sidebar-backdrop');
+
+        const openSidebar = () => {
+            if (tourSidebar) tourSidebar.classList.add('open');
+            if (sidebarBackdrop) sidebarBackdrop.classList.add('show');
+            if (sidebarToggle) sidebarToggle.setAttribute('aria-expanded', 'true');
+            // prevent body scroll when sidebar open
+            document.body.style.overflow = 'hidden';
+        };
+
+        const closeSidebar = () => {
+            if (tourSidebar) tourSidebar.classList.remove('open');
+            if (sidebarBackdrop) sidebarBackdrop.classList.remove('show');
+            if (sidebarToggle) sidebarToggle.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
+        };
+
+        if (sidebarToggle) {
+            sidebarToggle.addEventListener('click', (e) => {
+                const expanded = sidebarToggle.getAttribute('aria-expanded') === 'true';
+                if (expanded) closeSidebar(); else openSidebar();
+            });
+        }
+
+        if (sidebarBackdrop) {
+            sidebarBackdrop.addEventListener('click', () => closeSidebar());
+        }
+
+        // Close sidebar when a location is selected (the Panorama360 class already handles navigation)
+        if (tour && tour.locationItems && tour.locationItems.forEach) {
+            tour.locationItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    // slight delay so the navigation feels immediate
+                    setTimeout(() => closeSidebar(), 120);
+                });
+            });
+        }
+
+        // Close with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeSidebar();
+        });
+    } catch (err) {
+        console.warn('Erro ao inicializar o sidebar móvel:', err);
+    }
 });

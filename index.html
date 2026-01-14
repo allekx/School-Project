@@ -1,349 +1,568 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./mobile.css">
-  <link rel="stylesheet" href="./desktop.css">
-  <link rel="icon" href="../img/Logo celus.png" sizes="48x48" type="image/png">
-  <meta name="description" content="Escola Celus em Manaus: Educação de qualidade, formação integral e compromisso com o futuro dos alunos. Conheça nossos cursos, infraestrutura e equipe.">
-  <meta name="keywords" content="escola Manaus, educação Manaus, colégio Celus, ensino fundamental, ensino médio, escola particular Manaus">
-
-  <meta name="author" content="Alex Sander Campos Lopes">
-  <meta name="designer" content="Alex Sander Campos Lopes">
-  <meta name="developer" content="Alex Sander Campos Lopes">
-
-  <meta property="og:url" content="https://escolacelus.com.br">
-
-  <meta property="og:title" content="Escola Celus - Educação de Qualidade em Manaus">
-  <meta property="og:description" content="Conheça a Escola Celus, referência em educação em Manaus. Oferecemos ensino fundamental e médio com foco no desenvolvimento integral dos alunos.">
-  <meta property="og:image" content="https://escolacelus.com.br/img/predio%20escola%20celus.png">
-  <meta property="og:image:alt" content="Fachada da Escola Celus em Manaus">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:url" content="https://escolacelus.com.br/">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Escola Celus - Educação de Qualidade em Manaus">
-  <meta name="twitter:description" content="Conheça a Escola Celus, referência em educação em Manaus. Oferecemos ensino fundamental e médio com foco no desenvolvimento integral dos alunos.">
-  <meta name="twitter:image" content="https://escolacelus.com.br/img/Logo%20celus.png">
-  <link rel="canonical" href="https://escolacelus.com.br/">
-  <link rel="alternate" hreflang="pt-BR" href="https://escolacelus.com.br/">
-  <link rel="icon" href="../img/Logo celus.png" sizes="48x48" type="image/png">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./mobile.css">
-  <link rel="stylesheet" href="./desktop.css">
-  <title>Escola Celus - Educação de Qualidade em Manaus</title>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "EducationalOrganization",
-      "name": "Escola Celus",
-      "url": "https://escolacelus.com.br/",
-      "logo": "https://escolacelus.com.br/img/Logo%20celus.png",
-      "description": "Escola Celus em Manaus: Educação de qualidade, formação integral e compromisso com o futuro dos alunos.",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Rua Dessana, 12",
-        "addressLocality": "Manaus",
-        "addressRegion": "AM",
-        "postalCode": "69095-200",
-        "addressCountry": "BR"
-      },
-      "telephone": "+55 92 99345-5859"
-    }
-  </script>
-
-</head>
-
-<body>
-
-  <!--<div id="particles-js"></div>-->
-
-
-
-  <!--<div id="loading" class="loading">
-    <img src="./img/Logo celus.png" alt="Loading..." class="loading-image">
-  </div>-->
-
-
-  <header>
-    <a class="logo" href="https://escolacelus.com.br"><img src="./img/Logo celus.png" alt="Instituição Logo"></a>
-
-    <div class="menu-hamburguer" onclick="toggleMenu()">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-    </div>
-
-    <nav class="menu">
-      <ul>
-        <li class="dropdown" style="margin-left: 10rem;">
-          <a href="#" class="dropdown-toggle">TOUR 360</a>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle">PEDAGÓGICO</a>
-        </li>
-        <li class="dropdown">
-          <a href="./rematrícula/rematricula.html" class="dropdown-toggle">REMATRÍCULA</a>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle">MATRÍCULAS</a>
-        </li>
-
-        <li class="dropdown">
-          <a href="#todos-os-seguimentos" class="dropdown-toggle toggle-dropdown">SEGMENTOS</a>
-          <!--<div class="dropdown-menu">
-            <a href="#"> Educação Infantil</a>
-            <a href="#"> Ensino Fundamental I</a>
-            <a href="#"> Ensino Fundamental II</a>
-            <a href="#"> Ensino Médio</a>
-          </div>-->
-        </li>
-
-        <li class="dropdown">
-          <a href="" class="dropdown-toggle toggle-dropdown">CURSOS LIVRES</a>
-         <!-- <div class="dropdown-menu">
-            <a href="https://app.proesc.com/cursos/escolacelus?fase_id=2185&cidade_id=1994490&unidade_id=5595&curso_id=15289&turno_id=null"> Vôlei</a>
-            <a href="./pagfutsal/futsal.html"> Futsal</a>
-            <a href="./pagballet/ballet.html"> Ballet</a>
-            <a href="./pagjiu-jitsu/jiu-jitsu.html"> Jiu-Jitsu</a>
-          </div> -->
-        </li>
-        <li class="dropdown">
-          <a href="" class="dropdown-toggle toggle-dropdown">SOBRE</a>
-        </li>
-
-        <li class="portalMenu" style="margin-left: 4rem;">
-          <a href="https://app.proesc.com/app"><img style="width: 60px; height: 13px;" src="./img/Proesc_Marca-Preferencial-RGB-Horizontal-Positiva1 (1) 1.png" alt="Proesc"></a>
-        </li>
-        <li class="portalMenu" style="margin-left: 1rem;">
-          <a href="https://portal.coc.com.br/login/"><img style="width: 60px; height: 15px; " src="./img/historia-sistema-coc.png" alt="COC"></a>
-        </li>
-
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-
-    <section class="container-slider">
-
-
-      <button id="prev-button"><img src="./img/seta-esquerda (1).png" alt="prev button"></button>
-
-
-      <div class="banner">
-        <img src="./img/banner principal.jpeg" alt="Banner de Anúncio" class="slider">
-        <img src="./img/banner on.jpeg" alt="Banner de Anúncio" class="slider">
-        <img src="./img/banner celus.jpeg" class="slider" alt="Banner de Anúncio">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Escola Celus: educação particular em Manaus com excelência pedagógica, infraestrutura acolhedora e resultados comprovados do infantil ao ensino médio."
+    />
+    <meta
+      name="keywords"
+      content="escola particular Manaus, escola privada Manaus, educação infantil Manaus, ensino fundamental Manaus, ensino médio Manaus, Escola Celus"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Escola Celus" />
+    <link rel="canonical" href="https://www.escolacelus.com.br/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="Escola Celus | Educação Particular em Manaus" />
+    <meta
+      property="og:description"
+      content="Ensino particular em Manaus com foco em resultados, acolhimento e atividades que desenvolvem o estudante por completo."
+    />
+    <meta property="og:url" content="https://www.escolacelus.com.br/" />
+    <meta property="og:image" content="https://www.escolacelus.com.br/img/og-celus.jpg" />
+    <meta property="og:site_name" content="Escola Celus" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Escola Celus | Educação Particular em Manaus" />
+    <meta
+      name="twitter:description"
+      content="Do infantil ao ensino médio, a Escola Celus une tecnologia, acolhimento e excelência acadêmica em Manaus."
+    />
+    <meta name="twitter:image" content="https://www.escolacelus.com.br/img/og-celus.jpg" />
+    <meta name="theme-color" content="#1E8F4A" />
+    <title>Escola Celus | Educação Particular em Manaus</title>
+    <link
+      rel="icon"
+      href="./assets/img/Logo celus.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <link rel="apple-touch-icon" href="./assets/img/Logo celus.png" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "School",
+        "name": "Escola Celus",
+        "url": "https://www.escolacelus.com.br/",
+        "logo": "https://www.escolacelus.com.br/img/logo-celus.png",
+        "image": "https://www.escolacelus.com.br/img/og-celus.jpg",
+        "description": "Escola particular em Manaus com ensino completo, estruturas modernas e metodologias ativas do infantil ao ensino médio.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "R. Dessana, 12",
+          "addressLocality": "Manaus",
+          "addressRegion": "AM",
+          "postalCode": "69097-195",
+          "addressCountry": "BR"
+        },
+        "telephone": "+55-92-3026-0601",
+        "email": "financeiro@escolacelus.com.br",
+        "openingHours": "Mo-Fr 07:00-17:00",
+        "sameAs": [
+          "https://www.instagram.com/escolacelus",
+          "https://www.facebook.com/escolacelus"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header" role="banner">
+      <div class="container header-content">
+        <div class="logo-area">
+          <!-- PLACEHOLDER: substituir LOGO_AQUI.jpg -->
+          <a href="#" class="logo-link" aria-label="Página inicial">
+            <img
+              src="./assets/img/Logo celus.png"
+              alt="Logo da Escola"
+              class="logo-image"
+              draggable="false"
+            />
+          </a>
+        </div>
+        <button
+          class="menu-toggle"
+          aria-label="Abrir menu principal"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+          <span class="sr-only">Menu</span>
+        </button>
+        <nav class="main-nav" role="navigation" aria-label="Menu principal">
+          <ul id="primary-navigation">
+            <!-- <li><a href="./360tour/index.html" class="nav-link">Tour 360</a></li>   -->
+           <!-- <li><a href="./pedagogico/index.html" class="nav-link">Pedagógico</a></li> -->
+            <li><a href="https://wa.me/559293455859" class="nav-link">Rematrícula</a></li>
+            <li><a href="./Em manutenção/manutencao.html" class="nav-link">Matrícula</a></li>
+            <li><a href="#segmentos" class="nav-link">Segmentos</a></li>
+            <li><a href="./atividades/index.html" class="nav-link">Cursos Livres</a></li>
+            <li><a href="./sobre/index.html" class="nav-link">Sobre</a></li>
+          </ul>
+          <div class="portal-buttons" aria-label="Portais do aluno">
+            <!-- PLACEHOLDER: inserir link do Portal Proesc -->
+            <a
+              href="https://app.proesc.com/login"
+              class="portal-button portal-proesc"
+              aria-label="Portal Proesc"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="./assets/img/portal proesc.png"
+                alt="Acessar Portal Proesc"
+                class="portal-button__image"
+                draggable="false"
+              />
+            </a>
+            <!-- PLACEHOLDER: inserir link do Portal COC -->
+            <a
+              href="https://jornada.coc.com.br/entrar/"
+              class="portal-button portal-coc"
+              aria-label="Portal COC"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="./assets/img/portal coc.png"
+                alt="Acessar Portal COC"
+                class="portal-button__image"
+                draggable="false"
+              />
+            </a>
+          </div>
+        </nav>
       </div>
+    </header>
 
-      <button id="next-button"><img src="./img/seta-direita (1).png" alt="next button"></button>
-
-    </section>
-
-
-     <!--<div class="info">
-
-       <div class="areablog">
-        <a href="#"><img src="./img/blogCelus.png" alt=""></a>
-      </div>  
-
-      <img class="sobre-logo" src="./img/Logo celus.png" alt="logo celus">
-      <h2>Escola Celus</h2>
-
-      <p class="subtitle">Mais de 27 anos no mercado, o Celus está na terceira geração de gestores, onde buscamos sempre trazer inovação e muito crescimento para todos.</p>
-      <img src="./img/predio escola celus.png" alt="Imagens da Instituição">
-    </div>
-    <a href="./sobre/sobre.html"><button class="infoBotao">sobre nós »</button></a> -->
-
-
-
-    <!--<div id="ad-popup">
-      <button id="close-ad">X</button>
-      <a href="https://wa.me/message/CVAEG4YTXOSJN1"><img src="./img/celus popup.jpg" alt="Comunicado"></a>
-      <h1></h1>
-      <p></p>
-  </div> 
-
-    <div class="temossss">
-      <h1>
-        <h1>
-    </div>-->
-
-    <span class="linha" id="todos-os-seguimentos"></span>
-
-    <section class="todos-os-seguimentos" >
-      <div class="container-seg">
-        <h2>Escolha o Segmento</h2>
-        <p class="subtitle">Nossa escola oferece uma variedade de cursos para diferentes idades e objetivos. Confira algumas das nossas opções e encontre o caminho ideal para o seu aprendizado!</p>
-        <div class="features">
-          <div class="feature-box">
-            <a href="https://app.proesc.com/landing_pages/4fe87f61832071c184b2681a5da832e8" style="color:#38C738 ;">
-              <img src="./img/educação infantil.png" alt="Instant">
-              <h3>Educação Infantil</h3>
-              <p>2 a 5 anos</p>
-            </a>
+    <main>
+      <section
+        class="hero-carousel"
+        aria-label="Destaques da escola"
+        data-animate="fade-up"
+      >
+        <h1 class="sr-only">Bem-vindos à nossa escola particular</h1>
+        <div class="carousel" data-carousel>
+          <div class="carousel__track" data-carousel-track>
+            <article class="carousel__slide is-active">
+              <!-- PLACEHOLDER: substituir BANNER_01.jpg e link -->
+              <a href="#"
+                ><img
+                  src="./assets/img/banner principal.jpeg"
+                  alt="Alunos felizes em sala de aula"
+                  class="carousel__image"
+                />
+                <div class="carousel__caption">
+                  <span class="sr-only">Educação completa, humana e inovadora</span>
+                </div></a
+              >
+            </article>
+            <article class="carousel__slide">
+              <!-- PLACEHOLDER: substituir BANNER_02.jpg -->
+              <a href="#"
+                ><img
+                  src="./assets/img/banner on.jpeg"
+                  alt="Estrutura moderna da escola"
+                  class="carousel__image"
+                />
+                <div class="carousel__caption">
+                  <span class="sr-only">Infraestrutura acolhedora</span>
+                </div></a
+              >
+            </article>
+            <article class="carousel__slide">
+              <!-- PLACEHOLDER: substituir BANNER_03.jpg -->
+              <a href="#"
+                ><img
+                  src="./assets/img/banner celus.jpeg"
+                  alt="Estudantes participando de atividades criativas"
+                  class="carousel__image"
+                />
+                <div class="carousel__caption">
+                  <span class="sr-only">Metodologias ativas</span>
+                </div></a
+              >
+            </article>
           </div>
-          <div class="feature-box">
-            <a href="https://app.proesc.com/landing_pages/08f29c59c90bf71449239d1362248c7b" style="color:#38C738 ;">
-              <img src="./img/fundamental I.png" alt="Exchange">
-              <h3>Ensino Fundamental I</h3>
-              <p>1º ao 5º ano </p>
-            </a>
-
-          </div>
-          <div class="feature-box">
-            <a href="https://app.proesc.com/landing_pages/1d2dacb09c29179ba4719c3040408cdd" style="color:#38C738 ;">
-              <img src="./img/fundamental II.png" alt="Cashback">
-              <h3>Ensino Fundamental II</h3>
-              <p>6º ao 9º ano</p>
-            </a>
-          </div>
-          <div class="feature-box">
-            <a href="https://app.proesc.com/landing_pages/e6da59075ea1a30938c50591fef79dab" style="color:#38C738 ;">
-              <img src="./img/ensino médio.png" alt="Mobile App">
-              <h3>Ensino Médio</h3>
-              <p>1º a 3º série</p>
-            </a>
+          <button
+            class="carousel__control carousel__control--prev"
+            type="button"
+            aria-label="Slide anterior"
+            data-carousel-prev
+          >
+            &#10094;
+          </button>
+          <button
+            class="carousel__control carousel__control--next"
+            type="button"
+            aria-label="Próximo slide"
+            data-carousel-next
+          >
+            &#10095;
+          </button>
+          <div class="carousel__indicators" role="tablist" aria-label="Slides">
+            <button
+              class="carousel__indicator is-active"
+              type="button"
+              aria-label="Slide 1"
+              data-carousel-indicator="0"
+            ></button>
+            <button
+              class="carousel__indicator"
+              type="button"
+              aria-label="Slide 2"
+              data-carousel-indicator="1"
+            ></button>
+            <button
+              class="carousel__indicator"
+              type="button"
+              aria-label="Slide 3"
+              data-carousel-indicator="2"
+            ></button>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-
-    <span class="linha" style="margin-top: 3rem;"></span>
-
-
-
-    <div id="cookie-banner">
-      <p>🍪 Utilizamos cookies para criar uma melhor experiência de navegação. Ao continuar navegando, você aceita nossas políticas de Privacidade & Termos.</p>
-      <button id="accept-cookies">Aceitar</button>
-      <button id="reject-cookies">Rejeitar</button>
-    </div>
-
-
-
-
-
-    <section class="extracurricular">
-      <h1>Atividades Extracurriculares:</h1>
-      <p class="atividade-extra" id="conteudo">As atividades extracurriculares promovem o desenvolvimento de habilidades sociais, como trabalho em equipe, liderança e comunicação. Elas também ajudam as crianças a desenvolverem disciplina e responsabilidade.</p>
-
-
-      <div class="bannerEsporte">
-        <button id="prev-button-esporte"><img src="./img/left-chevron_9144318.png" alt="prev button"></button>
-
-        <div class="sliderEsportes">
-
-          <img src="./img/vôlei.png" class="esporteSlide" alt="Banner dos Esportes">
-
-          <img src="./img/Futsal.png" class="esporteSlide" alt="Banner dos Esportes">
-
-          <img src="./img/Ballet.png" class="esporteSlide" alt="Banner dos Esportes">
-
-          <img src="./img/Jiu-Jitsu.png" class="esporteSlide" alt="Banner dos Esportes">
+      <section
+        class="section indicadores"
+        aria-label="Resultados em crescimento"
+        data-animate="fade-up"
+      >
+        <div class="container indicadores__grid">
+          <header class="indicadores__intro">
+            <span class="section-label">Evolução constante</span>
+            <h2>Resultados que nos motivam a seguir crescendo</h2>
+            <p>
+              
+            </p>
+          </header>
+          <div class="indicadores__cards">
+            <article class="indicador-card">
+              <p class="indicador-card__tag">Satisfação das famílias</p>
+              <p class="indicador-card__valor">
+                <span
+                  class="indicador-card__numero"
+                  data-target="98"
+                  data-prefix="+"
+                  data-suffix="%"
+                >
+                  +0%
+                </span>
+                <span aria-hidden="true">▲</span>
+              </p>
+              <p class="indicador-card__sub">Pesquisa anual de satisfação</p>
+            </article>
+            <article class="indicador-card">
+              <p class="indicador-card__tag">Aprovação vestibulares</p>
+              <p class="indicador-card__valor">
+                <span
+                  class="indicador-card__numero"
+                  data-target="35"
+                  data-prefix="+"
+                  data-suffix="%"
+                >
+                  +0%
+                </span>
+                <span aria-hidden="true">▲</span>
+              </p>
+              <p class="indicador-card__sub">Crescimento nos últimos 3 anos</p>
+            </article>
+            <article class="indicador-card">
+              <p class="indicador-card__tag">Projetos inovadores</p>
+              <p class="indicador-card__valor">
+                <span
+                  class="indicador-card__numero"
+                  data-target="120"
+                  data-prefix=""
+                  data-suffix="+"
+                >
+                  0+
+                </span>
+                <span aria-hidden="true">▲</span>
+              </p>
+              <p class="indicador-card__sub">Projetos aplicados em 2024</p>
+            </article>
+            <article class="indicador-card">
+              <p class="indicador-card__tag">Participação em atividades</p>
+              <p class="indicador-card__valor">
+                <span
+                  class="indicador-card__numero"
+                  data-target="87"
+                  data-prefix="+"
+                  data-suffix="%"
+                >
+                  +0%
+                </span>
+                <span aria-hidden="true">▲</span>
+              </p>
+              <p class="indicador-card__sub">Alunos engajados em extracurriculares</p>
+            </article>
+          </div>
         </div>
+      </section>
 
-        <button id="next-button-esporte"><img src="./img/right-chevron_9144319.png" alt="next button"></button>
+      <section id="segmentos" class="section segmentos" data-animate="fade-up">
+        <div class="container">
+          <header class="section-header">
+            <span class="section-label">Crescer com confiança</span>
+            <h2>Nossos Segmentos</h2>
+            <p>
+              Nossa escola oferece uma variedade de cursos para diferentes
+              idades e objetivos. Confira algumas das nossas opções e encontre
+              o caminho ideal para o seu aprendizado!
+            </p>
+          </header>
+          <div class="segmentos__grid">
+          <!-- <article class="segment-card" data-link="https://app.proesc.com/landing_pages/4fe87f61832071c184b2681a5da832e8">-->
+              <!--PLACEHOLDER: substituir SEGMENTO_INTEGRAL.jpg -->
+            <!--  <img
+                src="./assets/img/educação infantil.png"
+                alt="Crianças na educação infantil"
+                class="segment-card__image"
+              />
+              <div class="segment-card__body">
+                <h3>Educação Infantil</h3>
+                <p>2 a 5 anos</p>
+              </div>
+            </article> -->
+            <article class="segment-card" data-link="https://app.proesc.com/landing_pages/4fe87f61832071c184b2681a5da832e8">
+              <!-- PLACEHOLDER: substituir SEGMENTO_INFANTIL.jpg -->
+              <img
+                src="./assets/img/educação infantil.png"
+                alt="Crianças na educação infantil"
+                class="segment-card__image"
+              />
+              <div class="segment-card__body">
+                <h3>Educação Infantil</h3>
+                <p>2 a 5 anos</p>
+              </div>
+            </article>
+            <article class="segment-card" data-link="https://app.proesc.com/landing_pages/08f29c59c90bf71449239d1362248c7b">
+              <!-- PLACEHOLDER: substituir SEGMENTO_FUND1.jpg -->
+              <img
+                src="./assets/img/fundamental I.png"
+                alt="Aluno do Ensino Fundamental I"
+                class="segment-card__image"
+              />
+              <div class="segment-card__body">
+                <h3>Ensino Fundamental I</h3>
+                <p>1º ao 5º ano</p>
+              </div>
+            </article>
+            <article class="segment-card" data-link="https://app.proesc.com/landing_pages/1d2dacb09c29179ba4719c3040408cdd">
+              <!-- PLACEHOLDER: substituir SEGMENTO_FUND2.jpg -->
+              <img
+                src="./assets/img/fundamental II.png"
+                alt="Estudantes do Ensino Fundamental II"
+                class="segment-card__image"
+              />
+              <div class="segment-card__body">
+                <h3>Ensino Fundamental II</h3>
+                <p>6º ao 9º ano</p>
+              </div>
+            </article>
+            <article class="segment-card" data-link="https://app.proesc.com/landing_pages/e6da59075ea1a30938c50591fef79dab">
+              <!-- PLACEHOLDER: substituir SEGMENTO_MEDIO.jpg -->
+              <img
+                src="./assets/img/ensino médio.png"
+                alt="Alunos do Ensino Médio"
+                class="segment-card__image"
+              />
+              <div class="segment-card__body">
+                <h3>Ensino Médio</h3>
+                <p>1ª a 3ª série</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section atividades" id="cursos-livres" data-animate="fade-up">
+        <div class="container atividades__grid">
+          <div class="atividades__content">
+            <span class="section-label">Integração e movimento</span>
+            <h2>Atividades Extracurriculares</h2>
+            <p>
+              As atividades extracurriculares promovem o desenvolvimento de
+              habilidades sociais, como trabalho em equipe, liderança e
+              comunicação. Elas também ajudam as crianças a desenvolverem
+              disciplina e responsabilidade.
+            </p>
+          </div>
+          <div class="atividades__image">
+            <!-- PLACEHOLDER: substituir ATIVIDADES.jpg -->
+            <img
+              src="./atividades/assets/img/jepamvolei.png"
+              alt="Crianças praticando atividades extracurriculares"
+            />
+          </div>
+          <div class="atividades__cta">
+            <button class="btn btn-primary" type="button">
+              <!-- PLACEHOLDER: inserir LINK_ATIVIDADES -->
+              <a href="./atividades/index.html">Saiba mais</a>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section coc" id="sobre" data-animate="fade-up">
+        <div class="container coc__grid">
+          <div class="coc__logo">
+            <!-- PLACEHOLDER: substituir LOGO_COC.png -->
+            <img src="./assets/img/portal coc.png" alt="Logo COC" />
+          </div>
+          <div class="coc__content">
+            <span class="section-label">Resultados comprovados</span>
+            <h2>Você já conhece o COC?</h2>
+            <p>
+              Somos referência em resultados nos principais vestibulares do
+              país! Isso porque o COC tem uma metodologia que alia conteúdo forte
+              e formação integral do Berçário ao Pré-Vestibular.
+            </p>
+            <button class="btn btn-secondary" type="button">
+              <!-- PLACEHOLDER: inserir LINK_COC --> 
+              <a href="https://coc.com.br/sobre/"> Conheça o COC </a>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contato" id="contato" data-animate="fade-up">
+        <div class="container contato__grid">
+          <div class="contato__info">
+            <h2>Contato</h2>
+            <p>
+              <strong>Endereço:</strong> R. Dessana, 12 - Cidade Nova, Manaus - AM
+            </p>
+            <p><strong>Telefone:</strong> (092) 3026-0601</p>
+            <p><strong>WhatsApp:</strong> (92) 99345-5859</p>
+            <p><strong>E-mail:</strong> financeiro@escolacelus.com.br</p>
+            <p><strong>Horário:</strong> Segunda a Sexta, 07h00 às 17h00</p>
+          </div>
+          <form class="contato__form" novalidate>
+            <h3>Fale conosco</h3>
+            <label for="nome">Nome</label>
+            <input
+              id="nome"
+              name="nome"
+              type="text"
+              required
+              minlength="3"
+              placeholder="Seu nome completo"
+            />
+            <label for="email">E-mail</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+              placeholder="nome@exemplo.com"
+            />
+            <label for="mensagem">Mensagem</label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              rows="4"
+              required
+              placeholder="Como podemos ajudar?"
+            ></textarea>
+            <button class="btn btn-primary" type="submit">Enviar</button>
+            <p class="form-feedback" role="status" aria-live="polite"></p>
+          </form>
+          <div class="contato__mapa">
+            <!-- PLACEHOLDER: substituir SRC_DO_MAPA -->
+            <div class="mapa-wrapper">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d959.9912237432699!2d-59.974691864126775!3d-3.0289907167357617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c197e7e19729b%3A0xca524addb2a2b816!2sEscola%20Celus%20Ltda!5e0!3m2!1spt-BR!2sbr!4v1763389502332!5m2!1spt-BR!2sbr"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Mapa da localização da escola"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" data-animate="fade-up">
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <!-- PLACEHOLDER: substituir LOGO_FOOTER.jpg -->
+          <img src="./assets/img/Logo celus.png" alt="Logo reduzida da escola" />
+          <p>
+            Educação premium com acolhimento, tecnologia e resultados que
+            transformam vidas.
+          </p>
+        </div>
+        <div class="footer__links">
+          <h3>Links rápidos</h3>
+          <ul>
+            <li><a href="#segmentos">Segmentos</a></li>
+            <li><a href="#cursos-livres">Atividades</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer__contato">
+          <h3>Contato</h3>
+          <p>(92) 99345-5859</p>
+          <p>financeiro@escolacelus.com.br</p>
+          <p>R. Dessana, 12 - Cidade Nova, Manaus</p>
+        </div>
+        <div class="footer__social">
+          <h3>Redes sociais</h3>
+          <div class="social-icons">
+              <!-- Ícones inline SVG para Instagram e Facebook -->
+              <a href="https://www.instagram.com/escolacelus" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                <!-- Ícone Instagram mais reconhecível: contorno arredondado + lente central + ponto -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="social-icon" aria-hidden="true" focusable="false">
+                  <rect x="3" y="3" width="18" height="18" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="1.6" />
+                  <circle cx="12" cy="12" r="3.2" fill="currentColor" />
+                  <circle cx="17.5" cy="6.5" r="0.85" fill="currentColor" />
+                </svg>
+              </a>
+              <a href="https://www.facebook.com/escolacelus" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="social-icon" fill="currentColor" aria-hidden="true" focusable="false">
+                  <path d="M22 12a10 10 0 10-11.5 9.9v-7h-2.2v-2.9h2.2V9.1c0-2.2 1.3-3.4 3.3-3.4.95 0 1.94.17 1.94.17v2.13h-1.09c-1.07 0-1.4.67-1.4 1.36v1.63h2.38l-.38 2.9h-2v7A10 10 0 0022 12z"/>
+                </svg>
+              </a>
+            </div>
+          <p class="footer__hours">Segunda a Sexta, 7h às 19h</p>
+        </div>
       </div>
-    </section>
+      <p class="footer__copy">
+        &copy; <span id="current-year"></span> Escola Celus. Todos os direitos
+        reservados.
+      </p>
+    </footer>
 
-    <span id="line" class="linha"></span>
-
-    <div class="info-dois">
-      <img src="./img/icon coc.svg" alt="COC">
-      <h2>Você já conhece o <br> COC?</h2>
-      <p>Somos referência em resultados nos principais vestibulares do país! Isso porque o COC tem uma metodologia que alia conteúdo forte e formação integral do Berçário ao Pré-Vestibular.</p>
-    </div>
-    <a href="https://ensino.coc.com.br/coc-plataforma-completa-de-educacao?utm_source=google&utm_medium=cpa&utm_campaign=bob_coc_-_pmax-long-tail_cnv_cad_pmax_-_cpa&utm_content=atm_-_pmax_v1_all&gad_source=1&gclid=CjwKCAjw9eO3BhBNEiwAoc0-jWjNYZVZu03GHcfPcCQ4HjcFHOEp1IZK4bFwMTLoSdDw5L0oFavnXRoCdgcQAvD_BwE" target="_blank" rel="noopener noreferrer">
-      <button class="infoBotao" style="margin-top: 2rem;">Conheça o COC »</button>
+    <!-- Botão flutuante do WhatsApp -->
+    <a
+      href="https://wa.me/559293455859"
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Fale conosco no WhatsApp"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        class="whatsapp-icon"
+      >
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+        />
+      </svg>
     </a>
 
-
-  </main>
-
-
-
-
-
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.01528651272244!2d-59.974502697587006!3d-3.0288993676813574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c197e7e19729b%3A0xca524addb2a2b816!2sEscola%20Celus%20Ltda!5e0!3m2!1spt-BR!2sbr!4v1738290707535!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-
-  <footer>
-    <div class="container-log-redes">
-      <img class="logo-footer" src="./img/Logo celus.png" alt="">
-      <div class="redes">
-
-        <h2>Siga Nossas Redes</h2>
-
-        <div class="container-redes">
-          <a href="https://www.instagram.com/escolacelus/"><img src="./img/icon instagram.svg" alt="Instagram"></a>
-          <a href="https://www.facebook.com/escolacelusltda/"><img src="./img/icon facebook.svg" alt="Facebook"></a>
-          <a href="#"><img src="./img/icon youtube.svg" alt="Youtube"></a>
-        </div>
-      </div>
-    </div>
-
-
-
-    <div class="links-rodape">
-
-      <a href="./sobre/sobre.html"><img src="./img/icon sobre nós.svg" alt="Icon sobre nós"> SOBRE NÓS</a>
-
-      <a href="https://wa.me/message/CVAEG4YTXOSJN1"><img src="./img/icon contato.svg" alt="Icon contatos">CONTATO</a>
-
-      <a href="https://ensino.coc.com.br/coc-plataforma-completa-de-educacao?utm_source=google&utm_medium=cpa&utm_campaign=bob_coc_-_pmax-long-tail_cnv_cad_pmax_-_cpa&utm_content=atm_-_pmax_v1_all&gad_source=1&gclid=CjwKCAjw9eO3BhBNEiwAoc0-jWjNYZVZu03GHcfPcCQ4HjcFHOEp1IZK4bFwMTLoSdDw5L0oFavnXRoCdgcQAvD_BwE" target="_blank" rel="noopener noreferrer"> <img src="./img/icon coc.svg" alt="Icon COC">COC</a>
-
-      <a href="https://app.proesc.com/cursos/escolacelus/LJkw"><img src="./img/icon matrículas.svg" alt="Icon matrículas">MATRÍCULAS</a>
-
-      <a href="#todos-os-seguimentos"><img src="./img/icon seguimentos.svg" alt="Icon Seguimentos">SEGMENTOS</a>
-
-      <a href="https://www.proesc.com" target="_blank" rel="noopener noreferrer"><img src="./img/icon proesc.svg" alt="Icon Proesc">PROESC</a>
-
-      <a href="./pedagogico/pedagogico.html"><img src="./img/icon pedagógico.svg" alt="Icon Pedagógico"> PEDAGÓGICO</a>
-
-      <a href="https://app.proesc.com/cursos/escolacelus?fase_id=2185&cidade_id=1994490&unidade_id=5595&curso_id=15289&turno_id=null"><img src="./img/icon P & A.svg" alt="Icon Projetos e Ações">PROJETOS & AÇÕES</a>
-
-      <a href="https://maps.app.goo.gl/kbDusRXSPpugpRQPA" target="_blank" rel="noopener noreferrer"><img src="./img/icon unidade.svg" alt="Icon Unidade">UNIDADE</a>
-    </div>
-  </footer>
-  <span>Copyright 2024 Escola Celus. Todos os direitos reservados. Todo o conteúdo do site, todas as fotos, imagens, logotipos, marcas, layout, aqui veiculados são de propriedade exclusiva da Escola Celus. É vedada qualquer reprodução, total ou parcial, de qualquer elemento de identidade, sem expressa autorização. A violação de qualquer direito mencionado implicará na responsabilização cível e criminal nos termos da Lei. <br>CNPJ 02.820.863/0001-30 - ESCOLA CELUS LTDA<br> By Developer<a href="https://github.com/allekx"> Alex Sander.</a></span>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <script src="./script.js"></script>
-
- <!-- <script>
-    // Inicializa ao carregar a página
-checkScreenSize();
-
-// Atualiza ao redimensionar a janela
-window.addEventListener('resize', checkScreenSize);
-
-//
-
-
-
-// Simula o carregamento de conteúdo
-window.addEventListener('load', function() {
-  const loading = document.getElementById('loading');
-  const content = document.getElementById('content');
-
-  // Remove o loading após 2 segundos
-  setTimeout(function() {
-      loading.style.display = 'none';
-      content.style.display = 'block';
-  }, 2500); // Altere o tempo conforme necessário
-});
-  </script>-->
+    <script src="./assets/script.js" defer></script>
+  </body>
 </html>
+

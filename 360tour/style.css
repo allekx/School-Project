@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+    background: linear-gradient(135deg, #c1fcde 0%, #91d6a0 100%);
     min-height: 100vh;
     color: #333;
 }
@@ -56,6 +56,58 @@ html, body {
 @media (max-width: 360px) {
     .tour-container {
         padding: 3px;
+    }
+}
+
+/* Header refinements for small devices: hide the 'Locais' toggle and balance spacing */
+@media (max-width: 600px) {
+    /* Ensure sidebar toggle does not appear on small phones */
+    .sidebar-toggle {
+        display: none !important;
+    }
+
+    /* Make header more compact and harmonious */
+    .tour-header {
+        padding: 12px;
+        border-radius: 12px;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+    /* Let the title take the remaining space and be centered visually */
+    .header h1 {
+        flex: 1 1 auto;
+        font-size: 1.1rem;
+        margin: 0 8px;
+        text-align: center;
+        line-height: 1.1;
+    }
+
+    /* Reduce logo size on small devices */
+    .header .logo,
+    .logo {
+        width: 88px;
+        height: auto;
+        max-width: 32%;
+    }
+
+    /* Make action buttons smaller and tighter */
+    .btn-voltar {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+        border-radius: 6px;
+    }
+
+    /* Ensure the location-info text is small and centered below header on very narrow screens */
+    .location-info {
+        font-size: 0.95rem;
+        margin-top: 6px;
+        text-align: center;
     }
 }
 
@@ -114,6 +166,26 @@ html, body {
     flex: 1;
     width: 100%;
     overflow-x: hidden;
+}
+
+/* Sidebar drawer for mobile */
+.sidebar-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: 1200;
+}
+
+.sidebar-toggle {
+    display: none;
+    background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
 }
 
 /* Viewer container */
@@ -438,6 +510,32 @@ html, body {
         scrollbar-width: thin;
         scrollbar-color: #27ae60 #ecf0f1;
     }
+
+    /* mobile sidebar becomes a drawer overlay */
+    .tour-sidebar {
+        position: fixed;
+        top: 80px; /* below header */
+        right: 0;
+        width: 86%;
+        max-width: 360px;
+        height: calc(100% - 96px);
+        transform: translateX(110%);
+        transition: transform 0.28s ease;
+        z-index: 1300;
+        padding: 12px;
+    }
+
+    .tour-sidebar.open {
+        transform: translateX(0);
+    }
+
+    .sidebar-backdrop.show {
+        display: block;
+    }
+
+    .sidebar-toggle {
+        display: inline-flex;
+    }
     
     .location-list::-webkit-scrollbar {
         height: 6px;
@@ -481,7 +579,7 @@ html, body {
     }
     
     .panorama-viewer {
-        height: 350px;
+        height: 60vh;
     }
     
     .viewer-container {
@@ -561,7 +659,7 @@ html, body {
     }
     
     .panorama-viewer {
-        height: 250px;
+        height: 55vh;
     }
     
     .viewer-container {

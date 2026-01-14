@@ -1,0 +1,574 @@
+@media (max-width: 480px) {
+
+  body {
+    width: 100%;
+  }
+          /* Estilos para o popup de anúncio */
+          #ad-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+            border-radius: 10px;
+            display: none;
+            text-align: center;
+            width: 260px;
+            z-index: 9;
+        }
+  
+  header {
+    position: fixed;
+    width: 100%;
+    height: 3.6rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 0rem;
+    background-color: rgb(238, 238, 238);
+    box-shadow: 0 2px 5px rgb(169, 235, 169);
+    z-index: 10;
+  }
+
+  .logo img {
+    margin-top: 15px;
+    width: 70px;
+    height: auto;
+    padding: 0px;
+  }
+
+  .logo{
+  margin-left: 0rem;
+  }
+  .logo:focus {
+    outline: none;
+  }
+  
+  
+/* Estilo do Menu-Hamburguer */
+.menu-hamburguer {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35px;
+  height: 30px;
+  margin-right: 1rem;
+}
+
+  header ul{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    gap:  1rem;
+    padding: 4px;
+  }
+
+
+  .bar {
+    background-color: #168a2f;
+    height: 5px;
+    width: 100%;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+/* Animação para transformar o menu em "X" */
+.menu-hamburguer.ativo .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+.menu-hamburguer.ativo .bar:nth-child(2) {
+    opacity: 0;
+}
+.menu-hamburguer.ativo .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+  .menu {
+    display: none; /* Esconde o menu inicialmente */ 
+    position: absolute;
+    top: 50px; /* Ajuste conforme necessário */
+    left: 0px;
+    width: 100%;
+    
+
+    max-height: 0; /* Inicialmente, o menu está escondido */
+    overflow: hidden; /* Oculta o conteúdo que excede a altura */
+    opacity: 0; /* Torna o menu invisível */
+    transition: max-height 0.7s ease, opacity 0.7s ease; /* Define a transição */
+ 
+}
+
+.menu ul {
+  background-image: url(./img/background\ menu.png);
+  background-repeat: no-repeat;
+  opacity: 100%;
+    list-style: none;
+    margin-left: 0rem;
+    margin-top: 0.4rem;
+    height: 100em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+
+
+.menu li {
+    padding: 6px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #38C738;
+    font-weight: bold;
+    font-size: 19px;
+    margin-right: 0rem;
+    padding: 7px;
+}
+
+.menu.active {
+    display: block;
+    justify-content: end;
+    margin-left: 0rem;
+    width: 100%;
+
+
+    max-height: 70rem; /* Ajuste para um valor que seja maior que a altura total do menu */
+    opacity: 1; /* Torna o menu visível */
+
+}
+
+
+.dropdown{
+  width: 100%;
+}
+
+
+.dropdown-menu {
+  margin-top: 1rem;
+  background: transparent;
+  position: relative;
+  z-index: 2;
+  display: none; /* Mantém o menu oculto por padrão */
+  height: auto;
+  width: auto;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+ 
+
+.dropdown-toggle  {
+  background: rgb(112, 243, 123);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  width: 100%;
+  height: auto;
+  margin-left: 0rem;
+  align-items: center;
+  justify-content: center;
+  color: #475249;
+  border-radius: 5px;
+  font-size: 11px;
+  padding: 10px;
+}
+
+
+.dropdown-menu a {
+  background: #fff;
+  border-radius: 8px;
+  font-size: 11px;
+  width: 100%;
+  margin-left: 0rem;
+  padding: 7px;
+  display: flex;
+}
+
+
+.menu li {
+  padding: 6px;
+}
+
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 0rem;
+}
+
+
+  header ul li a {
+    color: #000;
+    font-size: 17px;
+  }
+
+  header ul{
+    margin-top: -4rem;
+    display: flex;
+    align-items: end;
+    margin-right: 0rem;
+  }
+
+  .container-slider {
+    margin-top: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10rem;
+  }
+
+  .banner img {
+    color: #000;
+    margin-top: 4rem;
+    width: 100%;
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #prev-button, #next-button {
+    display: none;
+    width: 14px;
+    height: 14px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  #prev-button img, #next-button img {
+    display: none;
+    margin-top: 1.5rem;
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper {
+    width: 90%;
+    max-width: 350px;
+  }
+  .swiper-slide {
+    background: #ffffff;
+    border-radius: 6px;
+    padding: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+
+  .temos {
+    margin-top: 5rem;
+    margin-left: 0rem;
+  }
+  .temos h1 {
+    padding: 2px;
+    margin-left: 1rem;
+    font-size: 25px;
+  }
+
+  main .seguimentos {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+  .seguimentos a:hover{
+    position: relative;
+    width: 100%;
+    height: auto
+  
+  }
+  .seguimentos div img {
+    width: 90%;
+    height: auto;
+  }
+  .extracurricular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .extracurricular h1{
+    color: #38C738;
+    font-weight: bold;
+    margin-left: 7px;
+    font-size: 1.8rem;
+  }
+
+  .bannerEsporte {
+    margin-top: 0rem;
+  }
+  .sliderEsportes img {
+    width: 100%;
+    height: 6rem;
+  }
+  #prev-button-esporte, #next-button-esporte {
+    display: none;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  #prev-button-esporte img, #next-button-esporte img {
+    display: none;
+    width: 100%;
+    height: 100%;
+  }
+  .atividade-extra{
+    width: 95%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 4rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+
+  .info {
+
+    width: 100%;
+    margin-top: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  .info img {
+    display: block;
+    width: 70%;
+    height: auto;
+    border-radius: 4px ;
+  }
+  .info p {
+    margin-top: 1rem;
+    color: #777;
+    font-size: 16px;
+
+    max-width: 888px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+ 
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 28px;
+  }
+  #line {
+    display: none;
+  }
+  .info-dois {
+    width: 100%;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .info h2, .info-dois h2 {
+    color: #38C738;
+    font-weight: bold;
+    margin-left: 7px;
+    font-size: 2rem;
+  }
+  
+  .info P, .info-dois P {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #474747;
+    text-align: center;
+    font-family: "Nunito", serif;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 28px;
+  }
+
+  .infoBotao {
+  background-color: #4CAF50; 
+  color: white; 
+  padding: 10px 20px; 
+  width: 12rem;
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block;
+  margin-top: 10rem;
+  /*margin-top: 18.5rem;*/
+  margin-left: 1.4rem;
+  }
+
+  .areablog a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+  }
+
+  footer {
+    font-family: "Nunito", serif;
+    color: #ffffff;
+    background: #010c00ea;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo-footer {
+    width: 100px;
+  }
+  .container-log-redes {
+    font-family: "Nunito", serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin-left: 0px;
+    padding: 0px;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+  }
+  .redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .links-rodape {
+    display: flex;
+    flex-direction: column;
+  }
+  .links-rodape a {
+    font-family: "Nunito", serif;
+    color: #ffffff;
+  }
+  
+  footer a {
+    font-family: "Nunito", serif;
+    color: #ffffff;
+    color: #000;
+    padding: 15px;
+  }
+  
+  span{
+    display: inline-block;
+    padding: 8px;
+    justify-content: center;
+    font-size: 14px;
+    text-align: center;
+  }
+
+
+  .redes {
+    width: 100%;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+  }
+  .redes h2 {
+    font-size: 18px;
+    font-family:"Nunito", serif;
+    opacity: 70%;
+  }
+  .redes div  {
+    display: flex;
+  }
+  .container-redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .redes div a {
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+
+@media (max-width: 444px) {
+
+  .menu.active {
+    display: flex;
+    justify-content: end;
+    margin-left: 0rem;
+    height: auto;
+    width: 100%;
+}
+.extracurricular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.extracurricular h1{
+  color: #38C738;
+  font-weight: bold;
+  margin-left: 7px;
+  font-size: 1.7rem;
+  text-align: center;
+}
+.info img {
+  display: block;
+  width: 70%;
+  height: auto;
+  border-radius: 4px ;
+}
+.extracurricular p {
+    max-width: 888px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #474747;
+    text-align: center;
+    font-family: "Nunito", serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 28px;
+}
+}
+
+
+
+
+@media (max-width: 360px) {
+
+  .menu.active {
+    display: flex;
+    justify-content: end;
+    margin-left: 0rem;
+    height: auto;
+    width: 100%;
+}
+.extracurricular h1{
+  color: #38C738;
+  font-weight: bold;
+  margin-left: 7px;
+  font-size: 1.8rem;
+}
+.info img {
+  display: block;
+  width: 70%;
+  height: auto;
+  border-radius: 4px ;
+}
+
+}

@@ -72,7 +72,7 @@ a { color: inherit; text-decoration: none; }
 .hero-ctas { display:flex; gap:12px; }
 .hero-media {
   min-height: 280px; border-radius: var(--radius-lg);
-  background: url('../img/pedagogia.png') center/cover no-repeat;
+  background: url('../assets/img/pedagocio\ header.png') center/cover no-repeat;
   box-shadow: var(--shadow-md);
 }
 
@@ -121,7 +121,7 @@ a { color: inherit; text-decoration: none; }
 .families { background: linear-gradient(180deg, var(--green-50), var(--green-light)); }
 .families-grid { display:grid; grid-template-columns: 1.1fr .9fr; gap: 24px; align-items:center; }
 .families-text .families-actions { display:flex; gap: 12px; margin-top: 8px; flex-wrap: wrap; }
-.families-media { min-height: 220px; border-radius: var(--radius-lg); background:url('../img/equipe.png') center/cover no-repeat; box-shadow: var(--shadow-md); }
+.families-media { min-height: 220px; border-radius: var(--radius-lg); background:url('../assets/img/comunicacao\ familia.png') center/cover no-repeat; box-shadow: var(--shadow-md); }
 
 /* Contact */
 .contact .contact-grid { display:grid; grid-template-columns: 1.1fr .9fr; gap: 16px; align-items:start; }
