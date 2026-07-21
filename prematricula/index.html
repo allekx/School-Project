@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Meta Tags Essenciais -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pré-matrícula online da Escola Celus. Educação de qualidade, ambiente seguro e acolhedor para crianças e adolescentes. Inscreva-se agora!">
+    <meta name="keywords" content="pré-matrícula, escola, educação, Escola celus, matrícula online">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Portuguese">
+    <meta name="author" content="Escola Celus">
+
+    <!-- Open Graph (Redes Sociais) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pré-Matrícula - Escola Celus">
+    <meta property="og:description" content="Educação de qualidade, ambiente seguro e acolhedor. Inscreva-se na Escola Celus.">
+    <meta property="og:image" content="/og-image.png">
+    <meta property="og:url" content="https://escolacelus.com.br">
+    <meta property="og:site_name" content="Escola Celus">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pré-Matrícula - Escola Celus">
+    <meta name="twitter:description" content="Educação de qualidade, ambiente seguro e acolhedor.">
+    <meta name="twitter:image" content="/og-image.png">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://escolacelus.com.br">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Schema.org Markup (Escola de Ensino) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "Escola Celus",
+        "url": "https://escolacelus.com.br",
+        "logo": "https://escolacelus.com.br/logo.svg",
+        "description": "Escola de ensino moderna com educação de qualidade e ambiente acolhedor",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Rua Principal, 123",
+            "addressLocality": "Cidade",
+            "addressRegion": "Estado",
+            "postalCode": "00000-000",
+            "addressCountry": "BR"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+55 (XX) 9XXXX-XXXX",
+            "contactType": "Customer Service"
+        }
+    }
+    </script>
+
+    <title>Pré-Matrícula Online - Escola Celus | Educação de Qualidade Em Manaus</title>
+</head>
+<body>
+    <!-- ========== NAVBAR ========== -->
+    <header class="topbar">
+        <a class="logo" href="../index.html" aria-label="Voltar para a página inicial">
+            <img src="../assets/img/Logo celus.png" alt="Logotipo da Escola Celus">
+        </a>
+
+        <div class="topbar-meta">
+            <!--<span class="topbar-pill">Pré-matrícula online</span>-->
+            <a class="btn-voltar" href="../index.html">Voltar</a>
+        </div>
+    </header>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section id="inicio" class="hero" aria-label="Seção principal">
+        <!-- Background Image com Overlay -->
+        <div class="hero-background">
+            <img src="../assets/img/capa pre matricula.jpg">
+            <div class="hero-overlay"></div>
+        </div>
+
+        <!-- Conteúdo Hero -->
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badges" aria-label="Destaques da pré-matrícula">
+                    <span class="hero-badge">Pré-matrícula online</span>
+                    <span class="hero-badge">Resposta em até 72h</span>
+                </div>
+
+                <h1 class="hero-title">
+                    O futuro do seu filho começa com uma educação de qualidade.
+                </h1>
+                <p class="hero-subtitle">
+                    Na Escola Celus, cada aluno é acolhido com carinho, acompanhado de perto e preparado para conquistar um futuro de sucesso por meio de uma educação que une conhecimento, valores e desenvolvimento humano.
+                </p>
+
+                <div class="hero-highlights" aria-label="Benefícios da escola">
+                    <span class="hero-highlight-item">✓ Processo simples e seguro</span>
+                    <span class="hero-highlight-item">✓ Ambiente acolhedor e moderno</span>
+                    <span class="hero-highlight-item">✓ Formação integral para o futuro</span>
+                </div>
+
+                <div class="hero-buttons">
+                    <button class="btn btn-primary btn-large" id="heroMatriculaBtn" aria-label="Iniciar pré-matrícula">
+                        Iniciar Pré-Matrícula
+                    </button>
+                    <!--<button class="btn btn-secondary btn-large" id="heroDiferenciaisBtn" aria-label="Conhecer os diferenciais da escola">
+                        Conheça nossos diferenciais
+                    </button>-->
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator" aria-hidden="true">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- ========== DIFERENCIAIS ========== -->
+    <section id="diferenciais" class="diferenciais">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="section-title">Por que escolher a Escola Celus?</h2>
+                <p class="section-subtitle">Conheça os diferenciais que tornam nossa escola especial</p>
+            </header>
+
+            <div class="cards-grid">
+                <!-- Card 1 -->
+                <article class="card-diferencial card-qualidade" tabindex="0">
+                    <figure class="card-figure" aria-hidden="true">
+                        <img class="card-image" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="" loading="lazy">
+                    </figure>
+                    
+                    <h3 class="card-title">Ensino de Qualidade</h3>
+                    <p class="card-text">Metodologia moderna e atualizada que prepara os alunos para os desafios do futuro com excelência acadêmica.</p>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="card-diferencial card-professores" tabindex="0">
+                    <figure class="card-figure" aria-hidden="true">
+                        <img class="card-image" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="" loading="lazy">
+                    </figure>
+                   
+                    <h3 class="card-title">Professores Qualificados</h3>
+                    <p class="card-text">Equipe de educadores experientes, dedicados e continuamente atualizados em práticas pedagógicas inovadoras.</p>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="card-diferencial card-seguro" tabindex="0">
+                    <figure class="card-figure" aria-hidden="true">
+                        <img class="card-image" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="" loading="lazy">
+                    </figure>
+                    
+                    <h3 class="card-title">Ambiente Seguro</h3>
+                    <p class="card-text">Infraestrutura moderna com sistemas de segurança avançados e equipe treinada para proteger nossos alunos.</p>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="card-diferencial card-tecnologia" tabindex="0">
+                    <figure class="card-figure" aria-hidden="true">
+                        <img class="card-image" src="../assets/img/Programas Esportivos.jpg" alt="" loading="lazy">
+                    </figure>
+              
+                    <h3 class="card-title">Programas Esportivos</h3>
+                    <p class="card-text">Atividades esportivas completas que desenvolvem habilidades físicas, trabalho em equipe e disciplina nos alunos.</p>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="card-diferencial card-desenvolvimento" tabindex="0">
+                    <figure class="card-figure" aria-hidden="true">
+                        <img class="card-image" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="" loading="lazy">
+                    </figure>
+                    
+                    <h3 class="card-title">Desenvolvimento Humano</h3>
+                    <p class="card-text">Formação integral focada em valores, caráter e desenvolvimento socioemocional de cada aluno.</p>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="card-diferencial card-familias" tabindex="0">
+                    <figure class="card-figure" aria-hidden="true">
+                        <img class="card-image" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="" loading="lazy">
+                    </figure>
+                   
+                    <h3 class="card-title">Parceria com as Famílias</h3>
+                    <p class="card-text">Comunicação constante e envolvimento das famílias no processo educacional, construindo comunidade.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== COMO FUNCIONA (TIMELINE) ========== -->
+    <section id="sobre" class="como-funciona">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="section-title">Como funciona a Pré-Matrícula</h2>
+                <p class="section-subtitle">Um processo simples em apenas 4 passos</p>
+            </header>
+
+            <div class="timeline">
+                <!-- Passo 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-number">1</div>
+                    <h3 class="timeline-title">Preencha sua Pré-Matrícula</h3>
+                    <p class="timeline-text">Acesse o formulário online e forneça os dados do aluno e responsável em poucos minutos.</p>
+                </div>
+
+                <!-- Conector -->
+                <div class="timeline-connector" aria-hidden="true"></div>
+
+                <!-- Passo 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-number">2</div>
+                    <h3 class="timeline-title">Nossa Equipe Recebe</h3>
+                    <p class="timeline-text">Processamos seus dados de forma segura e começamos a análise da pré-matrícula.</p>
+                </div>
+
+                <!-- Conector -->
+                <div class="timeline-connector" aria-hidden="true"></div>
+
+                <!-- Passo 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-number">3</div>
+                    <h3 class="timeline-title">Entramos em Contato</h3>
+                    <p class="timeline-text">Nossa equipe de admissão entrará em contato para dar continuidade ao processo de matrícula.</p>
+                </div>
+
+                <!-- Conector -->
+                <div class="timeline-connector" aria-hidden="true"></div>
+
+                <!-- Passo 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-number">4</div>
+                    <h3 class="timeline-title">Bem-Vindo à Celus</h3>
+                    <p class="timeline-text">Seu filho fará parte da família Celus e começará uma jornada incrível de aprendizado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ESTRUTURA DA ESCOLA ========== -->
+   <!-- <section id="estrutura" class="estrutura">
+        <div class="container estrutura-container">
+            
+            <div class="estrutura-image">
+                <img src="../assets/img/sala.png" alt="Sala de aula moderna da Escola Celus" class="img-responsive">
+            </div>
+
+            
+            <div class="estrutura-content">
+                <h2 class="section-title">Um ambiente preparado para o aprendizado.</h2>
+                <p class="estrutura-text">
+                    Na Escola Celus, acreditamos que o ambiente físico é fundamental para o sucesso educacional. 
+                    Nossas instalações foram pensadas para proporcionar conforto, segurança e estímulo ao aprendizado, 
+                    combinando modernidade com acolhimento.
+                </p>
+
+               
+                <ul class="estrutura-list">
+                    <li class="list-item">
+                        <span class="list-icon">•</span>
+                        <span class="list-text">Salas modernas com climatização</span>
+                    </li>
+                    <li class="list-item">
+                        <span class="list-icon">•</span>
+                        <span class="list-text">Biblioteca completa e atualizada</span>
+                    </li>
+                    <li class="list-item">
+                        <span class="list-icon">•</span>
+                        <span class="list-text">Laboratórios de ciências e tecnologia</span>
+                    </li>
+                    <li class="list-item">
+                        <span class="list-icon">•</span>
+                        <span class="list-text">Quadras esportivas cobertas e abertas</span>
+                    </li>
+                    <li class="list-item">
+                        <span class="list-icon">•</span>
+                        <span class="list-text">Espaços de convivência acolhedores</span>
+                    </li>
+                    <li class="list-item">
+                        <span class="list-icon">•</span>
+                        <span class="list-text">Sistema de segurança 24 horas</span>
+                    </li>
+                    <li class="list-item">
+                        <span class="list-icon">•</span>
+                        <span class="list-text">Atendimento humanizado e acolhedor</span>
+                    </li>
+                </ul>
+
+                <button class="btn btn-secondary" id="estruturaBtn" aria-label="Conhecer mais sobre a estrutura da escola">
+                    Conheça nossa escola
+                </button>
+            </div>
+        </div>
+    </section>-->
+
+    <!-- ========== GALERIA ========== -->
+    <section id="galeria" class="galeria">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="section-title">Conheça nossos espaços</h2>
+                <p class="section-subtitle">Ambientes modernos preparados para aprendizado e desenvolvimento</p>
+            </header>
+
+            <div class="galeria-grid">
+                <figure class="galeria-item">
+                    <img src="../assets/img/Biblioteca acolhedora.png" alt="Biblioteca acolhedora da Escola">
+                </figure>
+                <figure class="galeria-item">
+                    <img src="../assets/img/quadra.png" alt="Quadra poliesportiva">
+                </figure>
+                <figure class="galeria-item">
+                    <img src="../assets/img//piscina.png" alt="Piscina infantil para recreação">
+                </figure>
+                <figure class="galeria-item">
+                    <img src="../assets/img/sala.png" alt="Quadra esportiva">
+                </figure>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== NÚMEROS ========== -->
+    <section id="numeros" class="numeros">
+        <div class="container">
+            <div class="numeros-grid">
+                <div class="numero-card">
+                    <div class="numero-value" data-target="20" data-suffix="+">0+</div>
+                    <p class="numero-label">Anos de Tradição</p>
+                </div>
+                <div class="numero-card">
+                    <div class="numero-value" data-target="1000" data-suffix="+">0+</div>
+                    <p class="numero-label">Alunos</p>
+                </div>
+                <div class="numero-card">
+                    <div class="numero-value" data-target="50" data-suffix="+">0+</div>
+                    <p class="numero-label">Profissionais</p>
+                </div>
+                <div class="numero-card">
+                    <div class="numero-value" data-target="98" data-suffix="%">0%</div>
+                    <p class="numero-label">Famílias Satisfeitas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== O QUE VOCÊ PRECISARÁ ========== -->
+   <!--<section id="checklist" class="checklist-section">
+        <div class="container">
+            <article class="checklist-card">
+                <h2 class="section-title">O que você precisará para pré-matrícula?</h2>
+                <p class="checklist-subtitle">Tenha em mãos apenas alguns dados para completar o formulário em aproximadamente 5 minutos</p>
+
+                <ul class="checklist">
+                    <li class="checklist-item">
+                        <span class="check-icon">•</span>
+                        <span class="check-text">CPF do responsável</span>
+                    </li>
+                    <li class="checklist-item">
+                        <span class="check-icon">•</span>
+                        <span class="check-text">Dados completos do aluno</span>
+                    </li>
+                    <li class="checklist-item">
+                        <span class="check-icon">•</span>
+                        <span class="check-text">Informações do responsável financeiro</span>
+                    </li>
+                    <li class="checklist-item">
+                        <span class="check-icon">•</span>
+                        <span class="check-text">Dados da escola anterior</span>
+                    </li>
+                    <li class="checklist-item">
+                        <span class="check-icon">•</span>
+                        <span class="check-text">Foto do aluno (opcional)</span>
+                    </li>
+                </ul>
+
+                <div class="checklist-time">
+                    <span class="time-icon">⏱</span>
+                    <span class="time-text">Tempo médio: <strong>5 minutos</strong></span>
+                </div>
+            </article>
+        </div>
+    </section>-->
+
+    <!-- ========== FAQ ========== -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="section-title">Perguntas Frequentes</h2>
+                <p class="section-subtitle">Tudo o que você precisa saber sobre a pré-matrícula</p>
+            </header>
+
+            <div class="accordion">
+                <!-- Item 1 -->
+                <article class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false" aria-controls="faq-1">
+                        <span class="accordion-title">Quanto tempo demora o processo de pré-matrícula?</span>
+                        <span class="accordion-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div id="faq-1" class="accordion-content" hidden>
+                        <p>O formulário de pré-matrícula é muito rápido e intuitivo, levando em média apenas 5 minutos para ser completado. Após a submissão, nossa equipe analisará os dados e entrará em contato para os próximos passos.</p>
+                    </div>
+                </article>
+
+                <!-- Item 2 -->
+                <article class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false" aria-controls="faq-2">
+                        <span class="accordion-title">Quais documentos preciso reunir para pré-matrícula?</span>
+                        <span class="accordion-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div id="faq-2" class="accordion-content" hidden>
+                        <p>Você precisará apenas do CPF do responsável, dados básicos do aluno, informações do responsável financeiro e dados da escola anterior. A foto é opcional. Tudo será solicitado no formulário de forma clara e objetiva.</p>
+                    </div>
+                </article>
+
+                <!-- Item 3 -->
+                <article class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false" aria-controls="faq-3">
+                        <span class="accordion-title">Posso concluir o formulário depois?</span>
+                        <span class="accordion-icon" aria-expanded="false" aria-controls="faq-3">+</span>
+                    </button>
+                    <div id="faq-3" class="accordion-content" hidden>
+                        <p>Sim! O sistema permite salvar seu progresso. Se precisar interromper, você poderá continuar de onde parou. No entanto, recomendamos completar tudo de uma vez para garantir a continuidade do processo.</p>
+                    </div>
+                </article>
+
+                <!-- Item 4 -->
+                <article class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false" aria-controls="faq-4">
+                        <span class="accordion-title">Quando a escola entra em contato?</span>
+                        <span class="accordion-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div id="faq-4" class="accordion-content" hidden>
+                        <p>Nossa equipe de admissão faz contato em até 2 dias úteis após o recebimento da pré-matrícula. O contato é feito via telefone ou e-mail conforme preferência informada no formulário.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA FINAL ========== -->
+    <section id="cta-final" class="cta-final">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Estamos felizes em receber sua família.</h2>
+                <p class="cta-text">
+                    Clique abaixo para iniciar sua Pré-Matrícula Online. 
+                    É rápido, seguro e simples!
+                </p>
+                <button class="btn btn-large btn-white" id="ctaMatriculaBtn" aria-label="Iniciar pré-matrícula">
+                    INICIAR PRÉ-MATRÍCULA
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Informações -->
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-text">Celus</span>
+                    </div>
+                    <p class="footer-description">
+                        Educação de qualidade que une conhecimento, valores e desenvolvimento humano.
+                    </p>
+                </div>
+
+                <!-- Contatos -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Contatos</h3>
+                    <ul class="footer-links">
+                        <li><a href="tel:+551199999999" aria-label="Telefone da Escola">Telefone: (92) 9345-5859</a></li>
+                        <li><a href="https://wa.me/559293455859" aria-label="WhatsApp da Escola">WhatsApp</a></li>
+                        <li><a href="mailto:secretaria@escolacelus.com.br" aria-label="Email da Escola">secretaria@escolacelus.com.br</a></li>
+                        <li><a href="#" aria-label="Endereço da Escola">R. Dessana, 12 - Cidade Nova, Manaus - AM, 69095-200</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links Rápidos -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#diferenciais">Diferenciais</a></li>
+                        <li><a href="#estrutura">Estrutura</a></li>
+                        <li><a href="#faq">Perguntas</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legais -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Legais</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Serviço</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Escola Celus. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== MODAL ========== -->
+    <div id="matriculaModal" class="modal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" id="modalCloseBtn" aria-label="Fechar modal">×</button>
+
+            <h2 id="modalTitle" class="modal-title">Você está a um passo da Pré-Matrícula.</h2>
+            <p class="modal-text">
+                O formulário é bem rápido! Leva aproximadamente cinco minutos. Tenha em mãos:
+            </p>
+
+            <ul class="modal-checklist">
+                <li>• CPF</li>
+                <li>• Dados do aluno</li>
+                <li>• Dados do responsável</li>
+                <li>• Foto do aluno (opcional)</li>
+            </ul>
+
+            <div class="modal-buttons">
+                <button class="btn btn-outline" id="modalCancelBtn">Cancelar</button>
+                <button class="btn btn-primary" id="modalContinueBtn">Continuar</button>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- ========== WHATSAPP FLUTUANTE (ÍCONE) ========== -->
+    <!--<a href="https://wa.me/559293455859" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Abrir WhatsApp da Escola Celus">
+        <svg class="whatsapp-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="12" fill="#25D366" />
+            <path fill="#FFFFFF" d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2c.27-.27.66-.36 1.02-.26 1.12.33 2.33.51 3.54.51.55 0 1 .45 1 1V21c0 .55-.45 1-1 1-7.63 0-14-6.38-14-14 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.21.18 2.42.51 3.54.1.36.01.75-.26 1.02l-2.13 2.23z"/>
+        </svg>
+        <span class="sr-only">WhatsApp</span>
+    </a>-->
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
