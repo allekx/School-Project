@@ -520,6 +520,40 @@
       margin-bottom: 0.5rem;
     }
 
+    
+    /* ===== FOOTER IMAGE APPEARANCE ===== */
+    .footer-image {
+      display: block;
+      width: 100%;
+      height: 170px;
+      border-radius: 6px;
+      object-fit: cover;
+      opacity: 0;
+      transform: translateY(18px) scale(0.995);
+      animation: footerImageIn 700ms var(--ease-out) 150ms forwards;
+      will-change: transform, opacity;
+      z-index: 1;
+    }
+
+    @keyframes footerImageIn {
+      from {
+        opacity: 0;
+        transform: translateY(18px) scale(0.995);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .footer-image {
+        transition: none;
+        animation: none;
+        opacity: 1;
+        transform: none;
+      }
+    }
     .footer-domain svg {
       width: 16px;
       height: 16px;
@@ -825,18 +859,21 @@
        <!-- BENEFITS SECTION -->
     <section class="benefits">
       <div class="benefit-card">
-        <div class="benefit-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M22 2L11 13M22 2l-7 20-5-9-9-5 20-7z"/>
-          </svg>
-        </div>
+        <div class="benefit-icon" aria-hidden="true" title="Ícone: livro">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" role="img" focusable="false">
+              <path d="M3 6.5h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H3z" />
+              <path d="M21 6.5h-7a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h7z" />
+              <path d="M12 7v10" />
+            </svg>
+          </div>
         <span class="benefit-label">Metodologia moderna para um ensino de excelência.</span>
       </div>
       <div class="benefit-card">
-        <div class="benefit-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
-            <polyline points="17 6 23 6 23 12"></polyline>
+        <div class="benefit-icon" aria-hidden="true" title="Ícone: pessoa">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" role="img" focusable="false">
+            <circle cx="12" cy="7" r="3" />
+            <path d="M5.5 20c1.5-3 4-4.5 6.5-4.5s5 1.5 6.5 4.5" />
+            <path d="M8.5 13.5c0-1.2 1.5-2.5 3.5-2.5s3.5 1.3 3.5 2.5" />
           </svg>
         </div>
         <span class="benefit-label">Profissionais qualificados e ensino de qualidade.</span>
@@ -847,7 +884,7 @@
             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
           </svg>
         </div>
-        <span class="benefit-label">Ambiente seguro, confortável e acolhedor para todos.</span>
+        <span class="benefit-label">Ambiente seguro e acolhedor para todos.</span>
       </div>
     </section>
 
